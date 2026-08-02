@@ -24,7 +24,9 @@ jobs:
         run: python scripts/refresh.py
 
       - name: Refresh league intel
-        run: python scripts/league_refresh.py
+        run: |
+          python scripts/league_history.py --league 1387442990548549632 --slug blitz
+          python scripts/analyze_league.py --slug blitz
 
       - name: Commit and push if changed
         run: |
