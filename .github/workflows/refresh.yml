@@ -23,6 +23,9 @@ jobs:
       - name: Refresh data
         run: python scripts/refresh.py
 
+      - name: Refresh league intel
+        run: python scripts/league_refresh.py
+
       - name: Commit and push if changed
         run: |
           git config user.name "hub-bot"
