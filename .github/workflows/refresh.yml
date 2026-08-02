@@ -1,0 +1,31 @@
+name: Refresh data
+
+on:
+  schedule:
+    - cron: '0 10 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Refresh data
+        run: python scripts/refresh.py
+
+      - name: Commit and push if changed
+        run: |
+          git config user.name "hub-bot"
+          git config user.email "hub-bot@users.noreply.github.com"
+          git add data
+          git diff --cached --quiet || (git commit -m "data: scheduled refresh" && git push)

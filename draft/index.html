@@ -1,0 +1,839 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>VBD Draft Board</title>
+<style>
+  :root {
+    --bg: #0f172a;
+    --bg2: #1e293b;
+    --bg3: #273549;
+    --border: #334155;
+    --text: #e2e8f0;
+    --text-dim: #94a3b8;
+    --text-faint: #64748b;
+    --accent: #38bdf8;
+    --qb: #ef4444;
+    --rb: #14b8a6;
+    --wr: #22c55e;
+    --te: #f59e0b;
+    --pos: #4ade80;
+    --neg: #f87171;
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; }
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.45;
+  }
+  button { font-family: inherit; }
+  input, select { font-family: inherit; }
+
+  .app { max-width: 1440px; margin: 0 auto; padding: 0 16px 40px; }
+
+  header.topbar {
+    display: flex; align-items: center; gap: 14px; flex-wrap: wrap;
+    padding: 14px 0 12px; border-bottom: 1px solid var(--border);
+    position: sticky; top: 0; background: var(--bg); z-index: 40;
+  }
+  .topbar h1 { font-size: 19px; margin: 0; font-weight: 700; letter-spacing: 0.2px; }
+  .topbar .updated { color: var(--text-faint); font-size: 12px; }
+  .topbar .spacer { flex: 1; }
+
+  .sync-pill {
+    display: inline-flex; align-items: center; gap: 6px;
+    cursor: pointer;
+    font-size: 12px; color: var(--text-dim);
+    border: 1px solid var(--border); border-radius: 999px; padding: 3px 10px;
+  }
+  .dot { width: 8px; height: 8px; border-radius: 50%; background: var(--text-faint); flex: none; }
+  .dot.synced { background: #34d399; }
+  .dot.saving {
+    background: transparent; border: 2px solid var(--accent); border-top-color: transparent;
+    width: 8px; height: 8px; animation: spin 0.8s linear infinite;
+  }
+  @keyframes spin { to { transform: rotate(360deg); } }
+
+  .iconbtn {
+    background: var(--bg2); color: var(--text); border: 1px solid var(--border);
+    border-radius: 8px; padding: 6px 12px; cursor: pointer; font-size: 13px;
+    display: inline-flex; align-items: center; gap: 6px;
+  }
+  .iconbtn:hover { background: var(--bg3); }
+  .iconbtn:disabled { opacity: 0.4; cursor: default; }
+  .iconbtn:disabled:hover { background: var(--bg2); }
+
+  .layout { display: flex; gap: 20px; align-items: flex-start; margin-top: 14px; }
+  .main { flex: 1; min-width: 0; }
+  .sidebar { width: 290px; flex: none; position: sticky; top: 62px; }
+  @media (max-width: 900px) {
+    .layout { flex-direction: column; }
+    .sidebar { width: 100%; position: static; }
+  }
+
+  /* Filter bar */
+  .filterbar { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; margin-bottom: 12px; }
+  .chip {
+    background: var(--bg2); color: var(--text-dim); border: 1px solid var(--border);
+    border-radius: 999px; padding: 4px 13px; cursor: pointer; font-size: 13px; font-weight: 600;
+  }
+  .chip:hover { color: var(--text); }
+  .chip.active { background: var(--accent); border-color: var(--accent); color: #082f49; }
+  .search {
+    background: var(--bg2); border: 1px solid var(--border); color: var(--text);
+    border-radius: 8px; padding: 6px 11px; font-size: 13px; width: 190px; outline: none;
+  }
+  .search:focus { border-color: var(--accent); }
+  .toggle { display: inline-flex; align-items: center; gap: 6px; font-size: 13px; color: var(--text-dim); cursor: pointer; user-select: none; }
+  .toggle input { accent-color: var(--accent); cursor: pointer; }
+
+  /* Table */
+  .tablewrap { background: var(--bg2); border: 1px solid var(--border); border-radius: 10px; overflow: auto; }
+  table { border-collapse: collapse; width: 100%; min-width: 760px; }
+  thead th {
+    text-align: right; font-size: 11px; text-transform: uppercase; letter-spacing: 0.6px;
+    color: var(--text-faint); padding: 9px 10px; border-bottom: 1px solid var(--border);
+    position: sticky; top: 0; background: var(--bg2); z-index: 5; white-space: nowrap;
+  }
+  thead th.l { text-align: left; }
+  thead th.sortable { cursor: pointer; }
+  thead th.sortable:hover { color: var(--text); }
+  thead th.sorted { color: var(--accent); }
+  tbody td { padding: 7px 10px; border-bottom: 1px solid rgba(51,65,85,0.5); text-align: right; white-space: nowrap; font-variant-numeric: tabular-nums; }
+  tbody td.l { text-align: left; }
+  tbody tr:last-child td { border-bottom: none; }
+  tbody tr:hover td { background: rgba(56,189,248,0.05); }
+  .rank { color: var(--text-faint); font-size: 12px; }
+  .pname { font-weight: 600; }
+  .pteam { color: var(--text-faint); font-size: 12px; margin-left: 6px; }
+  .poschip {
+    display: inline-block; font-size: 11px; font-weight: 700; border-radius: 5px;
+    padding: 2px 7px; color: #0b1220; min-width: 38px; text-align: center;
+  }
+  .poschip.QB { background: var(--qb); color: #fff; }
+  .poschip.RB { background: var(--rb); }
+  .poschip.WR { background: var(--wr); }
+  .poschip.TE { background: var(--te); }
+  .vbd { font-weight: 700; color: var(--accent); }
+  .val-pos { color: var(--pos); }
+  .val-neg { color: var(--neg); }
+  .muted { color: var(--text-faint); }
+  tr.drafted td { opacity: 0.45; }
+  tr.drafted .pname { text-decoration: line-through; }
+  .rowbtn {
+    border: 1px solid var(--border); background: var(--bg3); color: var(--text);
+    border-radius: 6px; padding: 3px 9px; font-size: 12px; cursor: pointer; margin-left: 5px;
+  }
+  .rowbtn.mine { border-color: rgba(56,189,248,0.6); color: var(--accent); }
+  .rowbtn.mine:hover { background: rgba(56,189,248,0.15); }
+  .rowbtn.gone:hover { background: rgba(248,113,113,0.12); }
+  .rowbtn.undo:hover { background: rgba(52,211,153,0.12); }
+  .mine-tag { font-size: 10px; font-weight: 700; color: var(--accent); border: 1px solid rgba(56,189,248,0.5); border-radius: 4px; padding: 1px 5px; margin-left: 6px; text-decoration: none; display: inline-block; }
+
+  /* Sidebar cards */
+  .card { background: var(--bg2); border: 1px solid var(--border); border-radius: 10px; padding: 13px 15px; margin-bottom: 14px; }
+  .card h3 { margin: 0 0 9px; font-size: 12px; text-transform: uppercase; letter-spacing: 0.7px; color: var(--text-faint); }
+  .slotrow { display: flex; align-items: center; gap: 8px; padding: 3.5px 0; font-size: 13px; }
+  .slotlabel { width: 46px; flex: none; color: var(--text-faint); font-size: 11px; font-weight: 700; letter-spacing: 0.5px; }
+  .slotempty { color: var(--text-faint); font-style: italic; }
+  .statrow { display: flex; justify-content: space-between; padding: 3px 0; font-size: 13px; color: var(--text-dim); }
+  .statrow b { color: var(--text); font-variant-numeric: tabular-nums; font-weight: 600; }
+
+  /* Drawer */
+  .overlay { position: fixed; inset: 0; background: rgba(2,6,23,0.6); z-index: 90; }
+  .drawer {
+    position: fixed; top: 0; right: 0; bottom: 0; width: 360px; max-width: 92vw;
+    background: var(--bg2); border-left: 1px solid var(--border); z-index: 100;
+    overflow-y: auto; padding: 18px 20px 30px; box-shadow: -12px 0 30px rgba(0,0,0,0.4);
+  }
+  .drawer h2 { margin: 0 0 4px; font-size: 16px; }
+  .drawer h4 { margin: 18px 0 6px; font-size: 12px; text-transform: uppercase; letter-spacing: 0.7px; color: var(--accent); border-bottom: 1px solid var(--border); padding-bottom: 4px; }
+  .frow { display: flex; align-items: center; justify-content: space-between; gap: 10px; padding: 3px 0; }
+  .frow label { color: var(--text-dim); font-size: 13px; }
+  .frow input {
+    width: 72px; background: var(--bg); border: 1px solid var(--border); color: var(--text);
+    border-radius: 6px; padding: 4px 8px; font-size: 13px; text-align: right; outline: none;
+  }
+  .frow input:focus { border-color: var(--accent); }
+  .warn { color: var(--te); font-size: 12px; margin: 4px 0; }
+  .drawerbtns { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 20px; }
+  .closex { float: right; background: none; border: none; color: var(--text-faint); font-size: 18px; cursor: pointer; padding: 0 2px; }
+  .closex:hover { color: var(--text); }
+
+  /* Help popover */
+  .helpwrap { position: relative; }
+  .helppop {
+    position: absolute; right: 0; top: 38px; width: 330px; background: var(--bg2);
+    border: 1px solid var(--border); border-radius: 10px; padding: 14px 16px; z-index: 80;
+    box-shadow: 0 12px 30px rgba(0,0,0,0.5); font-size: 12.5px; color: var(--text-dim);
+  }
+  .helppop dt { color: var(--text); font-weight: 700; margin-top: 8px; }
+  .helppop dt:first-child { margin-top: 0; }
+  .helppop dd { margin: 2px 0 0 0; }
+
+  .bigmsg { padding: 60px 20px; text-align: center; color: var(--text-dim); font-size: 15px; }
+  .errbox { background: rgba(248,113,113,0.08); border: 1px solid rgba(248,113,113,0.4); border-radius: 10px; padding: 20px; margin-top: 30px; color: var(--text); }
+</style>
+</head>
+<body>
+<div id="root"><div class="bigmsg">Loading…</div></div>
+
+<script src="https://unpkg.com/react@18/umd/react.production.min.js" crossorigin></script>
+<script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js" crossorigin></script>
+<script src="https://unpkg.com/htm@3.1.1/dist/htm.umd.js" crossorigin></script>
+
+<script>
+"use strict";
+/* Optional embedded fallback data for file:// use. Replace null with a
+   players.json-shaped object to embed data directly. */
+const EMBEDDED_PLAYERS = null;
+
+const html = htm.bind(React.createElement);
+const { useState, useEffect, useMemo, useRef, useCallback } = React;
+
+const LS_KEY = "vbd-draft-v1";
+const POSITIONS = ["QB", "RB", "WR", "TE"];
+const LEAGUE_POOL = { QB: 32, RB: 40, WR: 80, TE: 40 }; // H: assumed startable pool league-wide
+
+const DEFAULT_SETTINGS = {
+  teams: 12,
+  weeks: 16,
+  scoring: { ppy: 0.04, ptd: 4, int: -2, rushYd: 0.1, rushTd: 6, recYd: 0.1, recTd: 6, ppr: 0.5, fum: -2 },
+  roster: { qb: 1, rb: 2, wr: 3, te: 1, flex: 1 },
+  flexSplit: { rb: 0.5, wr: 0.5 },
+  fragility: { QB: 1.3, RB: 2.8, WR: 2.1, TE: 2.5 },
+  vorpBaseline: { QB: 13, RB: 34, WR: 46, TE: 15 },
+};
+
+function deepMergeSettings(base, over) {
+  if (!over || typeof over !== "object") return JSON.parse(JSON.stringify(base));
+  const out = {};
+  for (const k of Object.keys(base)) {
+    const b = base[k], o = over[k];
+    if (b && typeof b === "object") out[k] = deepMergeSettings(b, o);
+    else out[k] = (typeof o === "number" && isFinite(o)) ? o : b;
+  }
+  return out;
+}
+
+function num(v, fallback) { const n = parseFloat(v); return isFinite(n) ? n : fallback; }
+function f2(v) { return (v == null || !isFinite(v)) ? "–" : v.toFixed(2); }
+function f1(v) { return (v == null || !isFinite(v)) ? "–" : v.toFixed(1); }
+function pkey(p) { return p.name + "|" + p.team; }
+
+/* ---------------- VBD engine ---------------- */
+function volsRanks(settings) {
+  const { teams, roster, flexSplit } = settings;
+  return {
+    QB: Math.round(teams * roster.qb),
+    TE: Math.round(teams * roster.te),
+    RB: Math.floor(teams * roster.rb) + Math.round(flexSplit.rb * teams * roster.flex),
+    WR: Math.ceil(teams * roster.wr) + Math.round(flexSplit.wr * teams * roster.flex),
+  };
+}
+
+function computeBoard(players, settings, picks) {
+  const s = settings.scoring;
+  const weeks = Math.max(1, settings.weeks);
+  const draftedKeys = new Set(picks.map(p => p.name + "|" + p.team));
+
+  // per-player base points on the FULL pool (drafted + undrafted)
+  const rows = players.map(p => {
+    const st = p.stats || {};
+    const fpts =
+      s.ppy * (st.pass_yd || 0) + s.ptd * (st.pass_td || 0) + s.int * (st.pass_int || 0) +
+      s.rushYd * (st.rush_yd || 0) + s.rushTd * (st.rush_td || 0) +
+      s.ppr * (st.rec || 0) + s.recYd * (st.rec_yd || 0) + s.recTd * (st.rec_td || 0) +
+      s.fum * (st.fum || 0);
+    const fppg = fpts / 17;
+    const missed = settings.fragility[p.pos] != null ? settings.fragility[p.pos] : 0;
+    const frag = 1 - missed / weeks;
+    const fptsAdj = fppg * weeks * frag;
+    return {
+      player: p, key: pkey(p), fpts, fppg, fptsAdj,
+      fppgAdj: fptsAdj / weeks,
+      drafted: draftedKeys.has(pkey(p)),
+    };
+  });
+
+  // per-position pools sorted by fptsAdj desc (full pool)
+  const byPos = {};
+  for (const pos of POSITIONS) {
+    byPos[pos] = rows.filter(r => r.player.pos === pos).sort((a, b) => b.fptsAdj - a.fptsAdj);
+    byPos[pos].forEach((r, i) => { r.posRank = i + 1; });
+  }
+
+  const vols = volsRanks(settings);
+  const draftedByPos = { QB: 0, RB: 0, WR: 0, TE: 0 };
+  for (const r of rows) if (r.drafted) draftedByPos[r.player.pos]++;
+
+  const baselineVal = (pos, rank1based) => {
+    const pool = byPos[pos];
+    if (!pool.length) return 0;
+    const idx = Math.min(Math.max(1, Math.round(rank1based)), pool.length) - 1;
+    return pool[idx].fptsAdj;
+  };
+
+  const scarcity = {};
+  for (const pos of POSITIONS) {
+    const S = vols[pos];
+    const H = LEAGUE_POOL[pos];
+    const R = S - draftedByPos[pos];
+    let bonus = 0, M = 0;
+    if (S > 0 && H > 0) {
+      const I = S / H;                 // fixed share of pool that starts
+      const J = 1 + I / 0.75;          // base multiplier
+      const K = R / H;                 // remaining share
+      M = I > 0 ? J + (1 - K / I) : 0;
+      bonus = R < 1 ? 0 : (1 - R / S) * M;
+    }
+    scarcity[pos] = { S, R: Math.max(0, R), M, bonus, drafted: draftedByPos[pos] };
+  }
+
+  for (const pos of POSITIONS) {
+    const vorpBase = baselineVal(pos, settings.vorpBaseline[pos]);
+    const volsBase = baselineVal(pos, vols[pos]);
+    for (const r of byPos[pos]) {
+      r.vor = r.fptsAdj - vorpBase;
+      r.vols = Math.max(0, r.fptsAdj - volsBase);
+      r.vorG = r.vor / weeks;
+      r.volsG = r.vols / weeks;
+      r.vbdG = r.vorG + r.volsG + scarcity[pos].bonus;
+    }
+  }
+
+  // board rank across full pool by VBD/G desc
+  const all = rows.slice().sort((a, b) => b.vbdG - a.vbdG);
+  all.forEach((r, i) => { r.boardRank = i + 1; });
+  for (const r of rows) {
+    const adp = r.player.adp;
+    r.value = (adp == null || !isFinite(adp)) ? null : adp - r.boardRank;
+  }
+  return { rows, scarcity, vols };
+}
+
+/* ---------------- Sync loader ---------------- */
+async function loadHubSync() {
+  try {
+    if (window.HubSync) return window.HubSync;
+    if (location.protocol === "file:") return null;
+    const head = await fetch("../lib/sync.js", { method: "HEAD" });
+    if (!head.ok) return null;
+    await new Promise((res, rej) => {
+      const el = document.createElement("script");
+      el.src = "../lib/sync.js";
+      el.onload = res; el.onerror = rej;
+      document.head.appendChild(el);
+    });
+    return window.HubSync || null;
+  } catch (e) { return null; }
+}
+
+function loadLocal() {
+  try {
+    const raw = localStorage.getItem(LS_KEY);
+    if (!raw) return null;
+    const obj = JSON.parse(raw);
+    if (!obj || !Array.isArray(obj.picks)) return null;
+    return obj;
+  } catch (e) { return null; }
+}
+
+function sanitizeState(obj) {
+  if (!obj || typeof obj !== "object") return null;
+  const picks = Array.isArray(obj.picks)
+    ? obj.picks.filter(p => p && typeof p.name === "string").map(p => ({
+        name: p.name, team: String(p.team || ""), mine: !!p.mine, ts: p.ts || 0 }))
+    : [];
+  return { picks, settings: deepMergeSettings(DEFAULT_SETTINGS, obj.settings), version: 1 };
+}
+
+/* ---------------- UI bits ---------------- */
+function PosChip({ pos, rank }) {
+  return html`<span class="poschip ${pos}">${pos}${rank || ""}</span>`;
+}
+
+function HelpPopover({ onClose }) {
+  return html`
+    <div class="helppop" onClick=${e => e.stopPropagation()}>
+      <dl style=${{ margin: 0 }}>
+        <dt>FPPG adj</dt>
+        <dd>Projected fantasy points per game, discounted by the average games a player at that position misses. It is the durability-adjusted weekly output.</dd>
+        <dt>VOR / G</dt>
+        <dd>Value Over Replacement per game: points above the "replacement" player at the position (the VORP baseline rank). It measures how much better a player is than what you could get late.</dd>
+        <dt>VoLS / G</dt>
+        <dd>Value over Last Starter per game: points above the worst weekly starter at the position, floored at zero. Only players good enough to start earn it.</dd>
+        <dt>VBD / G</dt>
+        <dd>The board's master number: VOR/G plus VoLS/G plus a scarcity bonus that grows as a position's startable pool gets drafted. Higher means draft sooner.</dd>
+        <dt>Value</dt>
+        <dd>ADP minus board rank. Positive (green) means the board likes the player more than the market, so he may be available later than he should be.</dd>
+      </dl>
+      <div style=${{ textAlign: "right", marginTop: "10px" }}>
+        <button class="rowbtn" onClick=${onClose}>Close</button>
+      </div>
+    </div>`;
+}
+
+function NumField({ label, value, onChange, step }) {
+  return html`
+    <div class="frow">
+      <label>${label}</label>
+      <input type="number" step=${step || "any"} value=${value}
+        onChange=${e => onChange(num(e.target.value, value))} />
+    </div>`;
+}
+
+function SettingsDrawer({ settings, onSet, onReset, onExport, onImport, onClose }) {
+  const set = (path, v) => onSet(path, v);
+  const s = settings;
+  const flexSum = s.flexSplit.rb + s.flexSplit.wr;
+  const fileRef = useRef(null);
+  return html`
+    <div>
+      <div class="overlay" onClick=${onClose}></div>
+      <div class="drawer">
+        <button class="closex" onClick=${onClose} title="Close">✕</button>
+        <h2>Settings</h2>
+        <div style=${{ color: "var(--text-faint)", fontSize: "12px" }}>Changes recompute the board instantly.</div>
+
+        <h4>League</h4>
+        <${NumField} label="Teams" value=${s.teams} step="1" onChange=${v => set(["teams"], Math.max(2, Math.round(v)))} />
+        <${NumField} label="Weeks (season length used)" value=${s.weeks} step="1" onChange=${v => set(["weeks"], Math.max(1, Math.round(v)))} />
+
+        <h4>Scoring</h4>
+        <${NumField} label="Points per passing yard" value=${s.scoring.ppy} onChange=${v => set(["scoring","ppy"], v)} />
+        <${NumField} label="Passing TD" value=${s.scoring.ptd} onChange=${v => set(["scoring","ptd"], v)} />
+        <${NumField} label="Interception" value=${s.scoring.int} onChange=${v => set(["scoring","int"], v)} />
+        <${NumField} label="Points per rushing yard" value=${s.scoring.rushYd} onChange=${v => set(["scoring","rushYd"], v)} />
+        <${NumField} label="Rushing TD" value=${s.scoring.rushTd} onChange=${v => set(["scoring","rushTd"], v)} />
+        <${NumField} label="Points per reception (PPR)" value=${s.scoring.ppr} onChange=${v => set(["scoring","ppr"], v)} />
+        <${NumField} label="Points per receiving yard" value=${s.scoring.recYd} onChange=${v => set(["scoring","recYd"], v)} />
+        <${NumField} label="Receiving TD" value=${s.scoring.recTd} onChange=${v => set(["scoring","recTd"], v)} />
+        <${NumField} label="Fumble lost" value=${s.scoring.fum} onChange=${v => set(["scoring","fum"], v)} />
+
+        <h4>Roster</h4>
+        <${NumField} label="QB starters" value=${s.roster.qb} step="1" onChange=${v => set(["roster","qb"], Math.max(0, Math.round(v)))} />
+        <${NumField} label="RB starters" value=${s.roster.rb} step="1" onChange=${v => set(["roster","rb"], Math.max(0, Math.round(v)))} />
+        <${NumField} label="WR starters" value=${s.roster.wr} step="1" onChange=${v => set(["roster","wr"], Math.max(0, Math.round(v)))} />
+        <${NumField} label="TE starters" value=${s.roster.te} step="1" onChange=${v => set(["roster","te"], Math.max(0, Math.round(v)))} />
+        <${NumField} label="FLEX slots" value=${s.roster.flex} step="1" onChange=${v => set(["roster","flex"], Math.max(0, Math.round(v)))} />
+
+        <h4>Flex split</h4>
+        <${NumField} label="RB share of flex" value=${s.flexSplit.rb} step="0.05" onChange=${v => set(["flexSplit","rb"], v)} />
+        <${NumField} label="WR share of flex" value=${s.flexSplit.wr} step="0.05" onChange=${v => set(["flexSplit","wr"], v)} />
+        ${Math.abs(flexSum - 1) > 0.001 && html`<div class="warn">⚠ Flex shares sum to ${flexSum.toFixed(2)} — they should sum to 1.00.</div>`}
+
+        <h4>Fragility (avg games missed)</h4>
+        ${POSITIONS.map(pos => html`<${NumField} key=${pos} label=${pos} value=${s.fragility[pos]} step="0.1" onChange=${v => set(["fragility", pos], v)} />`)}
+
+        <h4>VORP baseline rank</h4>
+        ${POSITIONS.map(pos => html`<${NumField} key=${pos} label=${pos + " baseline (Nth player)"} value=${s.vorpBaseline[pos]} step="1" onChange=${v => set(["vorpBaseline", pos], Math.max(1, Math.round(v)))} />`)}
+
+        <div class="drawerbtns">
+          <button class="iconbtn" onClick=${onExport}>Export state</button>
+          <button class="iconbtn" onClick=${() => fileRef.current && fileRef.current.click()}>Import state</button>
+          <input ref=${fileRef} type="file" accept="application/json,.json" style=${{ display: "none" }}
+            onChange=${e => { const f = e.target.files && e.target.files[0]; if (f) onImport(f); e.target.value = ""; }} />
+          <button class="iconbtn" onClick=${onReset}>Reset to defaults</button>
+        </div>
+      </div>
+    </div>`;
+}
+
+function MyTeam({ myRows, settings }) {
+  const slots = [];
+  const r = settings.roster;
+  for (let i = 0; i < r.qb; i++) slots.push({ label: "QB", accepts: ["QB"] });
+  for (let i = 0; i < r.rb; i++) slots.push({ label: "RB", accepts: ["RB"] });
+  for (let i = 0; i < r.wr; i++) slots.push({ label: "WR", accepts: ["WR"] });
+  for (let i = 0; i < r.te; i++) slots.push({ label: "TE", accepts: ["TE"] });
+  for (let i = 0; i < r.flex; i++) slots.push({ label: "FLEX", accepts: ["RB", "WR", "TE"] });
+
+  const bench = [];
+  const filled = slots.map(sl => ({ ...sl, row: null }));
+  for (const row of myRows) {
+    let placed = false;
+    for (const sl of filled) {
+      if (!sl.row && sl.accepts.includes(row.player.pos)) { sl.row = row; placed = true; break; }
+    }
+    if (!placed) bench.push(row);
+  }
+  const slotEl = (sl, i) => html`
+    <div class="slotrow" key=${"s" + i}>
+      <span class="slotlabel">${sl.label}</span>
+      ${sl.row
+        ? html`<span><span class="pname">${sl.row.player.name}</span><span class="pteam">${sl.row.player.team}</span></span>`
+        : html`<span class="slotempty">empty</span>`}
+    </div>`;
+  return html`
+    <div class="card">
+      <h3>My Team</h3>
+      ${filled.map(slotEl)}
+      <div class="slotrow"><span class="slotlabel">BENCH</span>
+        ${bench.length === 0 && html`<span class="slotempty">empty</span>`}
+      </div>
+      ${bench.map((row, i) => html`
+        <div class="slotrow" key=${"b" + i}>
+          <span class="slotlabel"></span>
+          <span><${PosChip} pos=${row.player.pos} /> <span class="pname">${row.player.name}</span><span class="pteam">${row.player.team}</span></span>
+        </div>`)}
+    </div>`;
+}
+
+/* ---------------- App ---------------- */
+function App() {
+  const [players, setPlayers] = useState(null);
+  const [meta, setMeta] = useState({ updated: "", source: "" });
+  const [dataError, setDataError] = useState(null);
+
+  const [settings, setSettings] = useState(DEFAULT_SETTINGS);
+  const [picks, setPicks] = useState([]);
+  const historyRef = useRef([]); // stack of previous picks arrays
+  const [histLen, setHistLen] = useState(0);
+
+  const [sortKey, setSortKey] = useState("vbdG");
+  const [sortDir, setSortDir] = useState("desc");
+  const [posFilter, setPosFilter] = useState("ALL");
+  const [search, setSearch] = useState("");
+  const [showDrafted, setShowDrafted] = useState(false);
+  const [drawerOpen, setDrawerOpen] = useState(false);
+  const [helpOpen, setHelpOpen] = useState(false);
+
+  const hubRef = useRef(null);
+  const [syncState, setSyncState] = useState("local"); // local | synced | saving
+  const saveTimer = useRef(null);
+  const loadedRef = useRef(false);
+
+  /* ---- initial load ---- */
+  useEffect(() => {
+    let cancelled = false;
+    (async () => {
+      // data
+      let data = null;
+      try {
+        const res = await fetch("../data/players.json");
+        if (res.ok) data = await res.json();
+      } catch (e) { /* file:// or offline */ }
+      if (!data && EMBEDDED_PLAYERS) data = EMBEDDED_PLAYERS;
+      if (cancelled) return;
+      if (!data || !Array.isArray(data.players)) {
+        setDataError("Could not load player data. This app fetches ../data/players.json — serve the repo from a web server (e.g. GitHub Pages or `python3 -m http.server`), or set EMBEDDED_PLAYERS in index.html.");
+      } else {
+        setPlayers(data.players);
+        setMeta({ updated: data.updated || "", source: data.source || "" });
+      }
+
+      // state: localStorage + optional HubSync, prefer more picks
+      const local = sanitizeState(loadLocal());
+      let chosen = local;
+      const hub = await loadHubSync();
+      if (cancelled) return;
+      let configured = false;
+      try { configured = !!(hub && await hub.configured()); } catch (e) { configured = false; }
+      if (configured) {
+        hubRef.current = hub;
+        try {
+          const remoteRaw = await hub.load("draft");
+          const remote = sanitizeState(remoteRaw);
+          if (remote && (!local || remote.picks.length >= local.picks.length)) chosen = remote;
+        } catch (e) { /* keep local */ }
+        setSyncState("synced");
+      } else {
+        setSyncState("local");
+      }
+      if (cancelled) return;
+      if (chosen) { setPicks(chosen.picks); setSettings(chosen.settings); }
+      loadedRef.current = true;
+    })();
+    return () => { cancelled = true; };
+  }, []);
+
+  /* ---- persistence ---- */
+  useEffect(() => {
+    if (!loadedRef.current) return;
+    const state = { picks, settings, version: 1 };
+    try { localStorage.setItem(LS_KEY, JSON.stringify(state)); } catch (e) { /* quota */ }
+    if (hubRef.current) {
+      if (saveTimer.current) clearTimeout(saveTimer.current);
+      saveTimer.current = setTimeout(async () => {
+        setSyncState("saving");
+        try { await hubRef.current.save("draft", state); setSyncState("synced"); }
+        catch (e) { setSyncState("local"); }
+      }, 2000);
+    }
+  }, [picks, settings]);
+
+  /* ---- draft actions ---- */
+  const pushHistory = useCallback(() => {
+    historyRef.current.push(picks);
+    if (historyRef.current.length > 500) historyRef.current.shift();
+    setHistLen(historyRef.current.length);
+  }, [picks]);
+
+  const draftPlayer = useCallback((player, mine) => {
+    pushHistory();
+    setPicks(prev => prev.some(p => p.name === player.name && p.team === player.team)
+      ? prev
+      : [...prev, { name: player.name, team: player.team, mine, ts: Date.now() }]);
+  }, [pushHistory]);
+
+  const undraftPlayer = useCallback((player) => {
+    pushHistory();
+    setPicks(prev => prev.filter(p => !(p.name === player.name && p.team === player.team)));
+  }, [pushHistory]);
+
+  const undo = useCallback(() => {
+    const prev = historyRef.current.pop();
+    setHistLen(historyRef.current.length);
+    if (prev) setPicks(prev);
+  }, []);
+
+  const setSettingPath = useCallback((path, value) => {
+    setSettings(prev => {
+      const next = JSON.parse(JSON.stringify(prev));
+      let node = next;
+      for (let i = 0; i < path.length - 1; i++) node = node[path[i]];
+      node[path[path.length - 1]] = value;
+      return next;
+    });
+  }, []);
+
+  const resetSettings = useCallback(() => {
+    setSettings(JSON.parse(JSON.stringify(DEFAULT_SETTINGS)));
+  }, []);
+
+  const exportState = useCallback(() => {
+    const blob = new Blob([JSON.stringify({ picks, settings, version: 1 }, null, 2)], { type: "application/json" });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement("a");
+    a.href = url; a.download = "vbd-draft-state.json";
+    document.body.appendChild(a); a.click(); a.remove();
+    setTimeout(() => URL.revokeObjectURL(url), 2000);
+  }, [picks, settings]);
+
+  const importState = useCallback((file) => {
+    const reader = new FileReader();
+    reader.onload = () => {
+      try {
+        const obj = sanitizeState(JSON.parse(reader.result));
+        if (!obj) throw new Error("bad");
+        historyRef.current.push(picks);
+        setHistLen(historyRef.current.length);
+        setPicks(obj.picks);
+        setSettings(obj.settings);
+      } catch (e) { alert("Could not import: not a valid draft state JSON file."); }
+    };
+    reader.readAsText(file);
+  }, [picks]);
+
+  /* ---- board computation ---- */
+  const picksKey = useMemo(() => picks.map(p => p.name + "|" + p.team + "|" + (p.mine ? 1 : 0)).join(";"), [picks]);
+  const board = useMemo(() => {
+    if (!players) return null;
+    return computeBoard(players, settings, picks);
+  }, [players, settings, picksKey]); // eslint-disable-line
+
+  const pickMap = useMemo(() => {
+    const m = new Map();
+    for (const p of picks) m.set(p.name + "|" + p.team, p);
+    return m;
+  }, [picks]);
+
+  const visible = useMemo(() => {
+    if (!board) return [];
+    let rows = board.rows;
+    if (posFilter === "FLEX") rows = rows.filter(r => r.player.pos !== "QB");
+    else if (posFilter !== "ALL") rows = rows.filter(r => r.player.pos === posFilter);
+    if (!showDrafted) rows = rows.filter(r => !r.drafted);
+    const q = search.trim().toLowerCase();
+    if (q) rows = rows.filter(r => (r.player.name + " " + r.player.team).toLowerCase().includes(q));
+    const dir = sortDir === "asc" ? 1 : -1;
+    const cmp = {
+      vbdG: (a, b) => (a.vbdG - b.vbdG) * dir,
+      fppgAdj: (a, b) => (a.fppgAdj - b.fppgAdj) * dir,
+      posRank: (a, b) => (a.posRank - b.posRank) * dir,
+      adp: (a, b) => {
+        const av = a.player.adp, bv = b.player.adp;
+        if (av == null && bv == null) return 0;
+        if (av == null) return 1;           // nulls always last
+        if (bv == null) return -1;
+        return (av - bv) * dir;
+      },
+    }[sortKey] || ((a, b) => (a.vbdG - b.vbdG) * dir);
+    return rows.slice().sort(cmp);
+  }, [board, posFilter, search, showDrafted, sortKey, sortDir]);
+
+  const myRows = useMemo(() => {
+    if (!board) return [];
+    const rowByKey = new Map(board.rows.map(r => [r.key, r]));
+    return picks.filter(p => p.mine)
+      .slice().sort((a, b) => (a.ts || 0) - (b.ts || 0))
+      .map(p => rowByKey.get(p.name + "|" + p.team))
+      .filter(Boolean);
+  }, [board, picks]);
+
+  const clickSort = (key) => {
+    if (sortKey === key) setSortDir(d => d === "desc" ? "asc" : "desc");
+    else { setSortKey(key); setSortDir(key === "adp" || key === "posRank" ? "asc" : "desc"); }
+  };
+
+  const sortArrow = (key) => sortKey === key ? (sortDir === "desc" ? " ▾" : " ▴") : "";
+
+  if (dataError) {
+    return html`
+      <div class="app">
+        <header class="topbar"><h1>VBD Draft Board</h1></header>
+        <div class="errbox"><b>Player data unavailable.</b><br/>${dataError}</div>
+      </div>`;
+  }
+  if (!board) return html`<div class="bigmsg">Loading player data…</div>`;
+
+  const syncTitle = { local: "Local only", synced: "Synced", saving: "Saving…" }[syncState];
+
+  async function onSyncClick() {
+    const hub = await loadHubSync();
+    if (!hub) { alert("Sync module not available on this server."); return; }
+    let isConf = false;
+    try { isConf = !!(await hub.configured()); } catch (e) {}
+    if (isConf) {
+      if (confirm("Device sync is on. Disconnect this device? (Your local picks stay.)")) {
+        try { hub.clearConfig(); } catch (e) {}
+        location.reload();
+      }
+      return;
+    }
+    const owner = prompt("GitHub username (owner of the hub repo):");
+    if (!owner) return;
+    const repo = prompt("Repository name:", "fantasy-hub");
+    if (!repo) return;
+    const token = prompt("Fine-grained access token (Contents read/write on that repo). Stored only in this browser:");
+    if (!token) return;
+    try {
+      hub.configure({ owner: owner.trim(), repo: repo.trim(), token: token.trim() });
+      alert("Connected. Reloading to sync.");
+      location.reload();
+    } catch (e) { alert("Could not save sync settings: " + e.message); }
+  }
+
+  return html`
+    <div class="app">
+      <header class="topbar">
+        <h1>VBD Draft Board</h1>
+        <span class="updated">data updated ${meta.updated || "?"}</span>
+        <span class="spacer"></span>
+        <a class="iconbtn" href="../" title="Back to hub" style=${{ textDecoration: "none" }}>⌂ Hub</a>
+        <span class="sync-pill" onClick=${onSyncClick} title="Click to set up or disconnect device sync">
+          <span class="dot ${syncState === "synced" ? "synced" : syncState === "saving" ? "saving" : ""}"></span>
+          ${syncTitle}
+        </span>
+        <button class="iconbtn" onClick=${undo} disabled=${histLen === 0} title="Undo last draft action">↩ Undo</button>
+        <div class="helpwrap">
+          <button class="iconbtn" onClick=${() => setHelpOpen(o => !o)} title="What do these numbers mean?">?</button>
+          ${helpOpen && html`<${HelpPopover} onClose=${() => setHelpOpen(false)} />`}
+        </div>
+        <button class="iconbtn" onClick=${() => setDrawerOpen(true)} title="Settings">⚙ Settings</button>
+      </header>
+
+      <div class="layout">
+        <div class="main">
+          <div class="filterbar">
+            ${["ALL", "QB", "RB", "WR", "TE", "FLEX"].map(p => html`
+              <button key=${p} class="chip ${posFilter === p ? "active" : ""}" onClick=${() => setPosFilter(p)}>${p}</button>`)}
+            <input class="search" placeholder="Search player or team…" value=${search}
+              onInput=${e => setSearch(e.target.value)} />
+            <label class="toggle">
+              <input type="checkbox" checked=${showDrafted} onChange=${e => setShowDrafted(e.target.checked)} />
+              show drafted
+            </label>
+          </div>
+
+          <div class="tablewrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>#</th>
+                  <th class="l">Player</th>
+                  <th class="sortable ${sortKey === "posRank" ? "sorted" : ""}" onClick=${() => clickSort("posRank")}>Pos${sortArrow("posRank")}</th>
+                  <th class="sortable ${sortKey === "fppgAdj" ? "sorted" : ""}" onClick=${() => clickSort("fppgAdj")}>FPPG adj${sortArrow("fppgAdj")}</th>
+                  <th>VOR/G</th>
+                  <th>VoLS/G</th>
+                  <th class="sortable ${sortKey === "vbdG" ? "sorted" : ""}" onClick=${() => clickSort("vbdG")}>VBD/G${sortArrow("vbdG")}</th>
+                  <th class="sortable ${sortKey === "adp" ? "sorted" : ""}" onClick=${() => clickSort("adp")}>ADP${sortArrow("adp")}</th>
+                  <th>Value</th>
+                  <th></th>
+                </tr>
+              </thead>
+              <tbody>
+                ${visible.map(r => {
+                  const pk = pickMap.get(r.key);
+                  return html`
+                  <tr key=${r.key} class=${r.drafted ? "drafted" : ""}>
+                    <td class="rank">${r.boardRank}</td>
+                    <td class="l">
+                      <span class="pname">${r.player.name}</span><span class="pteam">${r.player.team}</span>
+                      ${pk && pk.mine && html`<span class="mine-tag">MINE</span>`}
+                    </td>
+                    <td><${PosChip} pos=${r.player.pos} rank=${r.posRank} /></td>
+                    <td>${f2(r.fppgAdj)}</td>
+                    <td class=${r.vorG < 0 ? "muted" : ""}>${f2(r.vorG)}</td>
+                    <td class=${r.volsG <= 0 ? "muted" : ""}>${f2(r.volsG)}</td>
+                    <td class="vbd">${f2(r.vbdG)}</td>
+                    <td>${r.player.adp == null ? html`<span class="muted">–</span>` : f2(r.player.adp)}</td>
+                    <td>${r.value == null
+                      ? html`<span class="muted">–</span>`
+                      : (() => { const v = Math.round(r.value) === 0 ? 0 : Math.round(r.value);
+                          return html`<span class=${v > 0 ? "val-pos" : v < 0 ? "val-neg" : "muted"}>${v > 0 ? "+" : ""}${v}</span>`; })()}</td>
+                    <td style=${{ textAlign: "right" }}>
+                      ${r.drafted
+                        ? html`<button class="rowbtn undo" onClick=${() => undraftPlayer(r.player)}>Un-draft</button>`
+                        : html`
+                          <button class="rowbtn mine" onClick=${() => draftPlayer(r.player, true)}>Mine</button>
+                          <button class="rowbtn gone" onClick=${() => draftPlayer(r.player, false)}>Gone</button>`}
+                    </td>
+                  </tr>`;
+                })}
+                ${visible.length === 0 && html`<tr><td colSpan="10" class="l muted" style=${{ padding: "20px" }}>No players match.</td></tr>`}
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <div class="sidebar">
+          <${MyTeam} myRows=${myRows} settings=${settings} />
+          <div class="card">
+            <h3>Draft counts (all teams)</h3>
+            ${POSITIONS.map(pos => html`
+              <div class="statrow" key=${pos}>
+                <span><${PosChip} pos=${pos} /></span>
+                <b>${board.scarcity[pos].drafted} <span class="muted" style=${{ fontWeight: 400 }}>of ${board.scarcity[pos].S} starters</span></b>
+              </div>`)}
+          </div>
+          <div class="card">
+            <h3>Scarcity bonus (pts/g)</h3>
+            ${POSITIONS.map(pos => html`
+              <div class="statrow" key=${pos}>
+                <span><${PosChip} pos=${pos} /></span>
+                <b>+${f2(board.scarcity[pos].bonus)} <span class="muted" style=${{ fontWeight: 400 }}>× ${f2(board.scarcity[pos].M)}</span></b>
+              </div>`)}
+          </div>
+        </div>
+      </div>
+
+      ${drawerOpen && html`<${SettingsDrawer}
+        settings=${settings}
+        onSet=${setSettingPath}
+        onReset=${resetSettings}
+        onExport=${exportState}
+        onImport=${importState}
+        onClose=${() => setDrawerOpen(false)} />`}
+    </div>`;
+}
+
+ReactDOM.createRoot(document.getElementById("root")).render(html`<${App} />`);
+</script>
+</body>
+</html>
