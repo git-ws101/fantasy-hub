@@ -26,7 +26,7 @@
     min-height: 100vh;
     padding: 48px 24px;
   }
-  .wrap { max-width: 980px; margin: 0 auto; }
+  .wrap { max-width: 1080px; margin: 0 auto; }
   header { margin-bottom: 8px; display: flex; align-items: baseline; gap: 14px; flex-wrap: wrap; }
   h1 { font-size: 1.9rem; font-weight: 700; letter-spacing: -0.02em; }
   h1 .dot { color: var(--accent); }
@@ -37,7 +37,7 @@
 
   .tiles {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
     gap: 14px;
     margin-bottom: 32px;
   }
@@ -46,54 +46,81 @@
     font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.08em;
     color: var(--muted); font-weight: 600; margin-bottom: 8px;
   }
-  .tile .value { font-size: 1.5rem; font-weight: 700; letter-spacing: -0.02em; }
+  .tile .value { font-size: 1.45rem; font-weight: 700; letter-spacing: -0.02em; }
   .tile .sub { color: var(--muted); font-size: 0.78rem; margin-top: 4px; }
 
-  .cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(290px, 1fr)); gap: 16px; }
+  section { margin-bottom: 40px; }
+  section > h3 {
+    font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.08em;
+    color: var(--muted); font-weight: 600; margin-bottom: 12px;
+  }
+
+  .cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(310px, 1fr)); gap: 16px; }
   .mgr {
     background: var(--panel); border: 1px solid var(--border); border-radius: 10px;
     padding: 18px; display: flex; flex-direction: column; gap: 12px;
   }
+  .mgr.me { border-color: var(--accent); }
   .mgr.gone { opacity: 0.55; }
   .mgr-head { display: flex; align-items: center; gap: 12px; }
-  .mgr-head img, .mgr-head .noavatar {
+  .noavatar {
     width: 42px; height: 42px; border-radius: 50%;
     border: 1px solid var(--border); background: var(--panel-2);
     display: flex; align-items: center; justify-content: center;
     color: var(--muted); font-weight: 700; flex: none;
   }
+  .mgr.me .noavatar { color: var(--accent); border-color: var(--accent); }
   .mgr-head .who { min-width: 0; }
-  .mgr-head .name { font-weight: 700; font-size: 1rem; }
+  .mgr-head .name { font-weight: 700; font-size: 1rem; display: flex; gap: 8px; align-items: center; }
   .mgr-head .team { color: var(--muted); font-size: 0.8rem; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
   .mgr-head .rec { margin-left: auto; text-align: right; flex: none; }
   .mgr-head .rec .wl { font-weight: 700; font-variant-numeric: tabular-nums; }
-  .mgr-head .rec .pf { color: var(--muted); font-size: 0.75rem; font-variant-numeric: tabular-nums; }
+  .mgr-head .rec .detail { color: var(--muted); font-size: 0.72rem; font-variant-numeric: tabular-nums; }
 
+  .youchip {
+    font-size: 0.65rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em;
+    color: var(--accent); border: 1px solid var(--accent); border-radius: 999px; padding: 1px 7px;
+  }
   .tags { display: flex; flex-wrap: wrap; gap: 6px; min-height: 22px; }
   .tag {
     font-size: 0.72rem; font-weight: 600; padding: 2px 9px;
     border-radius: 999px; border: 1px solid var(--border); color: var(--muted);
   }
   .tag.hot  { color: var(--warn); border-color: var(--warn); }
-  .tag.cold { color: var(--accent); }
   .tag.win  { color: var(--ok); border-color: var(--ok); }
+  .gone-note { color: var(--none); font-size: 0.75rem; font-style: italic; align-self: center; }
 
-  .faab .row1 {
-    display: flex; justify-content: space-between; font-size: 0.8rem;
-    color: var(--muted); margin-bottom: 6px;
+  .kv { display: flex; gap: 16px; font-size: 0.8rem; color: var(--muted); flex-wrap: wrap; }
+  .kv b { color: var(--text); font-variant-numeric: tabular-nums; }
+
+  .seq { display: flex; gap: 4px; align-items: center; flex-wrap: wrap; font-size: 0.8rem; color: var(--muted); }
+  .seq .p {
+    font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 0.72rem; font-weight: 700;
+    padding: 1px 7px; border-radius: 5px; background: var(--panel-2); border: 1px solid var(--border);
   }
-  .faab .row1 b { color: var(--text); font-variant-numeric: tabular-nums; }
-  .faab .track { height: 8px; background: var(--panel-2); border-radius: 4px; position: relative; overflow: hidden; }
-  .faab .fill { position: absolute; left: 0; top: 0; bottom: 0; background: var(--accent); border-radius: 4px; min-width: 2px; }
-
-  .stats { display: flex; gap: 16px; font-size: 0.8rem; color: var(--muted); flex-wrap: wrap; }
-  .stats b { color: var(--text); font-variant-numeric: tabular-nums; }
+  .seq .p.RB { color: var(--ok); }
+  .seq .p.WR { color: var(--accent); }
+  .seq .p.QB { color: var(--warn); }
+  .seq .p.TE { color: var(--err); }
 
   .bids { font-size: 0.78rem; color: var(--muted); border-top: 1px solid var(--panel-2); padding-top: 10px; }
   .bids .b { display: flex; justify-content: space-between; gap: 8px; margin-top: 3px; }
   .bids .b .amt { color: var(--text); font-weight: 600; font-variant-numeric: tabular-nums; flex: none; }
   .bids .label { font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.07em; font-weight: 600; }
-  .gone-note { color: var(--none); font-size: 0.75rem; font-style: italic; }
+
+  .tablewrap { background: var(--panel); border: 1px solid var(--border); border-radius: 10px; overflow-x: auto; }
+  table { border-collapse: collapse; width: 100%; font-size: 0.87rem; }
+  th, td { padding: 10px 14px; text-align: left; white-space: nowrap; }
+  th {
+    font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.06em;
+    color: var(--muted); font-weight: 600; border-bottom: 1px solid var(--border);
+  }
+  td { border-bottom: 1px solid var(--panel-2); }
+  tr:last-child td { border-bottom: none; }
+  tbody tr:hover td { background: var(--panel-2); }
+  td.num, th.num { text-align: right; font-variant-numeric: tabular-nums; }
+  td .sub { color: var(--none); font-size: 0.75rem; }
+  .pricenote { color: var(--muted); font-size: 0.8rem; margin-top: 10px; }
 
   .error-state {
     background: var(--panel); border: 1px dashed var(--border); border-radius: 10px;
@@ -108,101 +135,172 @@
     <h1>League Intel<span class="dot">.</span></h1>
     <a class="back" href="../">&larr; hub</a>
   </header>
-  <p class="tagline" id="tagline">Manager-by-manager scouting report, built from last season's Sleeper data.</p>
+  <p class="tagline">Manager-by-manager scouting report: records, draft habits, and FAAB behavior across league history.</p>
   <p class="meta" id="meta">loading&hellip;</p>
 
   <div id="content"></div>
 
-  <footer>Records, FAAB, and activity from the Sleeper API &middot; refreshed daily by GitHub Actions.</footer>
+  <footer>Built from full league history via the Sleeper API &middot; refreshed daily by GitHub Actions.</footer>
 </div>
 
 <script>
+  const ME = "999710101323735040";
   const esc = s => String(s ?? "").replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
   const fmt = n => Number(n).toLocaleString();
+  const POS_ORDER = ["QB", "RB", "WR", "TE", "K", "DEF"];
+  const BUCKETS = ["early", "mid", "late"];
 
-  const HOT_TAGS = new Set(["big FAAB spender", "haymaker bids", "spends early"]);
-  const WIN_TAGS = new Set(["contender"]);
+  function tags(m, currentSeason) {
+    const f = m.faab.summary || {};
+    const d = m.draft.summary || {};
+    const t = [];
+    const spendSeasons = Object.values(f.total_spent_by_season || {});
+    const avgSpend = spendSeasons.length ? spendSeasons.reduce((a, b) => a + b, 0) / spendSeasons.length : 0;
+    const buckets = f.spend_by_bucket || {};
+    const spendTotal = (buckets.early || 0) + (buckets.mid || 0) + (buckets.late || 0);
+    const claims = (f.claims_won || 0) + (f.claims_lost || 0);
 
-  function tagClass(t) {
-    if (WIN_TAGS.has(t)) return "tag win";
-    if (HOT_TAGS.has(t)) return "tag hot";
-    return "tag";
+    if ((f.max_winning_bid || 0) >= 40) t.push(["haymaker bids", "hot"]);
+    if (avgSpend >= 70) t.push(["big FAAB spender", "hot"]);
+    else if (spendSeasons.length && avgSpend <= 30) t.push(["FAAB hoarder", ""]);
+    if (spendTotal && (buckets.early || 0) / spendTotal >= 0.5) t.push(["spends early", "hot"]);
+    if (spendTotal && (buckets.late || 0) / spendTotal >= 0.5) t.push(["saves it for late", ""]);
+    if (claims >= 10 && f.claims_won / claims >= 0.65) t.push(["wins their claims", "win"]);
+    else if (claims >= 10 && f.claims_won / claims <= 0.4) t.push(["gets outbid", ""]);
+    const qbRounds = d.first_qb_rounds || [];
+    if (qbRounds.length && Math.min(...qbRounds) <= 3) t.push(["reaches for QB", ""]);
+    else if (qbRounds.length && Math.min(...qbRounds) >= 8) t.push(["waits on QB", ""]);
+    const wins = Object.values(m.records || {}).map(r => r.wins);
+    if (wins.some(w => w >= 9)) t.push(["contender", "win"]);
+    return t;
   }
 
   function render(d) {
-    if (d.status !== "ok") {
-      document.getElementById("meta").textContent = "";
-      document.getElementById("content").innerHTML =
-        `<div class="error-state">League data isn't available yet (${esc(d.detail || "no successful refresh")}). It will appear after the next data refresh run.</div>`;
-      return;
-    }
+    const seasons = d.seasons.map(s => s.season);
+    const currentSeason = seasons[seasons.length - 1];
+    const managers = Object.entries(d.managers).map(([uid, m]) => ({uid, ...m}));
 
     document.getElementById("meta").textContent =
-      `${d.league_name} · ${d.teams}-team · ${d.season} season · ` +
-      `analysis from ${d.previous_season} results · updated ${new Date(d.updated).toLocaleString()}`;
+      `${d.league_name} · seasons ${seasons[0]}–${currentSeason} · ` +
+      `${managers.length} managers all-time · updated ${new Date(d.generated).toLocaleString()}`;
 
-    const active = d.managers.filter(m => m.in_current);
-    const withFaab = d.managers.filter(m => m.faab.bid_count > 0);
-    const totalSpent = withFaab.reduce((a, m) => a + m.faab.spent, 0);
-    const biggest = withFaab.reduce((a, m) => m.faab.max_bid > (a?.faab.max_bid || 0) ? m : a, null);
-    const trader = d.managers.reduce((a, m) => m.activity.trades > (a?.activity.trades || 0) ? m : a, null);
+    const claims = d.league.contested_claims || [];
+    const topClaim = claims[0];
+    const pb = d.league.price_book || {};
+    const rbEarly = pb["RB|early"] || {};
+    const active = managers.filter(m => m.seasons.includes(currentSeason));
 
     const tiles = `
       <div class="tiles">
-        <div class="tile"><div class="label">Managers</div><div class="value">${active.length}</div><div class="sub">${d.managers.length - active.length} left since ${d.previous_season}</div></div>
-        <div class="tile"><div class="label">FAAB spent ${d.previous_season}</div><div class="value">$${fmt(totalSpent)}</div><div class="sub">of $${fmt((d.faab_budget || 0) * (d.managers.filter(m => m.in_previous).length))} league-wide</div></div>
-        <div class="tile"><div class="label">Biggest bid</div><div class="value">$${biggest ? fmt(biggest.faab.max_bid) : 0}</div><div class="sub">${biggest ? esc(biggest.name) : "—"}</div></div>
-        <div class="tile"><div class="label">Most trades</div><div class="value">${trader ? trader.activity.trades : 0}</div><div class="sub">${trader ? esc(trader.name) : "—"}</div></div>
+        <div class="tile"><div class="label">Managers ${esc(currentSeason)}</div><div class="value">${active.length}</div><div class="sub">${managers.length - active.length} departed all-time</div></div>
+        <div class="tile"><div class="label">RB panic price (wk 1–4)</div><div class="value">$${rbEarly.median ?? "—"}</div><div class="sub">median winning bid · max $${rbEarly.max ?? "—"}</div></div>
+        <div class="tile"><div class="label">Biggest haymaker</div><div class="value">$${topClaim ? fmt(topClaim.winning_bid) : "—"}</div><div class="sub">${topClaim ? esc(topClaim.player) + " · " + esc(topClaim.season) + " wk " + topClaim.week : ""}</div></div>
+        <div class="tile"><div class="label">Contested claims</div><div class="value">${claims.length}</div><div class="sub">2+ bidders on one player</div></div>
       </div>`;
 
-    const cards = d.managers.map(m => {
-      const r = m.record;
-      const rec = r.wins != null && (r.wins + r.losses) > 0
-        ? `${r.wins}-${r.losses}${r.ties ? "-" + r.ties : ""}` : "—";
-      const pct = m.faab.budget ? Math.min(100, m.faab.spent / m.faab.budget * 100) : 0;
-      const avatar = m.avatar
-        ? `<img src="https://sleepercdn.com/avatars/thumbs/${esc(m.avatar)}" alt="">`
-        : `<div class="noavatar">${esc((m.name || "?")[0].toUpperCase())}</div>`;
-      const bids = m.faab.top_bids.length ? `
-        <div class="bids"><span class="label">Biggest waiver swings</span>
-          ${m.faab.top_bids.map(b => `<div class="b"><span>${esc(b.player)} <span style="color:var(--none)">wk ${b.week ?? "?"}</span></span><span class="amt">$${fmt(b.bid)}</span></div>`).join("")}
-        </div>` : "";
+    managers.sort((a, b) => {
+      const cur = b.seasons.includes(currentSeason) - a.seasons.includes(currentSeason);
+      if (cur) return cur;
+      const w = uid => Object.values(uid.records || {}).reduce((x, r) => x + r.wins, 0);
+      return w(b) - w(a);
+    });
+
+    const cards = managers.map(m => {
+      const inCurrent = m.seasons.includes(currentSeason);
+      const teamSeasons = Object.keys(m.team_names || {}).sort();
+      const team = teamSeasons.length ? m.team_names[teamSeasons[teamSeasons.length - 1]] : "";
+      const recSeasons = Object.keys(m.records || {}).sort();
+      const totW = recSeasons.reduce((a, s) => a + m.records[s].wins, 0);
+      const totL = recSeasons.reduce((a, s) => a + m.records[s].losses, 0);
+      const recDetail = recSeasons.map(s => `’${s.slice(2)} ${m.records[s].wins}-${m.records[s].losses}`).join(" · ");
+      const f = m.faab.summary || {};
+      const dsum = m.draft.summary || {};
+      const seqSeasons = Object.keys(dsum.opening_sequences || {}).sort();
+      const seq = seqSeasons.length ? dsum.opening_sequences[seqSeasons[seqSeasons.length - 1]] : [];
+      const spendLine = Object.entries(f.total_spent_by_season || {}).sort()
+        .map(([s, v]) => `’${s.slice(2)} <b>$${fmt(v)}</b>`).join(" · ");
+      const topBuys = (f.top_buys || []).slice(0, 3);
+      const mtags = tags(m, currentSeason);
+
       return `
-      <div class="mgr${m.in_current ? "" : " gone"}">
+      <div class="mgr${m.uid === ME ? " me" : ""}${inCurrent ? "" : " gone"}">
         <div class="mgr-head">
-          ${avatar}
+          <div class="noavatar">${esc((m.display_name || "?")[0].toUpperCase())}</div>
           <div class="who">
-            <div class="name">${esc(m.name)}</div>
-            <div class="team">${esc(m.team_name || "")}</div>
+            <div class="name">${esc(m.display_name)}${m.uid === ME ? '<span class="youchip">you</span>' : ""}</div>
+            <div class="team">${esc(team)}</div>
           </div>
-          <div class="rec"><div class="wl">${rec}</div><div class="pf">${r.pf ? fmt(r.pf) + " PF" : ""}</div></div>
+          <div class="rec">
+            <div class="wl">${recSeasons.length ? totW + "-" + totL : "—"}</div>
+            <div class="detail">${esc(recDetail)}</div>
+          </div>
         </div>
-        <div class="tags">${m.tags.map(t => `<span class="${tagClass(t)}">${esc(t)}</span>`).join("")}
-          ${m.in_current ? "" : `<span class="gone-note">not in ${esc(d.season)} league</span>`}</div>
-        <div class="faab">
-          <div class="row1"><span>FAAB ${esc(String(d.previous_season))}</span><span><b>$${fmt(m.faab.spent)}</b> / $${fmt(m.faab.budget || 0)}</span></div>
-          <div class="track"><div class="fill" style="width:${pct}%"></div></div>
+        <div class="tags">${mtags.map(([t, c]) => `<span class="tag ${c}">${esc(t)}</span>`).join("")}
+          ${inCurrent ? "" : `<span class="gone-note">not in ${esc(currentSeason)}</span>`}</div>
+        ${seq.length ? `<div class="seq"><span>opens</span>${seq.map(p => `<span class="p ${esc(p)}">${esc(p)}</span>`).join("")}
+          ${(dsum.first_qb_rounds || []).length ? `<span>· first QB rd ${Math.min(...dsum.first_qb_rounds)}</span>` : ""}</div>` : ""}
+        <div class="kv">
+          ${spendLine ? `<span>FAAB ${spendLine}</span>` : "<span>no FAAB history</span>"}
+          <span>max bid <b>$${fmt(f.max_winning_bid || 0)}</b></span>
+          <span>claims <b>${f.claims_won || 0}</b>-<b>${f.claims_lost || 0}</b></span>
         </div>
-        <div class="stats">
-          <span>max bid <b>$${fmt(m.faab.max_bid)}</b></span>
-          <span>bids <b>${m.faab.bid_count}</b></span>
-          <span>adds <b>${m.activity.adds}</b></span>
-          <span>trades <b>${m.activity.trades}</b></span>
-        </div>
-        ${bids}
+        ${topBuys.length ? `
+        <div class="bids"><span class="label">Signature buys</span>
+          ${topBuys.map(b => `<div class="b"><span>${esc(b.player)} <span style="color:var(--none)">${esc(b.pos || "")} wk ${b.week}</span></span><span class="amt">$${fmt(b.bid)}</span></div>`).join("")}
+        </div>` : ""}
       </div>`;
     }).join("");
 
-    document.getElementById("content").innerHTML = tiles + `<div class="cards">${cards}</div>`;
+    const pbRows = POS_ORDER.filter(p => BUCKETS.some(b => pb[p + "|" + b])).map(p => `
+      <tr>
+        <td><b>${p}</b></td>
+        ${BUCKETS.map(b => {
+          const cell = pb[p + "|" + b];
+          return cell
+            ? `<td class="num">$${cell.median} <span class="sub">max $${cell.max} · n=${cell.n}</span></td>`
+            : `<td class="num"><span class="sub">—</span></td>`;
+        }).join("")}
+      </tr>`).join("");
+
+    const claimRows = claims.slice(0, 8).map(c => `
+      <tr>
+        <td>${esc(c.player)} <span class="sub">${esc(c.pos || "")}</span></td>
+        <td>${esc(c.season)} wk ${c.week}</td>
+        <td class="num">$${fmt(c.winning_bid)}</td>
+        <td class="num">$${fmt(c.second_bid)}</td>
+        <td class="num">$${fmt(c.margin)}</td>
+        <td class="num">${c.n_bidders}</td>
+      </tr>`).join("");
+
+    document.getElementById("content").innerHTML = tiles + `
+      <section>
+        <h3>Managers</h3>
+        <div class="cards">${cards}</div>
+      </section>
+      <section>
+        <h3>FAAB price book — what the wire actually costs here</h3>
+        <div class="tablewrap"><table>
+          <thead><tr><th>Pos</th><th class="num">Weeks 1–4</th><th class="num">Weeks 5–9</th><th class="num">Weeks 10+</th></tr></thead>
+          <tbody>${pbRows}</tbody>
+        </table></div>
+        <p class="pricenote">Median winning bid per position and season window, all seasons pooled. Bid one step past the median to win an uncontested class; expect a fight where n is high.</p>
+      </section>
+      <section>
+        <h3>Biggest contested claims — who overpays under pressure</h3>
+        <div class="tablewrap"><table>
+          <thead><tr><th>Player</th><th>When</th><th class="num">Winning bid</th><th class="num">2nd bid</th><th class="num">Overpay</th><th class="num">Bidders</th></tr></thead>
+          <tbody>${claimRows}</tbody>
+        </table></div>
+      </section>`;
   }
 
-  fetch("../data/league.json", { cache: "no-store" })
+  fetch("../data/analysis/blitz.json", { cache: "no-store" })
     .then(r => { if (!r.ok) throw new Error("HTTP " + r.status); return r.json(); })
     .then(render)
     .catch(err => {
       document.getElementById("meta").textContent = "";
       document.getElementById("content").innerHTML =
-        `<div class="error-state">Couldn't load <code>data/league.json</code> (${esc(err.message)}). It's generated by the daily refresh — run <code>python3 scripts/league_refresh.py</code> or trigger the Refresh data workflow.</div>`;
+        `<div class="error-state">Couldn't load <code>data/analysis/blitz.json</code> (${esc(err.message)}). Regenerate with <code>python3 scripts/league_history.py</code> + <code>python3 scripts/analyze_league.py --slug blitz</code>, or wait for the daily refresh.</div>`;
     });
 </script>
 </body>
