@@ -1,0 +1,100 @@
+{
+ "fetched": "2026-08-02T04:49:23.423702Z",
+ "user": {
+  "user_id": "999710101323735040",
+  "username": "artblankburner",
+  "display_name": "ArtBlankBurner"
+ },
+ "seasons": {
+  "2026": [
+   {
+    "league_id": "1387442990548549632",
+    "name": "Blitz: The Fantasy League",
+    "season": "2026",
+    "status": "pre_draft",
+    "total_rosters": 12,
+    "previous_league_id": "1257055054548967424",
+    "draft_id": "1387442990577905664",
+    "waiver_type": 2,
+    "waiver_budget": 100,
+    "playoff_teams": 5,
+    "num_teams": 12,
+    "scoring_rec": 0.5
+   },
+   {
+    "league_id": "1385640742378049536",
+    "name": "THE PLAYA HATERS\u2019 BALL",
+    "season": "2026",
+    "status": "pre_draft",
+    "total_rosters": 12,
+    "previous_league_id": "1257449805714558976",
+    "draft_id": "1385640742398984192",
+    "waiver_type": 2,
+    "waiver_budget": 100,
+    "playoff_teams": 6,
+    "num_teams": 12,
+    "scoring_rec": 0.5
+   }
+  ],
+  "2025": [
+   {
+    "league_id": "1257449805714558976",
+    "name": "THE PLAYA HATERS\u2019 BALL",
+    "season": "2025",
+    "status": "complete",
+    "total_rosters": 12,
+    "previous_league_id": "1124847881648369664",
+    "draft_id": "1257449805714558977",
+    "waiver_type": 2,
+    "waiver_budget": 100,
+    "playoff_teams": 6,
+    "num_teams": 12,
+    "scoring_rec": 0.5
+   },
+   {
+    "league_id": "1257055054548967424",
+    "name": "Blitz: The Fantasy League",
+    "season": "2025",
+    "status": "complete",
+    "total_rosters": 10,
+    "previous_league_id": "1111420972646776832",
+    "draft_id": "1257055054548967425",
+    "waiver_type": 2,
+    "waiver_budget": 100,
+    "playoff_teams": 5,
+    "num_teams": 10,
+    "scoring_rec": 0.5
+   }
+  ],
+  "2024": [
+   {
+    "league_id": "1111420972646776832",
+    "name": "Blitz: The Fantasy League",
+    "season": "2024",
+    "status": "complete",
+    "total_rosters": 12,
+    "previous_league_id": null,
+    "draft_id": "1111420973519089664",
+    "waiver_type": 2,
+    "waiver_budget": 100,
+    "playoff_teams": 6,
+    "num_teams": 12,
+    "scoring_rec": 0.5
+   },
+   {
+    "league_id": "1124847881648369664",
+    "name": "THE PLAYA HATERS\u2019 BALL",
+    "season": "2024",
+    "status": "complete",
+    "total_rosters": 12,
+    "previous_league_id": "984171734666383360",
+    "draft_id": "1124847881648369665",
+    "waiver_type": 2,
+    "waiver_budget": 100,
+    "playoff_teams": 6,
+    "num_teams": 12,
+    "scoring_rec": 0.5
+   }
+  ]
+ }
+}
