@@ -179,20 +179,26 @@ def compute_signals(pairs, tape, scores):
 def build_proposals(signals, pm_prices, k_prices, bankroll):
     proposals = []
     for s in signals:
-        if abs(s["z"]) < MIN_SIGNAL_Z:
-            continue
         p = s["pair"]
         pm, k = pm_prices[p["pm_id"]], k_prices[p["kalshi_ticker"]]
         edge = (pm - k) if s["side"] == "yes" else (k - pm)
+        s.update({"pm": pm, "kalshi": k, "edge": round(edge, 2),
+                  "ticker": p["kalshi_ticker"], "event": p["event"]})
+        if abs(s["z"]) < MIN_SIGNAL_Z:
+            s["status"] = "no_signal"
+            continue
         if edge < MIN_EDGE:
-            continue  # Kalshi already caught up - late, skip, don't chase
+            s["status"] = "already_priced"  # late, skip, don't chase
+            continue
         entry = k if s["side"] == "yes" else 1 - k
         b = (1 - entry) / entry                      # net odds on a $1 contract
         p_est = pm if s["side"] == "yes" else 1 - pm  # PM price as prob estimate
         kelly = max(0.0, (p_est * (b + 1) - 1) / b) * KELLY_FRACTION
         stake = round(min(kelly * bankroll, SHADOW_CAP_PCT * bankroll), 2)
         if stake < 5:
+            s["status"] = "stake_too_small"
             continue
+        s["status"] = "proposed"
         proposals.append({"event": p["event"], "ticker": p["kalshi_ticker"],
                           "side": s["side"], "z": round(s["z"], 1),
                           "sharp_usd": round(s["sharp_usd"]),
@@ -235,6 +241,28 @@ def main(bankroll=BANKROLL_DEFAULT):
     cold = COLD_START_RESOLVED_MARKETS * COLD_START_CALLS_PER_MARKET * (API_LATENCY + PM_RATE_SLEEP)
     print(f"\n  one-time cold start (90d wallet-history backfill, REST): ~{cold/3600:.1f}h")
     print(f"  same backfill via subgraph/bulk export:                  ~20-40m")
+
+    out = {
+        "generated_at": __import__("datetime").datetime.now(
+            __import__("datetime").timezone.utc).isoformat(timespec="seconds"),
+        "params": {"bankroll": bankroll, "shadow_cap_pct": SHADOW_CAP_PCT,
+                   "kelly_fraction": KELLY_FRACTION, "min_edge": MIN_EDGE,
+                   "min_signal_z": MIN_SIGNAL_Z},
+        "proposals": proposals,
+        "signals": [{"ticker": s["ticker"], "event": s["event"],
+                     "side": s["side"], "z": round(s["z"], 1),
+                     "sharp_usd": round(s["sharp_usd"]),
+                     "pm": s["pm"], "kalshi": s["kalshi"], "edge": s["edge"],
+                     "status": s["status"]} for s in signals],
+        "timings": [{"stage": st, "mock_ms": round(m * 1000, 1),
+                     "live_s": round(p, 1)} for st, m, p in TIMINGS],
+        "cold_start": {"rest_hours": round(cold / 3600, 1),
+                       "bulk_minutes": "20-40"},
+    }
+    out_path = Path(__file__).parent / "data" / "proposals.json"
+    out_path.parent.mkdir(exist_ok=True)
+    out_path.write_text(json.dumps(out, indent=1))
+    print(f"\n  wrote {out_path}")
 
 
 if __name__ == "__main__":

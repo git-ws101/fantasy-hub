@@ -1,0 +1,138 @@
+{
+ "generated_at": "2026-08-02T12:30:50+00:00",
+ "params": {
+  "bankroll": 2000.0,
+  "shadow_cap_pct": 0.02,
+  "kelly_fraction": 0.25,
+  "min_edge": 0.04,
+  "min_signal_z": 1.5
+ },
+ "proposals": [
+  {
+   "event": "Government shutdown by Oct 1",
+   "ticker": "KXSHUTDOWN-25OCT",
+   "side": "yes",
+   "z": 21.4,
+   "sharp_usd": 26018,
+   "pm": 0.54,
+   "kalshi": 0.35,
+   "edge": 0.19,
+   "stake": 40.0
+  }
+ ],
+ "signals": [
+  {
+   "ticker": "KXFED-25SEP-C25",
+   "event": "Fed cuts 25bps in September",
+   "side": "yes",
+   "z": 0.2,
+   "sharp_usd": 102,
+   "pm": 0.44,
+   "kalshi": 0.37,
+   "edge": 0.07,
+   "status": "no_signal"
+  },
+  {
+   "ticker": "KXCPI-25AUG-A03",
+   "event": "August CPI YoY above 3.0%",
+   "side": "no",
+   "z": -0.3,
+   "sharp_usd": 162,
+   "pm": 0.47,
+   "kalshi": 0.16,
+   "edge": -0.31,
+   "status": "no_signal"
+  },
+  {
+   "ticker": "KXSHUTDOWN-25OCT",
+   "event": "Government shutdown by Oct 1",
+   "side": "yes",
+   "z": 21.4,
+   "sharp_usd": 26018,
+   "pm": 0.54,
+   "kalshi": 0.35,
+   "edge": 0.19,
+   "status": "proposed"
+  },
+  {
+   "ticker": "KXEMMY-25-DRAMA",
+   "event": "Emmys Best Drama winner",
+   "side": "yes",
+   "z": 43.0,
+   "sharp_usd": 74289,
+   "pm": 0.59,
+   "kalshi": 0.7,
+   "edge": -0.11,
+   "status": "already_priced"
+  },
+  {
+   "ticker": "KXHURR-25-CAT4",
+   "event": "Cat 4+ US landfall this season",
+   "side": "yes",
+   "z": 0.1,
+   "sharp_usd": 77,
+   "pm": 0.42,
+   "kalshi": 0.38,
+   "edge": 0.04,
+   "status": "no_signal"
+  },
+  {
+   "ticker": "KXSPOTIFY-25W32",
+   "event": "Spotify #1 song this week",
+   "side": "yes",
+   "z": 0.4,
+   "sharp_usd": 182,
+   "pm": 0.49,
+   "kalshi": 0.74,
+   "edge": -0.25,
+   "status": "no_signal"
+  },
+  {
+   "ticker": "KXBTC-25AUG-B100",
+   "event": "BTC above 100k Aug 31",
+   "side": "no",
+   "z": -0.7,
+   "sharp_usd": 385,
+   "pm": 0.43,
+   "kalshi": 0.23,
+   "edge": -0.2,
+   "status": "no_signal"
+  }
+ ],
+ "timings": [
+  {
+   "stage": "1. load market map",
+   "mock_ms": 0.2,
+   "live_s": 0.0
+  },
+  {
+   "stage": "2. fetch Polymarket trades (24h)",
+   "mock_ms": 5.4,
+   "live_s": 7.2
+  },
+  {
+   "stage": "3. fetch Kalshi prices",
+   "mock_ms": 0.4,
+   "live_s": 0.4
+  },
+  {
+   "stage": "4. update wallet scores (incremental)",
+   "mock_ms": 0.5,
+   "live_s": 120.0
+  },
+  {
+   "stage": "5. compute flow signals",
+   "mock_ms": 0.6,
+   "live_s": 2.0
+  },
+  {
+   "stage": "6. build proposals",
+   "mock_ms": 0.1,
+   "live_s": 0.5
+  }
+ ],
+ "cold_start": {
+  "rest_hours": 1.0,
+  "bulk_minutes": "20-40"
+ }
+}
