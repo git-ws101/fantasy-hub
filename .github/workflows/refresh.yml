@@ -1,5 +1,9 @@
 name: Refresh data
 
+# TEMPORARY (branch-only): repurposed to run the league lookup, because
+# workflow_dispatch can only target workflows registered on the default
+# branch. Restore to the main version before merging.
+
 on:
   schedule:
     - cron: '0 10 * * *'
@@ -20,12 +24,12 @@ jobs:
         with:
           python-version: '3.12'
 
-      - name: Refresh data
-        run: python scripts/refresh.py
+      - name: Look up leagues
+        run: python scripts/league_lookup.py --username "ArtBlankBurner" --seasons "2026,2025,2024"
 
       - name: Commit and push if changed
         run: |
           git config user.name "hub-bot"
           git config user.email "hub-bot@users.noreply.github.com"
           git add data
-          git diff --cached --quiet || (git commit -m "data: scheduled refresh" && git push)
+          git diff --cached --quiet || (git commit -m "data: league lookup for ArtBlankBurner" && git push)
