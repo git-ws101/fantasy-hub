@@ -1,0 +1,12 @@
+{
+  "pairs": [
+    {"pm_id": "pm-fed-sep-cut", "kalshi_ticker": "KXFED-25SEP-C25", "event": "Fed cuts 25bps in September", "resolution_equivalent": true},
+    {"pm_id": "pm-cpi-aug-hot", "kalshi_ticker": "KXCPI-25AUG-A03", "event": "August CPI YoY above 3.0%", "resolution_equivalent": true},
+    {"pm_id": "pm-gov-shutdown-oct", "kalshi_ticker": "KXSHUTDOWN-25OCT", "event": "Government shutdown by Oct 1", "resolution_equivalent": true},
+    {"pm_id": "pm-emmys-drama", "kalshi_ticker": "KXEMMY-25-DRAMA", "event": "Emmys Best Drama winner", "resolution_equivalent": true},
+    {"pm_id": "pm-hurricane-cat4", "kalshi_ticker": "KXHURR-25-CAT4", "event": "Cat 4+ US landfall this season", "resolution_equivalent": true},
+    {"pm_id": "pm-spotify-top-song", "kalshi_ticker": "KXSPOTIFY-25W32", "event": "Spotify #1 song this week", "resolution_equivalent": true},
+    {"pm_id": "pm-btc-100k-aug", "kalshi_ticker": "KXBTC-25AUG-B100", "event": "BTC above 100k Aug 31", "resolution_equivalent": true},
+    {"pm_id": "pm-oscars-host", "kalshi_ticker": "KXOSCARHOST-26", "event": "2026 Oscars host announced by Dec", "resolution_equivalent": false}
+  ]
+}
