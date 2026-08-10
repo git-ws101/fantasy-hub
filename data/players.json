@@ -1,5 +1,5 @@
 {
- "updated": "2026-08-09",
+ "updated": "2026-08-10",
  "source": "Sleeper API 2026 season projections, half PPR ADP",
  "players": [
   {
@@ -2757,23 +2757,6 @@
    "adp": 45.5
   },
   {
-   "name": "Luther Burden",
-   "team": "CHI",
-   "pos": "WR",
-   "stats": {
-    "pass_yd": 0.0,
-    "pass_td": 0.0,
-    "pass_int": 0.0,
-    "rush_yd": 64.0,
-    "rush_td": 0.0,
-    "rec": 76.0,
-    "rec_yd": 936.0,
-    "rec_td": 7.0,
-    "fum": 0.0
-   },
-   "adp": 44.9
-  },
-  {
    "name": "Terry McLaurin",
    "team": "WAS",
    "pos": "WR",
@@ -2857,6 +2840,23 @@
     "fum": 0.0
    },
    "adp": 62.6
+  },
+  {
+   "name": "Luther Burden",
+   "team": "CHI",
+   "pos": "WR",
+   "stats": {
+    "pass_yd": 0.0,
+    "pass_td": 0.0,
+    "pass_int": 0.0,
+    "rush_yd": 61.0,
+    "rush_td": 0.0,
+    "rec": 72.0,
+    "rec_yd": 889.0,
+    "rec_td": 7.0,
+    "fum": 0.0
+   },
+   "adp": 44.9
   },
   {
    "name": "Brian Thomas",
