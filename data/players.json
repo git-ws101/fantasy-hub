@@ -1,5 +1,5 @@
 {
- "updated": "2026-08-10",
+ "updated": "2026-08-11",
  "source": "Sleeper API 2026 season projections, half PPR ADP",
  "players": [
   {
@@ -54,23 +54,6 @@
    "adp": 54.0
   },
   {
-   "name": "Jayden Daniels",
-   "team": "WAS",
-   "pos": "QB",
-   "stats": {
-    "pass_yd": 3373.0,
-    "pass_td": 22.0,
-    "pass_int": 9.0,
-    "rush_yd": 686.0,
-    "rush_td": 6.0,
-    "rec": 0.0,
-    "rec_yd": 0.0,
-    "rec_td": 0.0,
-    "fum": 3.0
-   },
-   "adp": 64.1
-  },
-  {
    "name": "Jalen Hurts",
    "team": "PHI",
    "pos": "QB",
@@ -88,6 +71,23 @@
    "adp": 68.4
   },
   {
+   "name": "Jayden Daniels",
+   "team": "WAS",
+   "pos": "QB",
+   "stats": {
+    "pass_yd": 3328.0,
+    "pass_td": 21.0,
+    "pass_int": 9.0,
+    "rush_yd": 686.0,
+    "rush_td": 6.0,
+    "rec": 0.0,
+    "rec_yd": 0.0,
+    "rec_td": 0.0,
+    "fum": 3.0
+   },
+   "adp": 64.1
+  },
+  {
    "name": "Joe Burrow",
    "team": "CIN",
    "pos": "QB",
@@ -102,7 +102,7 @@
     "rec_td": 0.0,
     "fum": 3.0
    },
-   "adp": 58.2
+   "adp": 51.5
   },
   {
    "name": "Trevor Lawrence",
@@ -969,7 +969,7 @@
     "rec_td": 2.0,
     "fum": 1.0
    },
-   "adp": 39.5
+   "adp": 46.5
   },
   {
    "name": "Cam Skattebo",
@@ -1088,7 +1088,7 @@
     "rec_td": 1.0,
     "fum": 1.0
    },
-   "adp": 41.3
+   "adp": 44.4
   },
   {
    "name": "Jadarian Price",
@@ -1105,7 +1105,7 @@
     "rec_td": 1.0,
     "fum": 1.0
    },
-   "adp": 63.0
+   "adp": 58.0
   },
   {
    "name": "Bhayshul Tuten",
@@ -1190,7 +1190,7 @@
     "rec_td": 1.0,
     "fum": 0.0
    },
-   "adp": 90.6
+   "adp": 77.2
   },
   {
    "name": "Tony Pollard",
@@ -1224,7 +1224,7 @@
     "rec_td": 1.0,
     "fum": 1.0
    },
-   "adp": 124.6
+   "adp": 111.2
   },
   {
    "name": "Kyle Monangai",
@@ -1309,7 +1309,7 @@
     "rec_td": 2.0,
     "fum": 1.0
    },
-   "adp": 69.3
+   "adp": 86.0
   },
   {
    "name": "Chris Rodriguez",
@@ -2686,7 +2686,7 @@
     "rec_td": 6.0,
     "fum": 0.0
    },
-   "adp": 38.2
+   "adp": 30.0
   },
   {
    "name": "Garrett Wilson",
@@ -2766,8 +2766,8 @@
     "pass_int": 0.0,
     "rush_yd": 7.0,
     "rush_td": 0.0,
-    "rec": 75.0,
-    "rec_yd": 1045.0,
+    "rec": 74.0,
+    "rec_yd": 1031.0,
     "rec_td": 6.0,
     "fum": 0.0
    },
@@ -2822,7 +2822,7 @@
     "rec_td": 7.0,
     "fum": 0.0
    },
-   "adp": 81.1
+   "adp": 64.1
   },
   {
    "name": "Rome Odunze",
@@ -2975,7 +2975,7 @@
     "rec_td": 6.0,
     "fum": 0.0
    },
-   "adp": 81.8
+   "adp": 92.2
   },
   {
    "name": "DJ Moore",
@@ -3009,7 +3009,7 @@
     "rec_td": 5.0,
     "fum": 0.0
    },
-   "adp": 71.6
+   "adp": 65.5
   },
   {
    "name": "Courtland Sutton",
@@ -3043,7 +3043,7 @@
     "rec_td": 4.0,
     "fum": 0.0
    },
-   "adp": 121.0
+   "adp": 102.2
   },
   {
    "name": "Jordan Addison",
@@ -3111,7 +3111,7 @@
     "rec_td": 5.0,
     "fum": 0.0
    },
-   "adp": 77.9
+   "adp": 92.2
   },
   {
    "name": "Jakobi Meyers",
@@ -3267,23 +3267,6 @@
    "adp": 130.4
   },
   {
-   "name": "Stefon Diggs",
-   "team": "WAS",
-   "pos": "WR",
-   "stats": {
-    "pass_yd": 0.0,
-    "pass_td": 0.0,
-    "pass_int": 0.0,
-    "rush_yd": 6.0,
-    "rush_td": 0.0,
-    "rec": 62.0,
-    "rec_yd": 704.0,
-    "rec_td": 5.0,
-    "fum": 0.0
-   },
-   "adp": 134.4
-  },
-  {
    "name": "Wan'Dale Robinson",
    "team": "TEN",
    "pos": "WR",
@@ -3315,7 +3298,7 @@
     "rec_td": 4.0,
     "fum": 1.0
    },
-   "adp": 158.7
+   "adp": 134.1
   },
   {
    "name": "KC Concepcion",
@@ -3333,6 +3316,23 @@
     "fum": 1.0
    },
    "adp": 116.0
+  },
+  {
+   "name": "Stefon Diggs",
+   "team": "WAS",
+   "pos": "WR",
+   "stats": {
+    "pass_yd": 0.0,
+    "pass_td": 0.0,
+    "pass_int": 0.0,
+    "rush_yd": 6.0,
+    "rush_td": 0.0,
+    "rec": 64.0,
+    "rec_yd": 687.0,
+    "rec_td": 4.0,
+    "fum": 0.0
+   },
+   "adp": 134.4
   },
   {
    "name": "Rashid Shaheed",
@@ -3774,7 +3774,7 @@
     "rec_td": 3.0,
     "fum": 0.0
    },
-   "adp": 191.7
+   "adp": 151.2
   },
   {
    "name": "Elijah Sarratt",
@@ -4641,7 +4641,7 @@
     "rec_td": 6.0,
     "fum": 0.0
    },
-   "adp": 42.1
+   "adp": 39.9
   },
   {
    "name": "Tyler Warren",
