@@ -1,5 +1,5 @@
 {
- "updated": "2026-08-12",
+ "updated": "2026-08-13",
  "source": "Sleeper API 2026 season projections, half PPR ADP",
  "players": [
   {
@@ -4933,6 +4933,23 @@
    "adp": 132.6
   },
   {
+   "name": "Dalton Schultz",
+   "team": "HOU",
+   "pos": "TE",
+   "stats": {
+    "pass_yd": 0.0,
+    "pass_td": 0.0,
+    "pass_int": 0.0,
+    "rush_yd": 0.0,
+    "rush_td": 0.0,
+    "rec": 58.0,
+    "rec_yd": 572.0,
+    "rec_td": 4.0,
+    "fum": 0.0
+   },
+   "adp": 149.2
+  },
+  {
    "name": "Juwan Johnson",
    "team": "NO",
    "pos": "TE",
@@ -4965,40 +4982,6 @@
     "fum": 0.0
    },
    "adp": 116.7
-  },
-  {
-   "name": "Dalton Schultz",
-   "team": "HOU",
-   "pos": "TE",
-   "stats": {
-    "pass_yd": 0.0,
-    "pass_td": 0.0,
-    "pass_int": 0.0,
-    "rush_yd": 0.0,
-    "rush_td": 0.0,
-    "rec": 55.0,
-    "rec_yd": 545.0,
-    "rec_td": 4.0,
-    "fum": 0.0
-   },
-   "adp": 149.2
-  },
-  {
-   "name": "Kenyon Sadiq",
-   "team": "NYJ",
-   "pos": "TE",
-   "stats": {
-    "pass_yd": 0.0,
-    "pass_td": 0.0,
-    "pass_int": 0.0,
-    "rush_yd": 9.0,
-    "rush_td": 0.0,
-    "rec": 52.0,
-    "rec_yd": 542.0,
-    "rec_td": 4.0,
-    "fum": 0.0
-   },
-   "adp": 131.9
   },
   {
    "name": "Pat Freiermuth",
@@ -5035,6 +5018,23 @@
    "adp": 161.4
   },
   {
+   "name": "Darren Waller",
+   "team": "CAR",
+   "pos": "TE",
+   "stats": {
+    "pass_yd": 0.0,
+    "pass_td": 0.0,
+    "pass_int": 0.0,
+    "rush_yd": 0.0,
+    "rush_td": 0.0,
+    "rec": 47.0,
+    "rec_yd": 516.0,
+    "rec_td": 4.0,
+    "fum": 0.0
+   },
+   "adp": null
+  },
+  {
    "name": "Cade Otton",
    "team": "TB",
    "pos": "TE",
@@ -5044,8 +5044,8 @@
     "pass_int": 0.0,
     "rush_yd": 0.0,
     "rush_td": 0.0,
-    "rec": 56.0,
-    "rec_yd": 540.0,
+    "rec": 53.0,
+    "rec_yd": 513.0,
     "rec_td": 3.0,
     "fum": 0.0
    },
@@ -5095,12 +5095,46 @@
     "pass_int": 0.0,
     "rush_yd": 0.0,
     "rush_td": 0.0,
-    "rec": 32.0,
-    "rec_yd": 375.0,
-    "rec_td": 3.0,
+    "rec": 35.0,
+    "rec_yd": 413.0,
+    "rec_td": 4.0,
     "fum": 0.0
    },
    "adp": 152.6
+  },
+  {
+   "name": "Kenyon Sadiq",
+   "team": "NYJ",
+   "pos": "TE",
+   "stats": {
+    "pass_yd": 0.0,
+    "pass_td": 0.0,
+    "pass_int": 0.0,
+    "rush_yd": 7.0,
+    "rush_td": 0.0,
+    "rec": 40.0,
+    "rec_yd": 415.0,
+    "rec_td": 3.0,
+    "fum": 0.0
+   },
+   "adp": 131.9
+  },
+  {
+   "name": "Mason Taylor",
+   "team": "NYJ",
+   "pos": "TE",
+   "stats": {
+    "pass_yd": 0.0,
+    "pass_td": 0.0,
+    "pass_int": 0.0,
+    "rush_yd": 0.0,
+    "rush_td": 0.0,
+    "rec": 40.0,
+    "rec_yd": 384.0,
+    "rec_td": 3.0,
+    "fum": 0.0
+   },
+   "adp": 218.2
   },
   {
    "name": "Darnell Washington",
@@ -5112,8 +5146,8 @@
     "pass_int": 0.0,
     "rush_yd": 0.0,
     "rush_td": 0.0,
-    "rec": 35.0,
-    "rec_yd": 359.0,
+    "rec": 33.0,
+    "rec_yd": 341.0,
     "rec_td": 3.0,
     "fum": 0.0
    },
@@ -5137,23 +5171,6 @@
    "adp": 176.4
   },
   {
-   "name": "David Njoku",
-   "team": "LAC",
-   "pos": "TE",
-   "stats": {
-    "pass_yd": 0.0,
-    "pass_td": 0.0,
-    "pass_int": 0.0,
-    "rush_yd": 0.0,
-    "rush_td": 0.0,
-    "rec": 31.0,
-    "rec_yd": 307.0,
-    "rec_td": 3.0,
-    "fum": 0.0
-   },
-   "adp": 172.0
-  },
-  {
    "name": "Michael Mayer",
    "team": "LV",
    "pos": "TE",
@@ -5169,23 +5186,6 @@
     "fum": 0.0
    },
    "adp": null
-  },
-  {
-   "name": "Colby Parkinson",
-   "team": "LAR",
-   "pos": "TE",
-   "stats": {
-    "pass_yd": 0.0,
-    "pass_td": 0.0,
-    "pass_int": 0.0,
-    "rush_yd": 0.0,
-    "rush_td": 0.0,
-    "rec": 30.0,
-    "rec_yd": 308.0,
-    "rec_td": 3.0,
-    "fum": 0.0
-   },
-   "adp": 196.0
   },
   {
    "name": "Cole Kmet",
@@ -5222,6 +5222,23 @@
    "adp": null
   },
   {
+   "name": "Colby Parkinson",
+   "team": "LAR",
+   "pos": "TE",
+   "stats": {
+    "pass_yd": 0.0,
+    "pass_td": 0.0,
+    "pass_int": 0.0,
+    "rush_yd": 0.0,
+    "rush_td": 0.0,
+    "rec": 29.0,
+    "rec_yd": 293.0,
+    "rec_td": 3.0,
+    "fum": 0.0
+   },
+   "adp": 196.0
+  },
+  {
    "name": "Theo Johnson",
    "team": "NYG",
    "pos": "TE",
@@ -5237,23 +5254,6 @@
     "fum": 0.0
    },
    "adp": 154.3
-  },
-  {
-   "name": "Mason Taylor",
-   "team": "NYJ",
-   "pos": "TE",
-   "stats": {
-    "pass_yd": 0.0,
-    "pass_td": 0.0,
-    "pass_int": 0.0,
-    "rush_yd": 0.0,
-    "rush_td": 0.0,
-    "rec": 33.0,
-    "rec_yd": 323.0,
-    "rec_td": 2.0,
-    "fum": 0.0
-   },
-   "adp": 218.2
   },
   {
    "name": "Elijah Arroyo",
@@ -5339,6 +5339,23 @@
     "fum": 0.0
    },
    "adp": null
+  },
+  {
+   "name": "David Njoku",
+   "team": "LAC",
+   "pos": "TE",
+   "stats": {
+    "pass_yd": 0.0,
+    "pass_td": 0.0,
+    "pass_int": 0.0,
+    "rush_yd": 0.0,
+    "rush_td": 0.0,
+    "rec": 23.0,
+    "rec_yd": 230.0,
+    "rec_td": 2.0,
+    "fum": 0.0
+   },
+   "adp": 172.0
   },
   {
    "name": "Justin Joly",
@@ -5488,23 +5505,6 @@
     "rush_td": 0.0,
     "rec": 16.0,
     "rec_yd": 162.0,
-    "rec_td": 1.0,
-    "fum": 0.0
-   },
-   "adp": null
-  },
-  {
-   "name": "Ja'Tavion Sanders",
-   "team": "CAR",
-   "pos": "TE",
-   "stats": {
-    "pass_yd": 0.0,
-    "pass_td": 0.0,
-    "pass_int": 0.0,
-    "rush_yd": 0.0,
-    "rush_td": 0.0,
-    "rec": 17.0,
-    "rec_yd": 148.0,
     "rec_td": 1.0,
     "fum": 0.0
    },
@@ -5664,8 +5664,8 @@
    "adp": null
   },
   {
-   "name": "Mitchell Evans",
-   "team": "CAR",
+   "name": "John Bates",
+   "team": "WAS",
    "pos": "TE",
    "stats": {
     "pass_yd": 0.0,
@@ -5674,15 +5674,15 @@
     "rush_yd": 0.0,
     "rush_td": 0.0,
     "rec": 13.0,
-    "rec_yd": 129.0,
+    "rec_yd": 128.0,
     "rec_td": 1.0,
     "fum": 0.0
    },
    "adp": null
   },
   {
-   "name": "John Bates",
-   "team": "WAS",
+   "name": "Tommy Tremble",
+   "team": "CAR",
    "pos": "TE",
    "stats": {
     "pass_yd": 0.0,
