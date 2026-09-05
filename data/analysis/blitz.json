@@ -1,5 +1,5 @@
 {
- "generated": "2026-09-04T13:55:11.352835Z",
+ "generated": "2026-09-05T13:10:54.537214Z",
  "slug": "blitz",
  "league_name": "Blitz: The Fantasy League",
  "seasons": [
@@ -1718,7 +1718,7 @@
         "week": 4,
         "bid": 1,
         "player": "Travis Hunter",
-        "pos": "WR",
+        "pos": "DB",
         "status": "failed"
        },
        {
@@ -4476,7 +4476,7 @@
         "week": 8,
         "bid": 5,
         "player": "Travis Hunter",
-        "pos": "WR",
+        "pos": "DB",
         "status": "complete"
        },
        {
@@ -6678,8 +6678,8 @@
     "max": 5
    },
    "WR|mid": {
-    "n": 21,
-    "median": 6,
+    "n": 20,
+    "median": 7.0,
     "max": 21
    },
    "QB|mid": {
@@ -6731,6 +6731,11 @@
     "n": 2,
     "median": 2.5,
     "max": 4
+   },
+   "DB|mid": {
+    "n": 1,
+    "median": 5,
+    "max": 5
    }
   },
   "contested_claims": [
