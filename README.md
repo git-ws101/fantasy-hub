@@ -6,7 +6,7 @@ A personal static site of small apps, served by GitHub Pages from the `main` bra
 
 - `index.html` — landing page with an app grid and a data pipeline status panel.
 - `draft/` — VBD Draft Board app.
-- `draft/phb/` — Playa Haters' Ball live draft helper. Same VBD engine, plus live Sleeper league settings, draft pick polling, a pick clock, and a best-available advisor.
+- `draft/live/` — Live Sleeper draft helper for both leagues. Same VBD engine, plus live league settings, draft pick polling, a pick clock, and a best-available advisor. Pick the league with `?league=phb` or `?league=blitz`. `draft/phb/` and `draft/blitz/` redirect there.
 - `data/players.json` — player projections used by the apps.
 - `data/status.json` — last refresh result, shown on the landing page.
 - `data/state/` — per-app synced state files (created by device sync).
