@@ -1,5 +1,5 @@
 {
- "generated": "2026-09-07T15:26:24.457842Z",
+ "generated": "2026-09-08T14:03:02.718007Z",
  "slug": "blitz",
  "league_name": "Blitz: The Fantasy League",
  "seasons": [
@@ -268,6 +268,9 @@
        "WR",
        "WR"
       ]
+     },
+     "2026": {
+      "slot": 5
      }
     },
     "summary": {
@@ -819,6 +822,9 @@
        "RB",
        "TE"
       ]
+     },
+     "2026": {
+      "slot": 2
      }
     },
     "summary": {
@@ -1523,6 +1529,9 @@
        "WR",
        "TE"
       ]
+     },
+     "2026": {
+      "slot": 8
      }
     },
     "summary": {
@@ -2057,6 +2066,9 @@
        "TE",
        "RB"
       ]
+     },
+     "2026": {
+      "slot": 1
      }
     },
     "summary": {
@@ -2766,6 +2778,9 @@
        "QB",
        "WR"
       ]
+     },
+     "2026": {
+      "slot": 3
      }
     },
     "summary": {
@@ -3695,6 +3710,9 @@
        "RB",
        "WR"
       ]
+     },
+     "2026": {
+      "slot": 11
      }
     },
     "summary": {
@@ -4290,6 +4308,9 @@
        "RB",
        "RB"
       ]
+     },
+     "2026": {
+      "slot": 9
      }
     },
     "summary": {
@@ -4914,6 +4935,9 @@
        "WR",
        "QB"
       ]
+     },
+     "2026": {
+      "slot": 6
      }
     },
     "summary": {
@@ -5798,6 +5822,9 @@
        "WR",
        "WR"
       ]
+     },
+     "2026": {
+      "slot": 10
      }
     },
     "summary": {
@@ -6161,6 +6188,9 @@
        "RB",
        "RB"
       ]
+     },
+     "2026": {
+      "slot": 12
      }
     },
     "summary": {
@@ -6611,7 +6641,51 @@
    ],
    "records": {},
    "draft": {
+    "seasons": {
+     "2026": {
+      "slot": 4
+     }
+    },
+    "summary": {
+     "first_qb_rounds": [],
+     "first_te_rounds": [],
+     "opening_sequences": {}
+    }
+   },
+   "faab": {
     "seasons": {},
+    "summary": {
+     "claims_won": 0,
+     "claims_lost": 0,
+     "total_spent_by_season": {},
+     "avg_winning_bid": null,
+     "max_winning_bid": null,
+     "median_winning_bid": null,
+     "avg_losing_bid": null,
+     "max_losing_bid": null,
+     "burn_curve": {},
+     "spend_by_bucket": {
+      "early": 0,
+      "mid": 0,
+      "late": 0
+     },
+     "top_buys": []
+    }
+   }
+  },
+  "1037248488746541056": {
+   "display_name": "rhettrez",
+   "team_names": {},
+   "seasons": [
+    "2026"
+   ],
+   "records": {},
+   "draft": {
+    "seasons": {
+     "2026": {
+      "slot": 7
+     }
+    },
     "summary": {
      "first_qb_rounds": [],
      "first_te_rounds": [],
