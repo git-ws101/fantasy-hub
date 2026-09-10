@@ -1,5 +1,5 @@
 {
- "generated": "2026-09-09T14:05:59.377315Z",
+ "generated": "2026-09-10T13:59:55.120944Z",
  "slug": "blitz",
  "league_name": "Blitz: The Fantasy League",
  "seasons": [
@@ -7811,7 +7811,9 @@
   },
   "999837972113567744": {
    "display_name": "aaronaaron",
-   "team_names": {},
+   "team_names": {
+    "2026": "The gustapher erics "
+   },
    "seasons": [
     "2026"
    ],
@@ -7972,7 +7974,9 @@
   },
   "1037248488746541056": {
    "display_name": "rhettrez",
-   "team_names": {},
+   "team_names": {
+    "2026": "Ayatollah's Revenge"
+   },
    "seasons": [
     "2026"
    ],
