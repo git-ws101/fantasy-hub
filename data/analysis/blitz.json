@@ -1,5 +1,5 @@
 {
- "generated": "2026-09-13T14:00:33.730951Z",
+ "generated": "2026-09-14T16:05:54.767038Z",
  "slug": "blitz",
  "league_name": "Blitz: The Fantasy League",
  "seasons": [
@@ -2182,7 +2182,7 @@
    "team_names": {
     "2024": "The Awwwwwwwwwww Men",
     "2025": "The Aww Men",
-    "2026": "The Aww Men"
+    "2026": "**Pending**"
    },
    "seasons": [
     "2024",
@@ -8112,6 +8112,42 @@
        "WR"
       ]
      }
+    }
+   },
+   "faab": {
+    "seasons": {},
+    "summary": {
+     "claims_won": 0,
+     "claims_lost": 0,
+     "total_spent_by_season": {},
+     "avg_winning_bid": null,
+     "max_winning_bid": null,
+     "median_winning_bid": null,
+     "avg_losing_bid": null,
+     "max_losing_bid": null,
+     "burn_curve": {},
+     "spend_by_bucket": {
+      "early": 0,
+      "mid": 0,
+      "late": 0
+     },
+     "top_buys": []
+    }
+   }
+  },
+  "1404669224789524480": {
+   "display_name": "JiggityJ",
+   "team_names": {},
+   "seasons": [
+    "2026"
+   ],
+   "records": {},
+   "draft": {
+    "seasons": {},
+    "summary": {
+     "first_qb_rounds": [],
+     "first_te_rounds": [],
+     "opening_sequences": {}
     }
    },
    "faab": {
