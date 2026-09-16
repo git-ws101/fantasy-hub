@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-15",
+ "updated": "2026-09-16",
  "source": "Sleeper API 2026 season projections, half PPR ADP",
  "players": [
   {
@@ -85,7 +85,7 @@
     "rec_td": 0.0,
     "fum": 3.0
    },
-   "adp": 71.0
+   "adp": 71.9
   },
   {
    "name": "Joe Burrow",
@@ -204,7 +204,7 @@
     "rec_td": 0.0,
     "fum": 3.0
    },
-   "adp": 111.1
+   "adp": 111.0
   },
   {
    "name": "Bo Nix",
@@ -221,7 +221,7 @@
     "rec_td": 0.0,
     "fum": 3.0
    },
-   "adp": 119.2
+   "adp": 119.1
   },
   {
    "name": "Patrick Mahomes",
@@ -238,7 +238,7 @@
     "rec_td": 0.0,
     "fum": 2.0
    },
-   "adp": 116.8
+   "adp": 117.1
   },
   {
    "name": "Kyler Murray",
@@ -255,7 +255,7 @@
     "rec_td": 0.0,
     "fum": 3.0
    },
-   "adp": 150.4
+   "adp": 149.7
   },
   {
    "name": "Jared Goff",
@@ -272,7 +272,7 @@
     "rec_td": 0.0,
     "fum": 3.0
    },
-   "adp": 142.4
+   "adp": 142.3
   },
   {
    "name": "Jordan Love",
@@ -289,7 +289,7 @@
     "rec_td": 0.0,
     "fum": 3.0
    },
-   "adp": 164.9
+   "adp": 164.8
   },
   {
    "name": "Matthew Stafford",
@@ -306,7 +306,7 @@
     "rec_td": 0.0,
     "fum": 2.0
    },
-   "adp": 105.4
+   "adp": 105.3
   },
   {
    "name": "Malik Willis",
@@ -323,7 +323,7 @@
     "rec_td": 0.0,
     "fum": 2.0
    },
-   "adp": 201.0
+   "adp": 201.9
   },
   {
    "name": "Baker Mayfield",
@@ -340,7 +340,7 @@
     "rec_td": 0.0,
     "fum": 4.0
    },
-   "adp": 163.5
+   "adp": 163.4
   },
   {
    "name": "Tyler Shough",
@@ -357,7 +357,7 @@
     "rec_td": 0.0,
     "fum": 3.0
    },
-   "adp": 184.5
+   "adp": 184.3
   },
   {
    "name": "Sam Darnold",
@@ -374,7 +374,7 @@
     "rec_td": 0.0,
     "fum": 3.0
    },
-   "adp": 177.0
+   "adp": 177.9
   },
   {
    "name": "C.J. Stroud",
@@ -391,7 +391,7 @@
     "rec_td": 0.0,
     "fum": 3.0
    },
-   "adp": 206.7
+   "adp": 206.5
   },
   {
    "name": "Bryce Young",
@@ -476,7 +476,7 @@
     "rec_td": 0.0,
     "fum": 3.0
    },
-   "adp": 210.7
+   "adp": 209.3
   },
   {
    "name": "Aaron Rodgers",
@@ -782,7 +782,7 @@
     "rec_td": 1.0,
     "fum": 2.0
    },
-   "adp": 14.5
+   "adp": 14.4
   },
   {
    "name": "De'Von Achane",
@@ -901,7 +901,7 @@
     "rec_td": 1.0,
     "fum": 1.0
    },
-   "adp": 30.6
+   "adp": 29.4
   },
   {
    "name": "Breece Hall",
@@ -918,7 +918,7 @@
     "rec_td": 2.0,
     "fum": 2.0
    },
-   "adp": 32.9
+   "adp": 32.8
   },
   {
    "name": "Kyren Williams",
@@ -935,7 +935,7 @@
     "rec_td": 2.0,
     "fum": 2.0
    },
-   "adp": 24.3
+   "adp": 23.7
   },
   {
    "name": "David Montgomery",
@@ -952,7 +952,7 @@
     "rec_td": 1.0,
     "fum": 1.0
    },
-   "adp": 42.8
+   "adp": 41.2
   },
   {
    "name": "D'Andre Swift",
@@ -969,7 +969,7 @@
     "rec_td": 1.0,
     "fum": 1.0
    },
-   "adp": 44.3
+   "adp": 45.7
   },
   {
    "name": "Jeremiyah Love",
@@ -986,7 +986,7 @@
     "rec_td": 2.0,
     "fum": 1.0
    },
-   "adp": 26.5
+   "adp": 27.5
   },
   {
    "name": "Travis Etienne",
@@ -1088,7 +1088,7 @@
     "rec_td": 1.0,
     "fum": 1.0
    },
-   "adp": 58.4
+   "adp": 58.3
   },
   {
    "name": "Rhamondre Stevenson",
@@ -1122,7 +1122,7 @@
     "rec_td": 1.0,
     "fum": 1.0
    },
-   "adp": 59.1
+   "adp": 59.0
   },
   {
    "name": "Jaylen Warren",
@@ -1139,7 +1139,7 @@
     "rec_td": 1.0,
     "fum": 2.0
    },
-   "adp": 67.7
+   "adp": 67.6
   },
   {
    "name": "J.K. Dobbins",
@@ -1156,7 +1156,7 @@
     "rec_td": 1.0,
     "fum": 0.0
    },
-   "adp": 84.0
+   "adp": 83.1
   },
   {
    "name": "Tony Pollard",
@@ -1173,7 +1173,7 @@
     "rec_td": 1.0,
     "fum": 1.0
    },
-   "adp": 76.6
+   "adp": 76.5
   },
   {
    "name": "Jordan Mason",
@@ -1190,7 +1190,7 @@
     "rec_td": 1.0,
     "fum": 1.0
    },
-   "adp": 91.2
+   "adp": 91.1
   },
   {
    "name": "Kyle Monangai",
@@ -1207,7 +1207,7 @@
     "rec_td": 1.0,
     "fum": 1.0
    },
-   "adp": 100.8
+   "adp": 100.7
   },
   {
    "name": "Rico Dowdle",
@@ -1224,7 +1224,7 @@
     "rec_td": 1.0,
     "fum": 1.0
    },
-   "adp": 82.1
+   "adp": 82.0
   },
   {
    "name": "Jonathon Brooks",
@@ -1258,7 +1258,7 @@
     "rec_td": 1.0,
     "fum": 2.0
    },
-   "adp": 98.3
+   "adp": 98.2
   },
   {
    "name": "Chuba Hubbard",
@@ -1275,7 +1275,7 @@
     "rec_td": 1.0,
     "fum": 1.0
    },
-   "adp": 80.1
+   "adp": 80.0
   },
   {
    "name": "Kenny Gainwell",
@@ -1309,7 +1309,7 @@
     "rec_td": 0.0,
     "fum": 1.0
    },
-   "adp": 92.7
+   "adp": 92.6
   },
   {
    "name": "Josh Jacobs",
@@ -1360,7 +1360,7 @@
     "rec_td": 0.0,
     "fum": 1.0
    },
-   "adp": 126.0
+   "adp": 125.1
   },
   {
    "name": "Aaron Jones",
@@ -1377,7 +1377,7 @@
     "rec_td": 1.0,
     "fum": 1.0
    },
-   "adp": 115.2
+   "adp": 115.1
   },
   {
    "name": "Jacory Croskey-Merritt",
@@ -1394,7 +1394,7 @@
     "rec_td": 1.0,
     "fum": 1.0
    },
-   "adp": 101.0
+   "adp": 101.9
   },
   {
    "name": "Rachaad White",
@@ -1428,7 +1428,7 @@
     "rec_td": 1.0,
     "fum": 1.0
    },
-   "adp": 152.9
+   "adp": 153.0
   },
   {
    "name": "Tyjae Spears",
@@ -1445,7 +1445,7 @@
     "rec_td": 1.0,
     "fum": 1.0
    },
-   "adp": 168.0
+   "adp": 167.1
   },
   {
    "name": "Mike Washington",
@@ -1462,7 +1462,7 @@
     "rec_td": 1.0,
     "fum": 0.0
    },
-   "adp": 122.4
+   "adp": 122.3
   },
   {
    "name": "Keaton Mitchell",
@@ -1479,7 +1479,7 @@
     "rec_td": 1.0,
     "fum": 1.0
    },
-   "adp": 167.8
+   "adp": 167.7
   },
   {
    "name": "Dylan Sampson",
@@ -1513,7 +1513,7 @@
     "rec_td": 1.0,
     "fum": 1.0
    },
-   "adp": 134.2
+   "adp": 134.1
   },
   {
    "name": "Tyler Allgeier",
@@ -1547,7 +1547,7 @@
     "rec_td": 0.0,
     "fum": 0.0
    },
-   "adp": 161.9
+   "adp": 161.8
   },
   {
    "name": "Brian Robinson",
@@ -1564,7 +1564,7 @@
     "rec_td": 0.0,
     "fum": 0.0
    },
-   "adp": 170.5
+   "adp": 171.4
   },
   {
    "name": "Samaje Perine",
@@ -1598,7 +1598,7 @@
     "rec_td": 1.0,
     "fum": 1.0
    },
-   "adp": 143.1
+   "adp": 143.0
   },
   {
    "name": "Tank Bigsby",
@@ -1615,7 +1615,7 @@
     "rec_td": 0.0,
     "fum": 1.0
    },
-   "adp": 152.5
+   "adp": 152.4
   },
   {
    "name": "Ray Davis",
@@ -1632,7 +1632,7 @@
     "rec_td": 0.0,
     "fum": 0.0
    },
-   "adp": 208.6
+   "adp": 208.5
   },
   {
    "name": "Emmett Johnson",
@@ -1649,7 +1649,7 @@
     "rec_td": 1.0,
     "fum": 1.0
    },
-   "adp": 176.8
+   "adp": 176.6
   },
   {
    "name": "Jonah Coleman",
@@ -1666,7 +1666,7 @@
     "rec_td": 1.0,
     "fum": 1.0
    },
-   "adp": 145.8
+   "adp": 145.7
   },
   {
    "name": "Nicholas Singleton",
@@ -1700,7 +1700,7 @@
     "rec_td": 1.0,
     "fum": 0.0
    },
-   "adp": 220.3
+   "adp": 220.1
   },
   {
    "name": "Isaiah Davis",
@@ -1734,7 +1734,7 @@
     "rec_td": 1.0,
     "fum": 1.0
    },
-   "adp": 165.2
+   "adp": 165.1
   },
   {
    "name": "Kimani Vidal",
@@ -1785,7 +1785,7 @@
     "rec_td": 1.0,
     "fum": 1.0
    },
-   "adp": 224.4
+   "adp": 225.6
   },
   {
    "name": "Emanuel Wilson",
@@ -1921,7 +1921,7 @@
     "rec_td": 0.0,
     "fum": 0.0
    },
-   "adp": 186.0
+   "adp": 185.1
   },
   {
    "name": "Kaytron Allen",
@@ -1955,7 +1955,7 @@
     "rec_td": 0.0,
     "fum": 0.0
    },
-   "adp": 222.6
+   "adp": 221.6
   },
   {
    "name": "Seth McGowan",
@@ -2023,7 +2023,7 @@
     "rec_td": 0.0,
     "fum": 0.0
    },
-   "adp": 196.6
+   "adp": 196.4
   },
   {
    "name": "Will Shipley",
@@ -2363,7 +2363,7 @@
     "rec_td": 0.0,
     "fum": 0.0
    },
-   "adp": 634.2
+   "adp": 653.2
   },
   {
    "name": "British Brooks",
@@ -2397,7 +2397,7 @@
     "rec_td": 10.0,
     "fum": 1.0
    },
-   "adp": 6.1
+   "adp": 5.9
   },
   {
    "name": "Ja'Marr Chase",
@@ -2431,7 +2431,7 @@
     "rec_td": 8.0,
     "fum": 1.0
    },
-   "adp": 8.1
+   "adp": 9.9
   },
   {
    "name": "Amon-Ra St. Brown",
@@ -2499,7 +2499,7 @@
     "rec_td": 7.0,
     "fum": 0.0
    },
-   "adp": 12.3
+   "adp": 11.7
   },
   {
    "name": "George Pickens",
@@ -2533,7 +2533,7 @@
     "rec_td": 7.0,
     "fum": 0.0
    },
-   "adp": 21.1
+   "adp": 21.0
   },
   {
    "name": "Chris Olave",
@@ -2652,7 +2652,7 @@
     "rec_td": 8.0,
     "fum": 0.0
    },
-   "adp": 62.9
+   "adp": 63.1
   },
   {
    "name": "Tee Higgins",
@@ -2686,7 +2686,7 @@
     "rec_td": 6.0,
     "fum": 0.0
    },
-   "adp": 46.8
+   "adp": 46.7
   },
   {
    "name": "Rashee Rice",
@@ -2720,7 +2720,7 @@
     "rec_td": 6.0,
     "fum": 0.0
    },
-   "adp": 38.2
+   "adp": 38.1
   },
   {
    "name": "Jaylen Waddle",
@@ -2754,7 +2754,7 @@
     "rec_td": 6.0,
     "fum": 0.0
    },
-   "adp": 56.1
+   "adp": 56.0
   },
   {
    "name": "Jameson Williams",
@@ -2771,7 +2771,7 @@
     "rec_td": 7.0,
     "fum": 0.0
    },
-   "adp": 57.2
+   "adp": 57.1
   },
   {
    "name": "Christian Watson",
@@ -2839,7 +2839,7 @@
     "rec_td": 7.0,
     "fum": 0.0
    },
-   "adp": 60.6
+   "adp": 59.5
   },
   {
    "name": "Brian Thomas",
@@ -2873,7 +2873,7 @@
     "rec_td": 6.0,
     "fum": 1.0
    },
-   "adp": 98.4
+   "adp": 99.6
   },
   {
    "name": "Davante Adams",
@@ -2907,7 +2907,7 @@
     "rec_td": 6.0,
     "fum": 0.0
    },
-   "adp": 73.3
+   "adp": 73.2
   },
   {
    "name": "DK Metcalf",
@@ -2924,7 +2924,7 @@
     "rec_td": 6.0,
     "fum": 0.0
    },
-   "adp": 78.1
+   "adp": 77.9
   },
   {
    "name": "Alec Pierce",
@@ -2958,7 +2958,7 @@
     "rec_td": 5.0,
     "fum": 1.0
    },
-   "adp": 49.5
+   "adp": 49.4
   },
   {
    "name": "Carnell Tate",
@@ -2992,7 +2992,7 @@
     "rec_td": 6.0,
     "fum": 0.0
    },
-   "adp": 81.0
+   "adp": 81.9
   },
   {
    "name": "Jordan Addison",
@@ -3009,7 +3009,7 @@
     "rec_td": 5.0,
     "fum": 0.0
    },
-   "adp": 102.3
+   "adp": 101.7
   },
   {
    "name": "Matthew Golden",
@@ -3026,7 +3026,7 @@
     "rec_td": 5.0,
     "fum": 0.0
    },
-   "adp": 118.8
+   "adp": 118.7
   },
   {
    "name": "Chris Godwin",
@@ -3094,7 +3094,7 @@
     "rec_td": 4.0,
     "fum": 0.0
    },
-   "adp": 114.6
+   "adp": 113.5
   },
   {
    "name": "Jakobi Meyers",
@@ -3111,7 +3111,7 @@
     "rec_td": 5.0,
     "fum": 0.0
    },
-   "adp": 134.2
+   "adp": 135.7
   },
   {
    "name": "Michael Wilson",
@@ -3128,7 +3128,7 @@
     "rec_td": 5.0,
     "fum": 0.0
    },
-   "adp": 89.6
+   "adp": 89.5
   },
   {
    "name": "Michael Pittman",
@@ -3145,7 +3145,7 @@
     "rec_td": 4.0,
     "fum": 0.0
    },
-   "adp": 107.3
+   "adp": 107.2
   },
   {
    "name": "Jalen Coker",
@@ -3162,7 +3162,7 @@
     "rec_td": 5.0,
     "fum": 0.0
    },
-   "adp": 143.8
+   "adp": 143.9
   },
   {
    "name": "Wan'Dale Robinson",
@@ -3179,7 +3179,7 @@
     "rec_td": 4.0,
     "fum": 0.0
    },
-   "adp": 123.6
+   "adp": 123.5
   },
   {
    "name": "Khalil Shakir",
@@ -3196,7 +3196,7 @@
     "rec_td": 4.0,
     "fum": 0.0
    },
-   "adp": 151.6
+   "adp": 151.5
   },
   {
    "name": "Quentin Johnston",
@@ -3247,7 +3247,7 @@
     "rec_td": 5.0,
     "fum": 0.0
    },
-   "adp": 130.3
+   "adp": 130.2
   },
   {
    "name": "Deebo Samuel",
@@ -3264,7 +3264,7 @@
     "rec_td": 4.0,
     "fum": 1.0
    },
-   "adp": 133.3
+   "adp": 133.2
   },
   {
    "name": "KC Concepcion",
@@ -3298,7 +3298,7 @@
     "rec_td": 4.0,
     "fum": 0.0
    },
-   "adp": 109.2
+   "adp": 109.1
   },
   {
    "name": "Rashid Shaheed",
@@ -3332,7 +3332,7 @@
     "rec_td": 3.0,
     "fum": 0.0
    },
-   "adp": 169.5
+   "adp": 169.4
   },
   {
    "name": "Jalen Nailor",
@@ -3349,7 +3349,7 @@
     "rec_td": 4.0,
     "fum": 0.0
    },
-   "adp": 170.5
+   "adp": 170.4
   },
   {
    "name": "Malik Washington",
@@ -3366,7 +3366,7 @@
     "rec_td": 3.0,
     "fum": 0.0
    },
-   "adp": 178.6
+   "adp": 178.5
   },
   {
    "name": "De'Zhaun Stribling",
@@ -3417,7 +3417,7 @@
     "rec_td": 4.0,
     "fum": 0.0
    },
-   "adp": 175.5
+   "adp": 175.4
   },
   {
    "name": "Omar Cooper",
@@ -3451,7 +3451,7 @@
     "rec_td": 3.0,
     "fum": 0.0
    },
-   "adp": 182.6
+   "adp": 182.5
   },
   {
    "name": "Jerry Jeudy",
@@ -3468,7 +3468,7 @@
     "rec_td": 3.0,
     "fum": 0.0
    },
-   "adp": 212.5
+   "adp": 212.4
   },
   {
    "name": "Ryan Flournoy",
@@ -3519,7 +3519,7 @@
     "rec_td": 3.0,
     "fum": 0.0
    },
-   "adp": 120.1
+   "adp": 120.0
   },
   {
    "name": "Devaughn Vele",
@@ -3553,7 +3553,7 @@
     "rec_td": 4.0,
     "fum": 0.0
    },
-   "adp": 147.7
+   "adp": 147.6
   },
   {
    "name": "Malachi Fields",
@@ -3570,7 +3570,7 @@
     "rec_td": 3.0,
     "fum": 0.0
    },
-   "adp": 200.3
+   "adp": 200.2
   },
   {
    "name": "Jauan Jennings",
@@ -3604,7 +3604,7 @@
     "rec_td": 3.0,
     "fum": 0.0
    },
-   "adp": 179.5
+   "adp": 179.4
   },
   {
    "name": "Rashod Bateman",
@@ -3689,7 +3689,7 @@
     "rec_td": 3.0,
     "fum": 0.0
    },
-   "adp": 193.9
+   "adp": 193.7
   },
   {
    "name": "Pat Bryant",
@@ -3723,7 +3723,7 @@
     "rec_td": 3.0,
     "fum": 0.0
    },
-   "adp": 203.3
+   "adp": 203.0
   },
   {
    "name": "Cyrus Allen",
@@ -3740,7 +3740,7 @@
     "rec_td": 3.0,
     "fum": 0.0
    },
-   "adp": 183.8
+   "adp": 183.7
   },
   {
    "name": "Tory Horton",
@@ -3825,7 +3825,7 @@
     "rec_td": 3.0,
     "fum": 0.0
    },
-   "adp": 206.8
+   "adp": 207.1
   },
   {
    "name": "Chimere Dike",
@@ -3910,7 +3910,7 @@
     "rec_td": 2.0,
     "fum": 0.0
    },
-   "adp": 229.3
+   "adp": 229.2
   },
   {
    "name": "Jack Bech",
@@ -4063,7 +4063,7 @@
     "rec_td": 2.0,
     "fum": 0.0
    },
-   "adp": 204.3
+   "adp": 203.9
   },
   {
    "name": "Marvin Mims",
@@ -4114,7 +4114,7 @@
     "rec_td": 2.0,
     "fum": 0.0
    },
-   "adp": 197.9
+   "adp": 197.8
   },
   {
    "name": "Troy Franklin",
@@ -4335,7 +4335,7 @@
     "rec_td": 2.0,
     "fum": 0.0
    },
-   "adp": 190.5
+   "adp": 190.4
   },
   {
    "name": "Brandon Aiyuk",
@@ -4658,7 +4658,7 @@
     "rec_td": 5.0,
     "fum": 0.0
    },
-   "adp": 50.3
+   "adp": 50.2
   },
   {
    "name": "Sam LaPorta",
@@ -4675,7 +4675,7 @@
     "rec_td": 6.0,
     "fum": 0.0
    },
-   "adp": 62.5
+   "adp": 62.4
   },
   {
    "name": "Harold Fannin",
@@ -4692,7 +4692,7 @@
     "rec_td": 5.0,
     "fum": 0.0
    },
-   "adp": 77.2
+   "adp": 77.1
   },
   {
    "name": "Tucker Kraft",
@@ -4743,7 +4743,7 @@
     "rec_td": 6.0,
     "fum": 0.0
    },
-   "adp": 83.9
+   "adp": 83.8
   },
   {
    "name": "Travis Kelce",
@@ -4760,7 +4760,7 @@
     "rec_td": 5.0,
     "fum": 0.0
    },
-   "adp": 96.3
+   "adp": 95.7
   },
   {
    "name": "Mark Andrews",
@@ -4777,7 +4777,7 @@
     "rec_td": 6.0,
     "fum": 0.0
    },
-   "adp": 124.4
+   "adp": 124.3
   },
   {
    "name": "Dalton Kincaid",
@@ -4794,7 +4794,7 @@
     "rec_td": 4.0,
     "fum": 0.0
    },
-   "adp": 94.9
+   "adp": 94.8
   },
   {
    "name": "Brenton Strange",
@@ -4811,7 +4811,7 @@
     "rec_td": 5.0,
     "fum": 0.0
    },
-   "adp": 166.4
+   "adp": 166.3
   },
   {
    "name": "Isaiah Likely",
@@ -4828,7 +4828,7 @@
     "rec_td": 5.0,
     "fum": 0.0
    },
-   "adp": 108.0
+   "adp": 107.1
   },
   {
    "name": "Jake Ferguson",
@@ -4845,7 +4845,7 @@
     "rec_td": 5.0,
     "fum": 1.0
    },
-   "adp": 116.8
+   "adp": 116.7
   },
   {
    "name": "Hunter Henry",
@@ -4879,7 +4879,7 @@
     "rec_td": 4.0,
     "fum": 0.0
    },
-   "adp": 179.6
+   "adp": 179.7
   },
   {
    "name": "Dalton Schultz",
@@ -4896,7 +4896,7 @@
     "rec_td": 4.0,
     "fum": 0.0
    },
-   "adp": 205.9
+   "adp": 205.7
   },
   {
    "name": "Oronde Gadsden",
@@ -4930,7 +4930,7 @@
     "rec_td": 4.0,
     "fum": 0.0
    },
-   "adp": 187.2
+   "adp": 187.1
   },
   {
    "name": "AJ Barner",
@@ -4964,7 +4964,7 @@
     "rec_td": 4.0,
     "fum": 0.0
    },
-   "adp": 161.5
+   "adp": 161.6
   },
   {
    "name": "Dallas Goedert",
@@ -4981,7 +4981,7 @@
     "rec_td": 4.0,
     "fum": 0.0
    },
-   "adp": 127.4
+   "adp": 127.3
   },
   {
    "name": "Pat Freiermuth",
@@ -5100,7 +5100,7 @@
     "rec_td": 4.0,
     "fum": 0.0
    },
-   "adp": 202.7
+   "adp": 202.6
   },
   {
    "name": "Kenyon Sadiq",
@@ -5117,7 +5117,7 @@
     "rec_td": 3.0,
     "fum": 0.0
    },
-   "adp": 192.2
+   "adp": 191.9
   },
   {
    "name": "Mason Taylor",
@@ -5355,7 +5355,7 @@
     "rec_td": 2.0,
     "fum": 0.0
    },
-   "adp": 223.3
+   "adp": 223.2
   },
   {
    "name": "Justin Joly",
