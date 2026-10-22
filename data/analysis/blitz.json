@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-21T14:47:58.838368Z",
+ "generated": "2026-10-22T14:48:27.114746Z",
  "slug": "blitz",
  "league_name": "Blitz: The Fantasy League",
  "seasons": [
@@ -458,7 +458,7 @@
        {
         "week": 8,
         "bid": 6,
-        "player": "Tyrone Tracy",
+        "player": "Tyrone Tracy Jr.",
         "pos": "RB",
         "status": "complete"
        },
@@ -516,7 +516,7 @@
        {
         "week": 11,
         "bid": 3,
-        "player": "Anthony Richardson",
+        "player": "Anthony Richardson Sr.",
         "pos": "QB",
         "status": "failed"
        },
@@ -602,7 +602,7 @@
        {
         "week": 8,
         "bid": 16,
-        "player": "Tyrone Tracy",
+        "player": "Tyrone Tracy Jr.",
         "pos": "RB",
         "status": "failed"
        }
@@ -1130,7 +1130,7 @@
        {
         "week": 5,
         "bid": 5,
-        "player": "Tyrone Tracy",
+        "player": "Tyrone Tracy Jr.",
         "pos": "RB",
         "status": "complete"
        },
@@ -1230,7 +1230,7 @@
        {
         "week": 6,
         "bid": 3,
-        "player": "Michael Pittman",
+        "player": "Michael Pittman Jr.",
         "pos": "WR",
         "status": "failed"
        },
@@ -1379,7 +1379,7 @@
        {
         "week": 1,
         "bid": 1,
-        "player": "Harold Fannin",
+        "player": "Harold Fannin Jr.",
         "pos": "TE",
         "status": "failed"
        },
@@ -1414,7 +1414,7 @@
        {
         "week": 8,
         "bid": 22,
-        "player": "Tyrone Tracy",
+        "player": "Tyrone Tracy Jr.",
         "pos": "RB",
         "status": "failed"
        },
@@ -1508,7 +1508,7 @@
       {
        "week": 5,
        "bid": 5,
-       "player": "Tyrone Tracy",
+       "player": "Tyrone Tracy Jr.",
        "pos": "RB",
        "status": "complete"
       }
@@ -1992,7 +1992,7 @@
        {
         "week": 10,
         "bid": 1,
-        "player": "John Metchie",
+        "player": "John Metchie III",
         "pos": "WR",
         "status": "failed"
        },
@@ -2092,7 +2092,7 @@
        {
         "week": 8,
         "bid": 17,
-        "player": "Tyrone Tracy",
+        "player": "Tyrone Tracy Jr.",
         "pos": "RB",
         "status": "failed"
        }
@@ -2794,7 +2794,7 @@
        {
         "week": 1,
         "bid": 10,
-        "player": "Harold Fannin",
+        "player": "Harold Fannin Jr.",
         "pos": "TE",
         "status": "complete"
        },
@@ -2815,7 +2815,7 @@
        {
         "week": 7,
         "bid": 12,
-        "player": "Marvin Harrison",
+        "player": "Marvin Harrison Jr.",
         "pos": "WR",
         "status": "complete"
        },
@@ -2984,14 +2984,14 @@
       {
        "week": 7,
        "bid": 12,
-       "player": "Marvin Harrison",
+       "player": "Marvin Harrison Jr.",
        "pos": "WR",
        "status": "complete"
       },
       {
        "week": 1,
        "bid": 10,
-       "player": "Harold Fannin",
+       "player": "Harold Fannin Jr.",
        "pos": "TE",
        "status": "complete"
       }
@@ -3589,7 +3589,7 @@
        {
         "week": 8,
         "bid": 62,
-        "player": "Tyrone Tracy",
+        "player": "Tyrone Tracy Jr.",
         "pos": "RB",
         "status": "complete"
        },
@@ -3713,7 +3713,7 @@
       {
        "week": 8,
        "bid": 62,
-       "player": "Tyrone Tracy",
+       "player": "Tyrone Tracy Jr.",
        "pos": "RB",
        "status": "complete"
       },
@@ -3924,7 +3924,7 @@
        {
         "week": 11,
         "bid": 25,
-        "player": "Anthony Richardson",
+        "player": "Anthony Richardson Sr.",
         "pos": "QB",
         "status": "complete"
        },
@@ -4021,7 +4021,7 @@
       {
        "week": 11,
        "bid": 25,
-       "player": "Anthony Richardson",
+       "player": "Anthony Richardson Sr.",
        "pos": "QB",
        "status": "complete"
       },
@@ -4514,7 +4514,7 @@
        {
         "week": 8,
         "bid": 1,
-        "player": "Tyrone Tracy",
+        "player": "Tyrone Tracy Jr.",
         "pos": "RB",
         "status": "failed"
        }
@@ -4640,7 +4640,7 @@
        {
         "week": 14,
         "bid": 2,
-        "player": "Kyle Pitts",
+        "player": "Kyle Pitts Sr.",
         "pos": "TE",
         "status": "complete"
        },
@@ -5342,7 +5342,7 @@
        {
         "week": 8,
         "bid": 1,
-        "player": "Harold Fannin",
+        "player": "Harold Fannin Jr.",
         "pos": "TE",
         "status": "complete"
        },
@@ -5428,7 +5428,7 @@
        {
         "week": 8,
         "bid": 55,
-        "player": "Tyrone Tracy",
+        "player": "Tyrone Tracy Jr.",
         "pos": "RB",
         "status": "failed"
        }
@@ -5957,7 +5957,7 @@
        {
         "week": 6,
         "bid": 6,
-        "player": "Michael Pittman",
+        "player": "Michael Pittman Jr.",
         "pos": "WR",
         "status": "complete"
        },
@@ -5985,7 +5985,7 @@
        {
         "week": 10,
         "bid": 5,
-        "player": "John Metchie",
+        "player": "John Metchie III",
         "pos": "WR",
         "status": "complete"
        },
@@ -6113,7 +6113,7 @@
        {
         "week": 3,
         "bid": 1,
-        "player": "Chris Rodriguez",
+        "player": "Chris Rodriguez Jr.",
         "pos": "RB",
         "status": "complete"
        },
@@ -6171,7 +6171,7 @@
        {
         "week": 1,
         "bid": 6,
-        "player": "Harold Fannin",
+        "player": "Harold Fannin Jr.",
         "pos": "TE",
         "status": "failed"
        },
@@ -7623,7 +7623,7 @@
        {
         "week": 7,
         "bid": 2,
-        "player": "Aaron Jones",
+        "player": "Aaron Jones Sr.",
         "pos": "RB",
         "status": "complete"
        },
@@ -7637,7 +7637,7 @@
        {
         "week": 9,
         "bid": 1,
-        "player": "Harold Fannin",
+        "player": "Harold Fannin Jr.",
         "pos": "TE",
         "status": "complete"
        },
@@ -7695,7 +7695,7 @@
        {
         "week": 8,
         "bid": 4,
-        "player": "Tyrone Tracy",
+        "player": "Tyrone Tracy Jr.",
         "pos": "RB",
         "status": "failed"
        },
@@ -8335,7 +8335,7 @@
    {
     "season": "2025",
     "week": 8,
-    "player": "Tyrone Tracy",
+    "player": "Tyrone Tracy Jr.",
     "pos": "RB",
     "winning_bid": 62,
     "second_bid": 55,
@@ -8395,7 +8395,7 @@
    {
     "season": "2024",
     "week": 11,
-    "player": "Anthony Richardson",
+    "player": "Anthony Richardson Sr.",
     "pos": "QB",
     "winning_bid": 25,
     "second_bid": 3,
@@ -8575,7 +8575,7 @@
    {
     "season": "2025",
     "week": 1,
-    "player": "Harold Fannin",
+    "player": "Harold Fannin Jr.",
     "pos": "TE",
     "winning_bid": 10,
     "second_bid": 6,
@@ -8655,7 +8655,7 @@
    {
     "season": "2024",
     "week": 6,
-    "player": "Michael Pittman",
+    "player": "Michael Pittman Jr.",
     "pos": "WR",
     "winning_bid": 6,
     "second_bid": 3,
@@ -8665,7 +8665,7 @@
    {
     "season": "2024",
     "week": 8,
-    "player": "Tyrone Tracy",
+    "player": "Tyrone Tracy Jr.",
     "pos": "RB",
     "winning_bid": 6,
     "second_bid": 1,
@@ -8695,7 +8695,7 @@
    {
     "season": "2024",
     "week": 10,
-    "player": "John Metchie",
+    "player": "John Metchie III",
     "pos": "WR",
     "winning_bid": 5,
     "second_bid": 1,
