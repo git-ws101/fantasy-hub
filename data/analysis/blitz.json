@@ -1,5 +1,5 @@
 {
- "generated": "2026-08-02T05:05:12.903746Z",
+ "generated": "2026-11-04T04:06:09.143511Z",
  "slug": "blitz",
  "league_name": "Blitz: The Fantasy League",
  "seasons": [
@@ -18,7 +18,7 @@
   {
    "season": "2026",
    "num_teams": 12,
-   "status": "pre_draft",
+   "status": "in_season",
    "waiver_budget": 100
   }
  ],
@@ -256,16 +256,128 @@
        "WR",
        "WR"
       ]
+     },
+     "2026": {
+      "slot": 5,
+      "picks": [
+       {
+        "pick_no": 5,
+        "round": 1,
+        "pos": "RB",
+        "player": "Omarion Hampton"
+       },
+       {
+        "pick_no": 20,
+        "round": 2,
+        "pos": "WR",
+        "player": "A.J. Brown"
+       },
+       {
+        "pick_no": 29,
+        "round": 3,
+        "pos": "RB",
+        "player": "Ashton Jeanty"
+       },
+       {
+        "pick_no": 44,
+        "round": 4,
+        "pos": "WR",
+        "player": "DJ Moore"
+       },
+       {
+        "pick_no": 53,
+        "round": 5,
+        "pos": "RB",
+        "player": "Bhayshul Tuten"
+       },
+       {
+        "pick_no": 68,
+        "round": 6,
+        "pos": "TE",
+        "player": "Tucker Kraft"
+       },
+       {
+        "pick_no": 77,
+        "round": 7,
+        "pos": "QB",
+        "player": "Caleb Williams"
+       },
+       {
+        "pick_no": 92,
+        "round": 8,
+        "pos": "WR",
+        "player": "De'Zhaun Stribling"
+       },
+       {
+        "pick_no": 101,
+        "round": 9,
+        "pos": "WR",
+        "player": "Jakobi Meyers"
+       },
+       {
+        "pick_no": 116,
+        "round": 10,
+        "pos": "RB",
+        "player": "Kyle Monangai"
+       },
+       {
+        "pick_no": 125,
+        "round": 11,
+        "pos": "RB",
+        "player": "Keaton Mitchell"
+       },
+       {
+        "pick_no": 140,
+        "round": 12,
+        "pos": "WR",
+        "player": "Ja'Kobi Lane"
+       },
+       {
+        "pick_no": 149,
+        "round": 13,
+        "pos": "WR",
+        "player": "Ryan Flournoy"
+       },
+       {
+        "pick_no": 164,
+        "round": 14,
+        "pos": "DEF",
+        "player": "Pittsburgh Steelers"
+       }
+      ],
+      "first_round_by_pos": {
+       "RB": 1,
+       "WR": 2,
+       "TE": 6,
+       "QB": 7,
+       "DEF": 14
+      },
+      "pos_counts": {
+       "RB": 5,
+       "WR": 6,
+       "TE": 1,
+       "QB": 1,
+       "DEF": 1
+      },
+      "opening_sequence": [
+       "RB",
+       "WR",
+       "RB",
+       "WR",
+       "RB"
+      ]
      }
     },
     "summary": {
      "first_qb_rounds": [
       3,
-      11
+      11,
+      7
      ],
      "first_te_rounds": [
       11,
-      7
+      7,
+      6
      ],
      "opening_sequences": {
       "2024": [
@@ -281,6 +393,13 @@
        "RB",
        "WR",
        "WR"
+      ],
+      "2026": [
+       "RB",
+       "WR",
+       "RB",
+       "WR",
+       "RB"
       ]
      }
     }
@@ -327,7 +446,7 @@
        {
         "week": 8,
         "bid": 6,
-        "player": "Tyrone Tracy",
+        "player": "Tyrone Tracy Jr.",
         "pos": "RB",
         "status": "complete"
        },
@@ -385,7 +504,7 @@
        {
         "week": 11,
         "bid": 3,
-        "player": "Anthony Richardson",
+        "player": "Anthony Richardson Sr.",
         "pos": "QB",
         "status": "failed"
        },
@@ -471,7 +590,7 @@
        {
         "week": 8,
         "bid": 16,
-        "player": "Tyrone Tracy",
+        "player": "Tyrone Tracy Jr.",
         "pos": "RB",
         "status": "failed"
        }
@@ -479,19 +598,85 @@
       "free_agent_adds": 34,
       "trades": 1,
       "spent": 87
+     },
+     "2026": {
+      "won": [
+       {
+        "week": 1,
+        "bid": 16,
+        "player": "Devaughn Vele",
+        "pos": "WR",
+        "status": "complete"
+       },
+       {
+        "week": 2,
+        "bid": 10,
+        "player": "Rashod Bateman",
+        "pos": "WR",
+        "status": "complete"
+       },
+       {
+        "week": 2,
+        "bid": 10,
+        "player": "Dontayvion Wicks",
+        "pos": "WR",
+        "status": "complete"
+       },
+       {
+        "week": 2,
+        "bid": 3,
+        "player": "Oronde Gadsden",
+        "pos": "TE",
+        "status": "complete"
+       },
+       {
+        "week": 7,
+        "bid": 1,
+        "player": "Ryan Flournoy",
+        "pos": "WR",
+        "status": "complete"
+       },
+       {
+        "week": 7,
+        "bid": 1,
+        "player": "Jordan Addison",
+        "pos": "WR",
+        "status": "complete"
+       }
+      ],
+      "lost": [
+       {
+        "week": 1,
+        "bid": 9,
+        "player": "Mack Hollins",
+        "pos": "WR",
+        "status": "failed"
+       },
+       {
+        "week": 3,
+        "bid": 18,
+        "player": "Kenyon Sadiq",
+        "pos": "TE",
+        "status": "failed"
+       }
+      ],
+      "free_agent_adds": 25,
+      "trades": 0,
+      "spent": 41
      }
     },
     "summary": {
-     "claims_won": 19,
-     "claims_lost": 6,
+     "claims_won": 25,
+     "claims_lost": 8,
      "total_spent_by_season": {
       "2024": 100,
-      "2025": 87
+      "2025": 87,
+      "2026": 41
      },
-     "avg_winning_bid": 9.8,
+     "avg_winning_bid": 9.1,
      "max_winning_bid": 25,
      "median_winning_bid": 6,
-     "avg_losing_bid": 15.8,
+     "avg_losing_bid": 15.2,
      "max_losing_bid": 32,
      "burn_curve": {
       "2024": {
@@ -511,11 +696,16 @@
        "10": 59,
        "13": 84,
        "14": 87
+      },
+      "2026": {
+       "1": 16,
+       "2": 39,
+       "7": 41
       }
      },
      "spend_by_bucket": {
-      "early": 3,
-      "mid": 103,
+      "early": 42,
+      "mid": 105,
       "late": 81
      },
      "top_buys": [
@@ -795,16 +985,130 @@
        "RB",
        "TE"
       ]
+     },
+     "2026": {
+      "slot": 2,
+      "picks": [
+       {
+        "pick_no": 2,
+        "round": 1,
+        "pos": "RB",
+        "player": "Bijan Robinson"
+       },
+       {
+        "pick_no": 23,
+        "round": 2,
+        "pos": "QB",
+        "player": "Josh Allen"
+       },
+       {
+        "pick_no": 26,
+        "round": 3,
+        "pos": "WR",
+        "player": "Chris Olave"
+       },
+       {
+        "pick_no": 47,
+        "round": 4,
+        "pos": "WR",
+        "player": "Tee Higgins"
+       },
+       {
+        "pick_no": 50,
+        "round": 5,
+        "pos": "RB",
+        "player": "Cam Skattebo"
+       },
+       {
+        "pick_no": 71,
+        "round": 6,
+        "pos": "RB",
+        "player": "TreVeyon Henderson"
+       },
+       {
+        "pick_no": 74,
+        "round": 7,
+        "pos": "WR",
+        "player": "Carnell Tate"
+       },
+       {
+        "pick_no": 95,
+        "round": 8,
+        "pos": "WR",
+        "player": "Chris Godwin"
+       },
+       {
+        "pick_no": 98,
+        "round": 9,
+        "pos": "TE",
+        "player": "Harold Fannin"
+       },
+       {
+        "pick_no": 119,
+        "round": 10,
+        "pos": "K",
+        "player": "Brandon Aubrey"
+       },
+       {
+        "pick_no": 122,
+        "round": 11,
+        "pos": "WR",
+        "player": "Quentin Johnston"
+       },
+       {
+        "pick_no": 143,
+        "round": 12,
+        "pos": "RB",
+        "player": "Alvin Kamara"
+       },
+       {
+        "pick_no": 146,
+        "round": 13,
+        "pos": "DEF",
+        "player": "Philadelphia Eagles"
+       },
+       {
+        "pick_no": 167,
+        "round": 14,
+        "pos": "WR",
+        "player": "Denzel Boston"
+       }
+      ],
+      "first_round_by_pos": {
+       "RB": 1,
+       "QB": 2,
+       "WR": 3,
+       "TE": 9,
+       "K": 10,
+       "DEF": 13
+      },
+      "pos_counts": {
+       "RB": 4,
+       "QB": 1,
+       "WR": 6,
+       "TE": 1,
+       "K": 1,
+       "DEF": 1
+      },
+      "opening_sequence": [
+       "RB",
+       "QB",
+       "WR",
+       "WR",
+       "RB"
+      ]
      }
     },
     "summary": {
      "first_qb_rounds": [
       6,
-      3
+      3,
+      2
      ],
      "first_te_rounds": [
       10,
-      5
+      5,
+      9
      ],
      "opening_sequences": {
       "2024": [
@@ -820,6 +1124,13 @@
        "QB",
        "RB",
        "TE"
+      ],
+      "2026": [
+       "RB",
+       "QB",
+       "WR",
+       "WR",
+       "RB"
       ]
      }
     }
@@ -866,7 +1177,7 @@
        {
         "week": 5,
         "bid": 5,
-        "player": "Tyrone Tracy",
+        "player": "Tyrone Tracy Jr.",
         "pos": "RB",
         "status": "complete"
        },
@@ -966,7 +1277,7 @@
        {
         "week": 6,
         "bid": 3,
-        "player": "Michael Pittman",
+        "player": "Michael Pittman Jr.",
         "pos": "WR",
         "status": "failed"
        },
@@ -1115,7 +1426,7 @@
        {
         "week": 1,
         "bid": 1,
-        "player": "Harold Fannin",
+        "player": "Harold Fannin Jr.",
         "pos": "TE",
         "status": "failed"
        },
@@ -1150,7 +1461,7 @@
        {
         "week": 8,
         "bid": 22,
-        "player": "Tyrone Tracy",
+        "player": "Tyrone Tracy Jr.",
         "pos": "RB",
         "status": "failed"
        },
@@ -1172,19 +1483,78 @@
       "free_agent_adds": 27,
       "trades": 1,
       "spent": 74
+     },
+     "2026": {
+      "won": [
+       {
+        "week": 3,
+        "bid": 2,
+        "player": "Tucker Kraft",
+        "pos": "TE",
+        "status": "complete"
+       },
+       {
+        "week": 4,
+        "bid": 1,
+        "player": "New York Jets",
+        "pos": "DEF",
+        "status": "complete"
+       },
+       {
+        "week": 6,
+        "bid": 17,
+        "player": "Jonah Coleman",
+        "pos": "RB",
+        "status": "complete"
+       },
+       {
+        "week": 7,
+        "bid": 1,
+        "player": "Jadarian Price",
+        "pos": "RB",
+        "status": "complete"
+       },
+       {
+        "week": 7,
+        "bid": 1,
+        "player": "Deebo Samuel Sr.",
+        "pos": "WR",
+        "status": "complete"
+       }
+      ],
+      "lost": [
+       {
+        "week": 3,
+        "bid": 1,
+        "player": "Harold Fannin Jr.",
+        "pos": "TE",
+        "status": "failed"
+       },
+       {
+        "week": 7,
+        "bid": 1,
+        "player": "Antonio Williams",
+        "pos": "WR",
+        "status": "failed"
+       }
+      ],
+      "free_agent_adds": 14,
+      "trades": 0,
+      "spent": 22
      }
     },
     "summary": {
-     "claims_won": 23,
-     "claims_lost": 24,
+     "claims_won": 28,
+     "claims_lost": 26,
      "total_spent_by_season": {
       "2024": 33,
-      "2025": 74
+      "2025": 74,
+      "2026": 22
      },
-     "avg_winning_bid": 4.7,
+     "avg_winning_bid": 4.6,
      "max_winning_bid": 30,
-     "median_winning_bid": 1,
-     "avg_losing_bid": 9.2,
+     "median_winning_bid": 1.0,
+     "avg_losing_bid": 8.5,
      "max_losing_bid": 60,
      "burn_curve": {
       "2024": {
@@ -1205,11 +1575,17 @@
        "10": 42,
        "13": 48,
        "14": 74
+      },
+      "2026": {
+       "3": 2,
+       "4": 3,
+       "6": 20,
+       "7": 22
       }
      },
      "spend_by_bucket": {
-      "early": 40,
-      "mid": 34,
+      "early": 43,
+      "mid": 53,
       "late": 33
      },
      "top_buys": [
@@ -1218,6 +1594,13 @@
        "bid": 30,
        "player": "Quentin Johnston",
        "pos": "WR",
+       "status": "complete"
+      },
+      {
+       "week": 6,
+       "bid": 17,
+       "player": "Jonah Coleman",
+       "pos": "RB",
        "status": "complete"
       },
       {
@@ -1239,13 +1622,6 @@
        "bid": 11,
        "player": "Mike Gesicki",
        "pos": "TE",
-       "status": "complete"
-      },
-      {
-       "week": 5,
-       "bid": 5,
-       "player": "Tyrone Tracy",
-       "pos": "RB",
        "status": "complete"
       }
      ]
@@ -1487,16 +1863,130 @@
        "WR",
        "TE"
       ]
+     },
+     "2026": {
+      "slot": 8,
+      "picks": [
+       {
+        "pick_no": 8,
+        "round": 1,
+        "pos": "WR",
+        "player": "Puka Nacua"
+       },
+       {
+        "pick_no": 17,
+        "round": 2,
+        "pos": "RB",
+        "player": "Jeremiyah Love"
+       },
+       {
+        "pick_no": 32,
+        "round": 3,
+        "pos": "RB",
+        "player": "Travis Etienne"
+       },
+       {
+        "pick_no": 41,
+        "round": 4,
+        "pos": "WR",
+        "player": "Jordan Addison"
+       },
+       {
+        "pick_no": 56,
+        "round": 5,
+        "pos": "RB",
+        "player": "Jaylen Warren"
+       },
+       {
+        "pick_no": 65,
+        "round": 6,
+        "pos": "WR",
+        "player": "Marvin Harrison"
+       },
+       {
+        "pick_no": 80,
+        "round": 7,
+        "pos": "TE",
+        "player": "Kyle Pitts"
+       },
+       {
+        "pick_no": 89,
+        "round": 8,
+        "pos": "WR",
+        "player": "Alec Pierce"
+       },
+       {
+        "pick_no": 104,
+        "round": 9,
+        "pos": "RB",
+        "player": "Aaron Jones"
+       },
+       {
+        "pick_no": 113,
+        "round": 10,
+        "pos": "WR",
+        "player": "Romeo Doubs"
+       },
+       {
+        "pick_no": 128,
+        "round": 11,
+        "pos": "QB",
+        "player": "Kyler Murray"
+       },
+       {
+        "pick_no": 137,
+        "round": 12,
+        "pos": "DEF",
+        "player": "Minnesota Vikings"
+       },
+       {
+        "pick_no": 152,
+        "round": 13,
+        "pos": "K",
+        "player": "Jake Bates"
+       },
+       {
+        "pick_no": 161,
+        "round": 14,
+        "pos": "QB",
+        "player": "Patrick Mahomes"
+       }
+      ],
+      "first_round_by_pos": {
+       "WR": 1,
+       "RB": 2,
+       "TE": 7,
+       "QB": 11,
+       "DEF": 12,
+       "K": 13
+      },
+      "pos_counts": {
+       "WR": 5,
+       "RB": 4,
+       "TE": 1,
+       "QB": 2,
+       "DEF": 1,
+       "K": 1
+      },
+      "opening_sequence": [
+       "WR",
+       "RB",
+       "RB",
+       "WR",
+       "RB"
+      ]
      }
     },
     "summary": {
      "first_qb_rounds": [
       11,
+      11,
       11
      ],
      "first_te_rounds": [
       4,
-      5
+      5,
+      7
      ],
      "opening_sequences": {
       "2024": [
@@ -1512,6 +2002,13 @@
        "RB",
        "WR",
        "TE"
+      ],
+      "2026": [
+       "WR",
+       "RB",
+       "RB",
+       "WR",
+       "RB"
       ]
      }
     }
@@ -1595,7 +2092,7 @@
        {
         "week": 10,
         "bid": 1,
-        "player": "John Metchie",
+        "player": "John Metchie III",
         "pos": "WR",
         "status": "failed"
        },
@@ -1682,7 +2179,7 @@
         "week": 4,
         "bid": 1,
         "player": "Travis Hunter",
-        "pos": "WR",
+        "pos": "DB",
         "status": "failed"
        },
        {
@@ -1695,7 +2192,7 @@
        {
         "week": 8,
         "bid": 17,
-        "player": "Tyrone Tracy",
+        "player": "Tyrone Tracy Jr.",
         "pos": "RB",
         "status": "failed"
        }
@@ -1703,19 +2200,50 @@
       "free_agent_adds": 33,
       "trades": 0,
       "spent": 100
+     },
+     "2026": {
+      "won": [
+       {
+        "week": 4,
+        "bid": 35,
+        "player": "Keon Coleman",
+        "pos": "WR",
+        "status": "complete"
+       }
+      ],
+      "lost": [
+       {
+        "week": 1,
+        "bid": 1,
+        "player": "Devaughn Vele",
+        "pos": "WR",
+        "status": "failed"
+       },
+       {
+        "week": 3,
+        "bid": 24,
+        "player": "Ollie Gordon II",
+        "pos": "RB",
+        "status": "failed"
+       }
+      ],
+      "free_agent_adds": 12,
+      "trades": 0,
+      "spent": 35
      }
     },
     "summary": {
-     "claims_won": 15,
-     "claims_lost": 9,
+     "claims_won": 16,
+     "claims_lost": 11,
      "total_spent_by_season": {
       "2024": 89,
-      "2025": 100
+      "2025": 100,
+      "2026": 35
      },
-     "avg_winning_bid": 12.6,
+     "avg_winning_bid": 14.0,
      "max_winning_bid": 70,
-     "median_winning_bid": 8,
-     "avg_losing_bid": 14.3,
+     "median_winning_bid": 8.0,
+     "avg_losing_bid": 14.0,
      "max_losing_bid": 55,
      "burn_curve": {
       "2024": {
@@ -1733,10 +2261,13 @@
        "7": 83,
        "12": 91,
        "13": 100
+      },
+      "2026": {
+       "4": 35
       }
      },
      "spend_by_bucket": {
-      "early": 47,
+      "early": 82,
       "mid": 124,
       "late": 18
      },
@@ -1757,6 +2288,13 @@
       },
       {
        "week": 4,
+       "bid": 35,
+       "player": "Keon Coleman",
+       "pos": "WR",
+       "status": "complete"
+      },
+      {
+       "week": 4,
        "bid": 18,
        "player": "Tank Bigsby",
        "pos": "RB",
@@ -1766,13 +2304,6 @@
        "week": 4,
        "bid": 15,
        "player": "Dontayvion Wicks",
-       "pos": "WR",
-       "status": "complete"
-      },
-      {
-       "week": 5,
-       "bid": 9,
-       "player": "Josh Downs",
        "pos": "WR",
        "status": "complete"
       }
@@ -1785,7 +2316,7 @@
    "team_names": {
     "2024": "The Awwwwwwwwwww Men",
     "2025": "The Aww Men",
-    "2026": "The Aww Men"
+    "2026": "BTs & Sweet Tea LLP"
    },
    "seasons": [
     "2024",
@@ -2009,16 +2540,130 @@
        "TE",
        "RB"
       ]
+     },
+     "2026": {
+      "slot": 1,
+      "picks": [
+       {
+        "pick_no": 1,
+        "round": 1,
+        "pos": "RB",
+        "player": "Jahmyr Gibbs"
+       },
+       {
+        "pick_no": 24,
+        "round": 2,
+        "pos": "WR",
+        "player": "Malik Nabers"
+       },
+       {
+        "pick_no": 25,
+        "round": 3,
+        "pos": "TE",
+        "player": "Trey McBride"
+       },
+       {
+        "pick_no": 48,
+        "round": 4,
+        "pos": "RB",
+        "player": "David Montgomery"
+       },
+       {
+        "pick_no": 49,
+        "round": 5,
+        "pos": "WR",
+        "player": "Terry McLaurin"
+       },
+       {
+        "pick_no": 72,
+        "round": 6,
+        "pos": "RB",
+        "player": "MarShawn Lloyd"
+       },
+       {
+        "pick_no": 73,
+        "round": 7,
+        "pos": "QB",
+        "player": "Justin Herbert"
+       },
+       {
+        "pick_no": 96,
+        "round": 8,
+        "pos": "TE",
+        "player": "Isaiah Likely"
+       },
+       {
+        "pick_no": 97,
+        "round": 9,
+        "pos": "WR",
+        "player": "Josh Downs"
+       },
+       {
+        "pick_no": 120,
+        "round": 10,
+        "pos": "WR",
+        "player": "Jordyn Tyson"
+       },
+       {
+        "pick_no": 121,
+        "round": 11,
+        "pos": "K",
+        "player": "Cameron Dicker"
+       },
+       {
+        "pick_no": 144,
+        "round": 12,
+        "pos": "QB",
+        "player": "Jaxson Dart"
+       },
+       {
+        "pick_no": 145,
+        "round": 13,
+        "pos": "WR",
+        "player": "Andre Levrone"
+       },
+       {
+        "pick_no": 168,
+        "round": 14,
+        "pos": "DEF",
+        "player": "Detroit Lions"
+       }
+      ],
+      "first_round_by_pos": {
+       "RB": 1,
+       "WR": 2,
+       "TE": 3,
+       "QB": 7,
+       "K": 11,
+       "DEF": 14
+      },
+      "pos_counts": {
+       "RB": 3,
+       "WR": 5,
+       "TE": 2,
+       "QB": 2,
+       "K": 1,
+       "DEF": 1
+      },
+      "opening_sequence": [
+       "RB",
+       "WR",
+       "TE",
+       "RB",
+       "WR"
+      ]
      }
     },
     "summary": {
      "first_qb_rounds": [
       3,
+      7,
       7
      ],
      "first_te_rounds": [
       5,
-      4
+      4,
+      3
      ],
      "opening_sequences": {
       "2024": [
@@ -2034,6 +2679,13 @@
        "RB",
        "TE",
        "RB"
+      ],
+      "2026": [
+       "RB",
+       "WR",
+       "TE",
+       "RB",
+       "WR"
       ]
      }
     }
@@ -2264,7 +2916,7 @@
        {
         "week": 1,
         "bid": 10,
-        "player": "Harold Fannin",
+        "player": "Harold Fannin Jr.",
         "pos": "TE",
         "status": "complete"
        },
@@ -2285,7 +2937,7 @@
        {
         "week": 7,
         "bid": 12,
-        "player": "Marvin Harrison",
+        "player": "Marvin Harrison Jr.",
         "pos": "WR",
         "status": "complete"
        },
@@ -2386,6 +3038,13 @@
       "free_agent_adds": 48,
       "trades": 1,
       "spent": 150
+     },
+     "2026": {
+      "won": [],
+      "lost": [],
+      "free_agent_adds": 18,
+      "trades": 0,
+      "spent": 0
      }
     },
     "summary": {
@@ -2393,7 +3052,8 @@
      "claims_lost": 23,
      "total_spent_by_season": {
       "2024": 82,
-      "2025": 150
+      "2025": 150,
+      "2026": 0
      },
      "avg_winning_bid": 9.7,
      "max_winning_bid": 101,
@@ -2422,7 +3082,8 @@
        "13": 139,
        "15": 149,
        "16": 150
-      }
+      },
+      "2026": {}
      },
      "spend_by_bucket": {
       "early": 47,
@@ -2454,14 +3115,14 @@
       {
        "week": 7,
        "bid": 12,
-       "player": "Marvin Harrison",
+       "player": "Marvin Harrison Jr.",
        "pos": "WR",
        "status": "complete"
       },
       {
        "week": 1,
        "bid": 10,
-       "player": "Harold Fannin",
+       "player": "Harold Fannin Jr.",
        "pos": "TE",
        "status": "complete"
       }
@@ -2706,16 +3367,130 @@
        "QB",
        "WR"
       ]
+     },
+     "2026": {
+      "slot": 3,
+      "picks": [
+       {
+        "pick_no": 3,
+        "round": 1,
+        "pos": "RB",
+        "player": "Jonathan Taylor"
+       },
+       {
+        "pick_no": 22,
+        "round": 2,
+        "pos": "TE",
+        "player": "Brock Bowers"
+       },
+       {
+        "pick_no": 27,
+        "round": 3,
+        "pos": "RB",
+        "player": "Breece Hall"
+       },
+       {
+        "pick_no": 46,
+        "round": 4,
+        "pos": "WR",
+        "player": "Jaylen Waddle"
+       },
+       {
+        "pick_no": 51,
+        "round": 5,
+        "pos": "RB",
+        "player": "Quinshon Judkins"
+       },
+       {
+        "pick_no": 70,
+        "round": 6,
+        "pos": "WR",
+        "player": "Parker Washington"
+       },
+       {
+        "pick_no": 75,
+        "round": 7,
+        "pos": "WR",
+        "player": "Mike Evans"
+       },
+       {
+        "pick_no": 94,
+        "round": 8,
+        "pos": "WR",
+        "player": "Matthew Golden"
+       },
+       {
+        "pick_no": 99,
+        "round": 9,
+        "pos": "RB",
+        "player": "Chuba Hubbard"
+       },
+       {
+        "pick_no": 118,
+        "round": 10,
+        "pos": "WR",
+        "player": "KC Concepcion"
+       },
+       {
+        "pick_no": 123,
+        "round": 11,
+        "pos": "RB",
+        "player": "Mike Washington"
+       },
+       {
+        "pick_no": 142,
+        "round": 12,
+        "pos": "DEF",
+        "player": "Jacksonville Jaguars"
+       },
+       {
+        "pick_no": 147,
+        "round": 13,
+        "pos": "QB",
+        "player": "Brock Purdy"
+       },
+       {
+        "pick_no": 166,
+        "round": 14,
+        "pos": "K",
+        "player": "Evan McPherson"
+       }
+      ],
+      "first_round_by_pos": {
+       "RB": 1,
+       "TE": 2,
+       "WR": 4,
+       "DEF": 12,
+       "QB": 13,
+       "K": 14
+      },
+      "pos_counts": {
+       "RB": 5,
+       "TE": 1,
+       "WR": 5,
+       "DEF": 1,
+       "QB": 1,
+       "K": 1
+      },
+      "opening_sequence": [
+       "RB",
+       "TE",
+       "RB",
+       "WR",
+       "RB"
+      ]
      }
     },
     "summary": {
      "first_qb_rounds": [
       4,
-      4
+      4,
+      13
      ],
      "first_te_rounds": [
       6,
-      8
+      8,
+      2
      ],
      "opening_sequences": {
       "2024": [
@@ -2731,6 +3506,13 @@
        "WR",
        "QB",
        "WR"
+      ],
+      "2026": [
+       "RB",
+       "TE",
+       "RB",
+       "WR",
+       "RB"
       ]
      }
     }
@@ -2926,7 +3708,7 @@
        {
         "week": 8,
         "bid": 62,
-        "player": "Tyrone Tracy",
+        "player": "Tyrone Tracy Jr.",
         "pos": "RB",
         "status": "complete"
        },
@@ -3006,19 +3788,134 @@
       "free_agent_adds": 10,
       "trades": 1,
       "spent": 91
+     },
+     "2026": {
+      "won": [
+       {
+        "week": 1,
+        "bid": 3,
+        "player": "Tampa Bay Buccaneers",
+        "pos": "DEF",
+        "status": "complete"
+       },
+       {
+        "week": 1,
+        "bid": 5,
+        "player": "Brock Purdy",
+        "pos": "QB",
+        "status": "complete"
+       },
+       {
+        "week": 1,
+        "bid": 15,
+        "player": "Deebo Samuel Sr.",
+        "pos": "WR",
+        "status": "complete"
+       },
+       {
+        "week": 2,
+        "bid": 1,
+        "player": "Kansas City Chiefs",
+        "pos": "DEF",
+        "status": "complete"
+       },
+       {
+        "week": 4,
+        "bid": 1,
+        "player": "Cincinnati Bengals",
+        "pos": "DEF",
+        "status": "complete"
+       },
+       {
+        "week": 5,
+        "bid": 1,
+        "player": "New England Patriots",
+        "pos": "DEF",
+        "status": "complete"
+       },
+       {
+        "week": 6,
+        "bid": 2,
+        "player": "Jaylin Noel",
+        "pos": "WR",
+        "status": "complete"
+       },
+       {
+        "week": 6,
+        "bid": 2,
+        "player": "Houston Texans",
+        "pos": "DEF",
+        "status": "complete"
+       },
+       {
+        "week": 7,
+        "bid": 1,
+        "player": "Matthew Stafford",
+        "pos": "QB",
+        "status": "complete"
+       }
+      ],
+      "lost": [
+       {
+        "week": 1,
+        "bid": 7,
+        "player": "Devaughn Vele",
+        "pos": "WR",
+        "status": "failed"
+       },
+       {
+        "week": 2,
+        "bid": 1,
+        "player": "Carolina Panthers",
+        "pos": "DEF",
+        "status": "failed"
+       },
+       {
+        "week": 6,
+        "bid": 2,
+        "player": "Tre Tucker",
+        "pos": "WR",
+        "status": "failed"
+       },
+       {
+        "week": 6,
+        "bid": 2,
+        "player": "Omar Cooper Jr.",
+        "pos": "WR",
+        "status": "failed"
+       },
+       {
+        "week": 7,
+        "bid": 2,
+        "player": "Cincinnati Bengals",
+        "pos": "DEF",
+        "status": "failed"
+       },
+       {
+        "week": 7,
+        "bid": 2,
+        "player": "Tre Tucker",
+        "pos": "WR",
+        "status": "failed"
+       }
+      ],
+      "free_agent_adds": 7,
+      "trades": 0,
+      "spent": 31
      }
     },
     "summary": {
-     "claims_won": 17,
-     "claims_lost": 19,
+     "claims_won": 26,
+     "claims_lost": 25,
      "total_spent_by_season": {
       "2024": 93,
-      "2025": 91
+      "2025": 91,
+      "2026": 31
      },
-     "avg_winning_bid": 10.8,
+     "avg_winning_bid": 8.3,
      "max_winning_bid": 62,
-     "median_winning_bid": 5,
-     "avg_losing_bid": 8.6,
+     "median_winning_bid": 4.5,
+     "avg_losing_bid": 7.2,
      "max_losing_bid": 26,
      "burn_curve": {
       "2024": {
@@ -3039,18 +3936,26 @@
        "11": 86,
        "12": 90,
        "13": 91
+      },
+      "2026": {
+       "1": 23,
+       "2": 24,
+       "4": 25,
+       "5": 26,
+       "6": 30,
+       "7": 31
       }
      },
      "spend_by_bucket": {
-      "early": 56,
-      "mid": 87,
+      "early": 81,
+      "mid": 93,
       "late": 41
      },
      "top_buys": [
       {
        "week": 8,
        "bid": 62,
-       "player": "Tyrone Tracy",
+       "player": "Tyrone Tracy Jr.",
        "pos": "RB",
        "status": "complete"
       },
@@ -3069,17 +3974,17 @@
        "status": "complete"
       },
       {
+       "week": 1,
+       "bid": 15,
+       "player": "Deebo Samuel Sr.",
+       "pos": "WR",
+       "status": "complete"
+      },
+      {
        "week": 13,
        "bid": 11,
        "player": "Jaleel McLaughlin",
        "pos": "RB",
-       "status": "complete"
-      },
-      {
-       "week": 14,
-       "bid": 10,
-       "player": "Ladd McConkey",
-       "pos": "WR",
        "status": "complete"
       }
      ]
@@ -3092,7 +3997,8 @@
     "2024": "Rex then Becks then Rex"
    },
    "seasons": [
-    "2024"
+    "2024",
+    "2026"
    ],
    "draft": {
     "seasons": {
@@ -3253,7 +4159,7 @@
        {
         "week": 11,
         "bid": 25,
-        "player": "Anthony Richardson",
+        "player": "Anthony Richardson Sr.",
         "pos": "QB",
         "status": "complete"
        },
@@ -3350,7 +4256,7 @@
       {
        "week": 11,
        "bid": 25,
-       "player": "Anthony Richardson",
+       "player": "Anthony Richardson Sr.",
        "pos": "QB",
        "status": "complete"
       },
@@ -3616,16 +4522,130 @@
        "RB",
        "WR"
       ]
+     },
+     "2026": {
+      "slot": 11,
+      "picks": [
+       {
+        "pick_no": 11,
+        "round": 1,
+        "pos": "RB",
+        "player": "De'Von Achane"
+       },
+       {
+        "pick_no": 14,
+        "round": 2,
+        "pos": "WR",
+        "player": "CeeDee Lamb"
+       },
+       {
+        "pick_no": 35,
+        "round": 3,
+        "pos": "QB",
+        "player": "Lamar Jackson"
+       },
+       {
+        "pick_no": 38,
+        "round": 4,
+        "pos": "WR",
+        "player": "Tetairoa McMillan"
+       },
+       {
+        "pick_no": 59,
+        "round": 5,
+        "pos": "TE",
+        "player": "Sam LaPorta"
+       },
+       {
+        "pick_no": 62,
+        "round": 6,
+        "pos": "WR",
+        "player": "Christian Watson"
+       },
+       {
+        "pick_no": 83,
+        "round": 7,
+        "pos": "RB",
+        "player": "Rico Dowdle"
+       },
+       {
+        "pick_no": 86,
+        "round": 8,
+        "pos": "RB",
+        "player": "Jordan Mason"
+       },
+       {
+        "pick_no": 107,
+        "round": 9,
+        "pos": "WR",
+        "player": "Xavier Worthy"
+       },
+       {
+        "pick_no": 110,
+        "round": 10,
+        "pos": "DEF",
+        "player": "Seattle Seahawks"
+       },
+       {
+        "pick_no": 131,
+        "round": 11,
+        "pos": "K",
+        "player": "Cam Little"
+       },
+       {
+        "pick_no": 134,
+        "round": 12,
+        "pos": "WR",
+        "player": "Michael Pittman"
+       },
+       {
+        "pick_no": 155,
+        "round": 13,
+        "pos": "RB",
+        "player": "Chris Rodriguez"
+       },
+       {
+        "pick_no": 158,
+        "round": 14,
+        "pos": "TE",
+        "player": "Brenton Strange"
+       }
+      ],
+      "first_round_by_pos": {
+       "RB": 1,
+       "WR": 2,
+       "QB": 3,
+       "TE": 5,
+       "DEF": 10,
+       "K": 11
+      },
+      "pos_counts": {
+       "RB": 4,
+       "WR": 5,
+       "QB": 1,
+       "TE": 2,
+       "DEF": 1,
+       "K": 1
+      },
+      "opening_sequence": [
+       "RB",
+       "WR",
+       "QB",
+       "WR",
+       "TE"
+      ]
      }
     },
     "summary": {
      "first_qb_rounds": [
       4,
+      3,
       3
      ],
      "first_te_rounds": [
       6,
-      8
+      8,
+      5
      ],
      "opening_sequences": {
       "2024": [
@@ -3641,6 +4661,13 @@
        "QB",
        "RB",
        "WR"
+      ],
+      "2026": [
+       "RB",
+       "WR",
+       "QB",
+       "WR",
+       "TE"
       ]
      }
     }
@@ -3710,7 +4737,7 @@
        {
         "week": 8,
         "bid": 1,
-        "player": "Tyrone Tracy",
+        "player": "Tyrone Tracy Jr.",
         "pos": "RB",
         "status": "failed"
        }
@@ -3836,7 +4863,7 @@
        {
         "week": 14,
         "bid": 2,
-        "player": "Kyle Pitts",
+        "player": "Kyle Pitts Sr.",
         "pos": "TE",
         "status": "complete"
        },
@@ -3881,19 +4908,92 @@
       "free_agent_adds": 19,
       "trades": 0,
       "spent": 101
+     },
+     "2026": {
+      "won": [
+       {
+        "week": 2,
+        "bid": 1,
+        "player": "Tyjae Spears",
+        "pos": "RB",
+        "status": "complete"
+       },
+       {
+        "week": 3,
+        "bid": 21,
+        "player": "Braelon Allen",
+        "pos": "RB",
+        "status": "complete"
+       },
+       {
+        "week": 3,
+        "bid": 9,
+        "player": "Keaton Mitchell",
+        "pos": "RB",
+        "status": "complete"
+       },
+       {
+        "week": 3,
+        "bid": 25,
+        "player": "Ollie Gordon II",
+        "pos": "RB",
+        "status": "complete"
+       },
+       {
+        "week": 4,
+        "bid": 1,
+        "player": "Bo Nix",
+        "pos": "QB",
+        "status": "complete"
+       },
+       {
+        "week": 6,
+        "bid": 3,
+        "player": "Jared Goff",
+        "pos": "QB",
+        "status": "complete"
+       },
+       {
+        "week": 7,
+        "bid": 6,
+        "player": "Tre Tucker",
+        "pos": "WR",
+        "status": "complete"
+       },
+       {
+        "week": 7,
+        "bid": 1,
+        "player": "Jacoby Brissett",
+        "pos": "QB",
+        "status": "complete"
+       }
+      ],
+      "lost": [
+       {
+        "week": 4,
+        "bid": 9,
+        "player": "Brian Robinson Jr.",
+        "pos": "RB",
+        "status": "failed"
+       }
+      ],
+      "free_agent_adds": 7,
+      "trades": 0,
+      "spent": 67
      }
     },
     "summary": {
-     "claims_won": 23,
-     "claims_lost": 8,
+     "claims_won": 31,
+     "claims_lost": 9,
      "total_spent_by_season": {
       "2024": 100,
-      "2025": 101
+      "2025": 101,
+      "2026": 67
      },
-     "avg_winning_bid": 8.7,
+     "avg_winning_bid": 8.6,
      "max_winning_bid": 61,
      "median_winning_bid": 4,
-     "avg_losing_bid": 7.4,
+     "avg_losing_bid": 7.6,
      "max_losing_bid": 21,
      "burn_curve": {
       "2024": {
@@ -3915,11 +5015,18 @@
        "13": 74,
        "14": 89,
        "16": 101
+      },
+      "2026": {
+       "2": 1,
+       "3": 56,
+       "4": 57,
+       "6": 60,
+       "7": 67
       }
      },
      "spend_by_bucket": {
-      "early": 12,
-      "mid": 64,
+      "early": 69,
+      "mid": 74,
       "late": 125
      },
      "top_buys": [
@@ -3931,9 +5038,23 @@
        "status": "complete"
       },
       {
+       "week": 3,
+       "bid": 25,
+       "player": "Ollie Gordon II",
+       "pos": "RB",
+       "status": "complete"
+      },
+      {
        "week": 9,
        "bid": 22,
        "player": "RJ Harvey",
+       "pos": "RB",
+       "status": "complete"
+      },
+      {
+       "week": 3,
+       "bid": 21,
+       "player": "Braelon Allen",
        "pos": "RB",
        "status": "complete"
       },
@@ -3942,20 +5063,6 @@
        "bid": 19,
        "player": "Justin Herbert",
        "pos": "QB",
-       "status": "complete"
-      },
-      {
-       "week": 8,
-       "bid": 16,
-       "player": "Jakobi Meyers",
-       "pos": "WR",
-       "status": "complete"
-      },
-      {
-       "week": 14,
-       "bid": 13,
-       "player": "Mike Evans",
-       "pos": "WR",
        "status": "complete"
       }
      ]
@@ -4199,16 +5306,130 @@
        "RB",
        "RB"
       ]
+     },
+     "2026": {
+      "slot": 9,
+      "picks": [
+       {
+        "pick_no": 9,
+        "round": 1,
+        "pos": "RB",
+        "player": "Christian McCaffrey"
+       },
+       {
+        "pick_no": 16,
+        "round": 2,
+        "pos": "RB",
+        "player": "Saquon Barkley"
+       },
+       {
+        "pick_no": 33,
+        "round": 3,
+        "pos": "WR",
+        "player": "Ladd McConkey"
+       },
+       {
+        "pick_no": 40,
+        "round": 4,
+        "pos": "WR",
+        "player": "Rashee Rice"
+       },
+       {
+        "pick_no": 57,
+        "round": 5,
+        "pos": "QB",
+        "player": "Joe Burrow"
+       },
+       {
+        "pick_no": 64,
+        "round": 6,
+        "pos": "WR",
+        "player": "Jameson Williams"
+       },
+       {
+        "pick_no": 81,
+        "round": 7,
+        "pos": "RB",
+        "player": "Tony Pollard"
+       },
+       {
+        "pick_no": 88,
+        "round": 8,
+        "pos": "WR",
+        "player": "DK Metcalf"
+       },
+       {
+        "pick_no": 105,
+        "round": 9,
+        "pos": "DEF",
+        "player": "Los Angeles Rams"
+       },
+       {
+        "pick_no": 112,
+        "round": 10,
+        "pos": "RB",
+        "player": "Jacory Croskey-Merritt"
+       },
+       {
+        "pick_no": 129,
+        "round": 11,
+        "pos": "TE",
+        "player": "Jake Ferguson"
+       },
+       {
+        "pick_no": 136,
+        "round": 12,
+        "pos": "WR",
+        "player": "Wan'Dale Robinson"
+       },
+       {
+        "pick_no": 153,
+        "round": 13,
+        "pos": "RB",
+        "player": "Woody Marks"
+       },
+       {
+        "pick_no": 160,
+        "round": 14,
+        "pos": "K",
+        "player": "Ka'imi Fairbairn"
+       }
+      ],
+      "first_round_by_pos": {
+       "RB": 1,
+       "WR": 3,
+       "QB": 5,
+       "DEF": 9,
+       "TE": 11,
+       "K": 14
+      },
+      "pos_counts": {
+       "RB": 5,
+       "WR": 5,
+       "QB": 1,
+       "DEF": 1,
+       "TE": 1,
+       "K": 1
+      },
+      "opening_sequence": [
+       "RB",
+       "RB",
+       "WR",
+       "WR",
+       "QB"
+      ]
      }
     },
     "summary": {
      "first_qb_rounds": [
       7,
-      2
+      2,
+      5
      ],
      "first_te_rounds": [
       5,
-      3
+      3,
+      11
      ],
      "opening_sequences": {
       "2024": [
@@ -4224,6 +5445,13 @@
        "TE",
        "RB",
        "RB"
+      ],
+      "2026": [
+       "RB",
+       "RB",
+       "WR",
+       "WR",
+       "QB"
       ]
      }
     }
@@ -4385,7 +5613,7 @@
         "week": 8,
         "bid": 5,
         "player": "Travis Hunter",
-        "pos": "WR",
+        "pos": "DB",
         "status": "complete"
        },
        {
@@ -4405,7 +5633,7 @@
        {
         "week": 8,
         "bid": 1,
-        "player": "Harold Fannin",
+        "player": "Harold Fannin Jr.",
         "pos": "TE",
         "status": "complete"
        },
@@ -4491,7 +5719,7 @@
        {
         "week": 8,
         "bid": 55,
-        "player": "Tyrone Tracy",
+        "player": "Tyrone Tracy Jr.",
         "pos": "RB",
         "status": "failed"
        }
@@ -4499,19 +5727,155 @@
       "free_agent_adds": 36,
       "trades": 2,
       "spent": 65
+     },
+     "2026": {
+      "won": [
+       {
+        "week": 1,
+        "bid": 5,
+        "player": "Mark Andrews",
+        "pos": "TE",
+        "status": "complete"
+       },
+       {
+        "week": 2,
+        "bid": 22,
+        "player": "Denzel Boston",
+        "pos": "WR",
+        "status": "complete"
+       },
+       {
+        "week": 3,
+        "bid": 30,
+        "player": "Kenyon Sadiq",
+        "pos": "TE",
+        "status": "complete"
+       },
+       {
+        "week": 5,
+        "bid": 3,
+        "player": "C.J. Stroud",
+        "pos": "QB",
+        "status": "complete"
+       },
+       {
+        "week": 5,
+        "bid": 5,
+        "player": "Brenton Strange",
+        "pos": "TE",
+        "status": "complete"
+       },
+       {
+        "week": 6,
+        "bid": 10,
+        "player": "Omar Cooper Jr.",
+        "pos": "WR",
+        "status": "complete"
+       },
+       {
+        "week": 6,
+        "bid": 3,
+        "player": "Kyle Pitts Sr.",
+        "pos": "TE",
+        "status": "complete"
+       },
+       {
+        "week": 7,
+        "bid": 1,
+        "player": "Chase McLaughlin",
+        "pos": "K",
+        "status": "complete"
+       },
+       {
+        "week": 7,
+        "bid": 1,
+        "player": "New England Patriots",
+        "pos": "DEF",
+        "status": "complete"
+       },
+       {
+        "week": 7,
+        "bid": 2,
+        "player": "Kimani Vidal",
+        "pos": "RB",
+        "status": "complete"
+       },
+       {
+        "week": 7,
+        "bid": 2,
+        "player": "New York Jets",
+        "pos": "DEF",
+        "status": "complete"
+       }
+      ],
+      "lost": [
+       {
+        "week": 1,
+        "bid": 1,
+        "player": "Dalton Schultz",
+        "pos": "TE",
+        "status": "failed"
+       },
+       {
+        "week": 6,
+        "bid": 2,
+        "player": "Houston Texans",
+        "pos": "DEF",
+        "status": "failed"
+       },
+       {
+        "week": 7,
+        "bid": 1,
+        "player": "Chad Ryland",
+        "pos": "K",
+        "status": "failed"
+       },
+       {
+        "week": 7,
+        "bid": 1,
+        "player": "Jacksonville Jaguars",
+        "pos": "DEF",
+        "status": "failed"
+       },
+       {
+        "week": 7,
+        "bid": 1,
+        "player": "Kenny Gainwell",
+        "pos": "RB",
+        "status": "failed"
+       },
+       {
+        "week": 7,
+        "bid": 1,
+        "player": "Dylan Sampson",
+        "pos": "RB",
+        "status": "failed"
+       },
+       {
+        "week": 7,
+        "bid": 2,
+        "player": "Cincinnati Bengals",
+        "pos": "DEF",
+        "status": "failed"
+       }
+      ],
+      "free_agent_adds": 3,
+      "trades": 2,
+      "spent": 84
      }
     },
     "summary": {
-     "claims_won": 22,
-     "claims_lost": 14,
+     "claims_won": 33,
+     "claims_lost": 21,
      "total_spent_by_season": {
       "2024": 100,
-      "2025": 65
+      "2025": 65,
+      "2026": 84
      },
      "avg_winning_bid": 7.5,
      "max_winning_bid": 68,
-     "median_winning_bid": 1.5,
-     "avg_losing_bid": 14.8,
+     "median_winning_bid": 2,
+     "avg_losing_bid": 10.3,
      "max_losing_bid": 61,
      "burn_curve": {
       "2024": {
@@ -4531,11 +5895,19 @@
        "9": 32,
        "10": 50,
        "11": 65
+      },
+      "2026": {
+       "1": 5,
+       "2": 27,
+       "3": 57,
+       "5": 65,
+       "6": 78,
+       "7": 84
       }
      },
      "spend_by_bucket": {
-      "early": 100,
-      "mid": 28,
+      "early": 157,
+      "mid": 55,
       "late": 37
      },
      "top_buys": [
@@ -4544,6 +5916,20 @@
        "bid": 68,
        "player": "Isaiah Likely",
        "pos": "TE",
+       "status": "complete"
+      },
+      {
+       "week": 3,
+       "bid": 30,
+       "player": "Kenyon Sadiq",
+       "pos": "TE",
+       "status": "complete"
+      },
+      {
+       "week": 2,
+       "bid": 22,
+       "player": "Denzel Boston",
+       "pos": "WR",
        "status": "complete"
       },
       {
@@ -4558,20 +5944,6 @@
        "bid": 15,
        "player": "Samaje Perine",
        "pos": "RB",
-       "status": "complete"
-      },
-      {
-       "week": 10,
-       "bid": 15,
-       "player": "Alec Pierce",
-       "pos": "WR",
-       "status": "complete"
-      },
-      {
-       "week": 11,
-       "bid": 14,
-       "player": "Los Angeles Rams",
-       "pos": "DEF",
        "status": "complete"
       }
      ]
@@ -4811,16 +6183,128 @@
        "WR",
        "QB"
       ]
+     },
+     "2026": {
+      "slot": 6,
+      "picks": [
+       {
+        "pick_no": 6,
+        "round": 1,
+        "pos": "RB",
+        "player": "James Cook"
+       },
+       {
+        "pick_no": 19,
+        "round": 2,
+        "pos": "RB",
+        "player": "Kyren Williams"
+       },
+       {
+        "pick_no": 30,
+        "round": 3,
+        "pos": "WR",
+        "player": "DeVonta Smith"
+       },
+       {
+        "pick_no": 43,
+        "round": 4,
+        "pos": "WR",
+        "player": "Garrett Wilson"
+       },
+       {
+        "pick_no": 54,
+        "round": 5,
+        "pos": "RB",
+        "player": "Jadarian Price"
+       },
+       {
+        "pick_no": 67,
+        "round": 6,
+        "pos": "WR",
+        "player": "Davante Adams"
+       },
+       {
+        "pick_no": 78,
+        "round": 7,
+        "pos": "QB",
+        "player": "Dak Prescott"
+       },
+       {
+        "pick_no": 91,
+        "round": 8,
+        "pos": "TE",
+        "player": "Dalton Kincaid"
+       },
+       {
+        "pick_no": 102,
+        "round": 9,
+        "pos": "RB",
+        "player": "Kenny Gainwell"
+       },
+       {
+        "pick_no": 115,
+        "round": 10,
+        "pos": "WR",
+        "player": "Stefon Diggs"
+       },
+       {
+        "pick_no": 126,
+        "round": 11,
+        "pos": "RB",
+        "player": "Rachaad White"
+       },
+       {
+        "pick_no": 139,
+        "round": 12,
+        "pos": "WR",
+        "player": "Jalen Coker"
+       },
+       {
+        "pick_no": 150,
+        "round": 13,
+        "pos": "QB",
+        "player": "Bo Nix"
+       },
+       {
+        "pick_no": 163,
+        "round": 14,
+        "pos": "K",
+        "player": "Harrison Mevis"
+       }
+      ],
+      "first_round_by_pos": {
+       "RB": 1,
+       "WR": 3,
+       "QB": 7,
+       "TE": 8,
+       "K": 14
+      },
+      "pos_counts": {
+       "RB": 5,
+       "WR": 5,
+       "QB": 2,
+       "TE": 1,
+       "K": 1
+      },
+      "opening_sequence": [
+       "RB",
+       "RB",
+       "WR",
+       "WR",
+       "RB"
+      ]
      }
     },
     "summary": {
      "first_qb_rounds": [
       5,
-      5
+      5,
+      7
      ],
      "first_te_rounds": [
       7,
-      10
+      10,
+      8
      ],
      "opening_sequences": {
       "2024": [
@@ -4836,6 +6320,13 @@
        "WR",
        "WR",
        "QB"
+      ],
+      "2026": [
+       "RB",
+       "RB",
+       "WR",
+       "WR",
+       "RB"
       ]
      }
     }
@@ -4889,7 +6380,7 @@
        {
         "week": 6,
         "bid": 6,
-        "player": "Michael Pittman",
+        "player": "Michael Pittman Jr.",
         "pos": "WR",
         "status": "complete"
        },
@@ -4917,7 +6408,7 @@
        {
         "week": 10,
         "bid": 5,
-        "player": "John Metchie",
+        "player": "John Metchie III",
         "pos": "WR",
         "status": "complete"
        },
@@ -5045,7 +6536,7 @@
        {
         "week": 3,
         "bid": 1,
-        "player": "Chris Rodriguez",
+        "player": "Chris Rodriguez Jr.",
         "pos": "RB",
         "status": "complete"
        },
@@ -5103,7 +6594,7 @@
        {
         "week": 1,
         "bid": 6,
-        "player": "Harold Fannin",
+        "player": "Harold Fannin Jr.",
         "pos": "TE",
         "status": "failed"
        },
@@ -5167,19 +6658,71 @@
       "free_agent_adds": 23,
       "trades": 0,
       "spent": 100
+     },
+     "2026": {
+      "won": [
+       {
+        "week": 1,
+        "bid": 1,
+        "player": "Tyler Shough",
+        "pos": "QB",
+        "status": "complete"
+       },
+       {
+        "week": 5,
+        "bid": 7,
+        "player": "Darius Cooper",
+        "pos": "WR",
+        "status": "complete"
+       },
+       {
+        "week": 5,
+        "bid": 6,
+        "player": "Kimani Vidal",
+        "pos": "RB",
+        "status": "complete"
+       },
+       {
+        "week": 6,
+        "bid": 1,
+        "player": "Mike Gesicki",
+        "pos": "TE",
+        "status": "complete"
+       },
+       {
+        "week": 6,
+        "bid": 6,
+        "player": "Rico Dowdle",
+        "pos": "RB",
+        "status": "complete"
+       }
+      ],
+      "lost": [
+       {
+        "week": 3,
+        "bid": 12,
+        "player": "Braelon Allen",
+        "pos": "RB",
+        "status": "failed"
+       }
+      ],
+      "free_agent_adds": 7,
+      "trades": 0,
+      "spent": 21
      }
     },
     "summary": {
-     "claims_won": 26,
-     "claims_lost": 18,
+     "claims_won": 31,
+     "claims_lost": 19,
      "total_spent_by_season": {
       "2024": 98,
-      "2025": 100
+      "2025": 100,
+      "2026": 21
      },
-     "avg_winning_bid": 7.6,
+     "avg_winning_bid": 7.1,
      "max_winning_bid": 37,
-     "median_winning_bid": 4.5,
-     "avg_losing_bid": 10.0,
+     "median_winning_bid": 5,
+     "avg_losing_bid": 10.1,
      "max_losing_bid": 44,
      "burn_curve": {
       "2024": {
@@ -5202,11 +6745,16 @@
        "7": 57,
        "9": 63,
        "11": 100
+      },
+      "2026": {
+       "1": 1,
+       "5": 14,
+       "6": 21
       }
      },
      "spend_by_bucket": {
-      "early": 86,
-      "mid": 63,
+      "early": 87,
+      "mid": 83,
       "late": 49
      },
      "top_buys": [
@@ -5676,16 +7224,130 @@
        "WR",
        "WR"
       ]
+     },
+     "2026": {
+      "slot": 10,
+      "picks": [
+       {
+        "pick_no": 10,
+        "round": 1,
+        "pos": "WR",
+        "player": "Justin Jefferson"
+       },
+       {
+        "pick_no": 15,
+        "round": 2,
+        "pos": "RB",
+        "player": "Chase Brown"
+       },
+       {
+        "pick_no": 34,
+        "round": 3,
+        "pos": "WR",
+        "player": "Zay Flowers"
+       },
+       {
+        "pick_no": 39,
+        "round": 4,
+        "pos": "RB",
+        "player": "D'Andre Swift"
+       },
+       {
+        "pick_no": 58,
+        "round": 5,
+        "pos": "QB",
+        "player": "Jayden Daniels"
+       },
+       {
+        "pick_no": 63,
+        "round": 6,
+        "pos": "WR",
+        "player": "Rome Odunze"
+       },
+       {
+        "pick_no": 82,
+        "round": 7,
+        "pos": "TE",
+        "player": "George Kittle"
+       },
+       {
+        "pick_no": 87,
+        "round": 8,
+        "pos": "RB",
+        "player": "Jonathon Brooks"
+       },
+       {
+        "pick_no": 106,
+        "round": 9,
+        "pos": "WR",
+        "player": "Jayden Reed"
+       },
+       {
+        "pick_no": 111,
+        "round": 10,
+        "pos": "RB",
+        "player": "Ray Davis"
+       },
+       {
+        "pick_no": 130,
+        "round": 11,
+        "pos": "WR",
+        "player": "Rashid Shaheed"
+       },
+       {
+        "pick_no": 135,
+        "round": 12,
+        "pos": "RB",
+        "player": "Zach Charbonnet"
+       },
+       {
+        "pick_no": 154,
+        "round": 13,
+        "pos": "DEF",
+        "player": "Los Angeles Chargers"
+       },
+       {
+        "pick_no": 159,
+        "round": 14,
+        "pos": "K",
+        "player": "Harrison Butker"
+       }
+      ],
+      "first_round_by_pos": {
+       "WR": 1,
+       "RB": 2,
+       "QB": 5,
+       "TE": 7,
+       "DEF": 13,
+       "K": 14
+      },
+      "pos_counts": {
+       "WR": 5,
+       "RB": 5,
+       "QB": 1,
+       "TE": 1,
+       "DEF": 1,
+       "K": 1
+      },
+      "opening_sequence": [
+       "WR",
+       "RB",
+       "WR",
+       "RB",
+       "QB"
+      ]
      }
     },
     "summary": {
      "first_qb_rounds": [
       5,
-      9
+      9,
+      5
      ],
      "first_te_rounds": [
       6,
-      11
+      11,
+      7
      ],
      "opening_sequences": {
       "2024": [
@@ -5701,6 +7363,13 @@
        "RB",
        "WR",
        "WR"
+      ],
+      "2026": [
+       "WR",
+       "RB",
+       "WR",
+       "RB",
+       "QB"
       ]
      }
     }
@@ -5744,6 +7413,13 @@
       "free_agent_adds": 13,
       "trades": 0,
       "spent": 100
+     },
+     "2026": {
+      "won": [],
+      "lost": [],
+      "free_agent_adds": 10,
+      "trades": 0,
+      "spent": 0
      }
     },
     "summary": {
@@ -5751,7 +7427,8 @@
      "claims_lost": 1,
      "total_spent_by_season": {
       "2024": 100,
-      "2025": 100
+      "2025": 100,
+      "2026": 0
      },
      "avg_winning_bid": 100.0,
      "max_winning_bid": 100,
@@ -5764,7 +7441,8 @@
       },
       "2025": {
        "15": 100
-      }
+      },
+      "2026": {}
      },
      "spend_by_bucket": {
       "early": 0,
@@ -6027,16 +7705,130 @@
        "RB",
        "RB"
       ]
+     },
+     "2026": {
+      "slot": 12,
+      "picks": [
+       {
+        "pick_no": 12,
+        "round": 1,
+        "pos": "WR",
+        "player": "Amon-Ra St. Brown"
+       },
+       {
+        "pick_no": 13,
+        "round": 2,
+        "pos": "RB",
+        "player": "Derrick Henry"
+       },
+       {
+        "pick_no": 36,
+        "round": 3,
+        "pos": "WR",
+        "player": "Emeka Egbuka"
+       },
+       {
+        "pick_no": 37,
+        "round": 4,
+        "pos": "RB",
+        "player": "Javonte Williams"
+       },
+       {
+        "pick_no": 60,
+        "round": 5,
+        "pos": "RB",
+        "player": "Josh Jacobs"
+       },
+       {
+        "pick_no": 61,
+        "round": 6,
+        "pos": "QB",
+        "player": "Drake Maye"
+       },
+       {
+        "pick_no": 84,
+        "round": 7,
+        "pos": "WR",
+        "player": "Brian Thomas"
+       },
+       {
+        "pick_no": 85,
+        "round": 8,
+        "pos": "WR",
+        "player": "Michael Wilson"
+       },
+       {
+        "pick_no": 108,
+        "round": 9,
+        "pos": "WR",
+        "player": "Makai Lemon"
+       },
+       {
+        "pick_no": 109,
+        "round": 10,
+        "pos": "DEF",
+        "player": "Houston Texans"
+       },
+       {
+        "pick_no": 132,
+        "round": 11,
+        "pos": "QB",
+        "player": "Matthew Stafford"
+       },
+       {
+        "pick_no": 133,
+        "round": 12,
+        "pos": "TE",
+        "player": "Travis Kelce"
+       },
+       {
+        "pick_no": 156,
+        "round": 13,
+        "pos": "TE",
+        "player": "Mark Andrews"
+       },
+       {
+        "pick_no": 157,
+        "round": 14,
+        "pos": "K",
+        "player": "Jason Myers"
+       }
+      ],
+      "first_round_by_pos": {
+       "WR": 1,
+       "RB": 2,
+       "QB": 6,
+       "DEF": 10,
+       "TE": 12,
+       "K": 14
+      },
+      "pos_counts": {
+       "WR": 5,
+       "RB": 3,
+       "QB": 2,
+       "DEF": 1,
+       "TE": 2,
+       "K": 1
+      },
+      "opening_sequence": [
+       "WR",
+       "RB",
+       "WR",
+       "RB",
+       "RB"
+      ]
      }
     },
     "summary": {
      "first_qb_rounds": [
       10,
-      7
+      7,
+      6
      ],
      "first_te_rounds": [
       8,
-      9
+      9,
+      12
      ],
      "opening_sequences": {
       "2024": [
@@ -6050,6 +7842,13 @@
        "WR",
        "WR",
        "RB",
+       "RB",
+       "RB"
+      ],
+      "2026": [
+       "WR",
+       "RB",
+       "WR",
        "RB",
        "RB"
       ]
@@ -6282,7 +8081,7 @@
        {
         "week": 7,
         "bid": 2,
-        "player": "Aaron Jones",
+        "player": "Aaron Jones Sr.",
         "pos": "RB",
         "status": "complete"
        },
@@ -6296,7 +8095,7 @@
        {
         "week": 9,
         "bid": 1,
-        "player": "Harold Fannin",
+        "player": "Harold Fannin Jr.",
         "pos": "TE",
         "status": "complete"
        },
@@ -6354,7 +8153,7 @@
        {
         "week": 8,
         "bid": 4,
-        "player": "Tyrone Tracy",
+        "player": "Tyrone Tracy Jr.",
         "pos": "RB",
         "status": "failed"
        },
@@ -6390,19 +8189,78 @@
       "free_agent_adds": 30,
       "trades": 0,
       "spent": 100
+     },
+     "2026": {
+      "won": [
+       {
+        "week": 3,
+        "bid": 9,
+        "player": "Jaylen Wright",
+        "pos": "RB",
+        "status": "complete"
+       },
+       {
+        "week": 4,
+        "bid": 1,
+        "player": "Mike Gesicki",
+        "pos": "TE",
+        "status": "complete"
+       },
+       {
+        "week": 7,
+        "bid": 3,
+        "player": "Cincinnati Bengals",
+        "pos": "DEF",
+        "status": "complete"
+       }
+      ],
+      "lost": [
+       {
+        "week": 3,
+        "bid": 2,
+        "player": "Malik Washington",
+        "pos": "WR",
+        "status": "failed"
+       },
+       {
+        "week": 3,
+        "bid": 16,
+        "player": "Braelon Allen",
+        "pos": "RB",
+        "status": "failed"
+       },
+       {
+        "week": 7,
+        "bid": 1,
+        "player": "New England Patriots",
+        "pos": "DEF",
+        "status": "failed"
+       },
+       {
+        "week": 7,
+        "bid": 1,
+        "player": "Tre Tucker",
+        "pos": "WR",
+        "status": "failed"
+       }
+      ],
+      "free_agent_adds": 14,
+      "trades": 0,
+      "spent": 13
      }
     },
     "summary": {
-     "claims_won": 19,
-     "claims_lost": 26,
+     "claims_won": 22,
+     "claims_lost": 30,
      "total_spent_by_season": {
       "2024": 100,
-      "2025": 100
+      "2025": 100,
+      "2026": 13
      },
-     "avg_winning_bid": 10.5,
+     "avg_winning_bid": 9.7,
      "max_winning_bid": 81,
-     "median_winning_bid": 2,
-     "avg_losing_bid": 8.1,
+     "median_winning_bid": 2.5,
+     "avg_losing_bid": 7.7,
      "max_losing_bid": 44,
      "burn_curve": {
       "2024": {
@@ -6422,11 +8280,16 @@
        "9": 98,
        "12": 99,
        "13": 100
+      },
+      "2026": {
+       "3": 9,
+       "4": 10,
+       "7": 13
       }
      },
      "spend_by_bucket": {
-      "early": 111,
-      "mid": 6,
+      "early": 121,
+      "mid": 9,
       "late": 83
      },
      "top_buys": [
@@ -6471,6 +8334,456 @@
   },
   "999837972113567744": {
    "display_name": "aaronaaron",
+   "team_names": {
+    "2026": "The gustapher erics "
+   },
+   "seasons": [
+    "2026"
+   ],
+   "draft": {
+    "seasons": {
+     "2026": {
+      "slot": 4,
+      "picks": [
+       {
+        "pick_no": 4,
+        "round": 1,
+        "pos": "WR",
+        "player": "Ja'Marr Chase"
+       },
+       {
+        "pick_no": 21,
+        "round": 2,
+        "pos": "WR",
+        "player": "Nico Collins"
+       },
+       {
+        "pick_no": 28,
+        "round": 3,
+        "pos": "WR",
+        "player": "Drake London"
+       },
+       {
+        "pick_no": 45,
+        "round": 4,
+        "pos": "RB",
+        "player": "Bucky Irving"
+       },
+       {
+        "pick_no": 52,
+        "round": 5,
+        "pos": "TE",
+        "player": "Tyler Warren"
+       },
+       {
+        "pick_no": 69,
+        "round": 6,
+        "pos": "RB",
+        "player": "J.K. Dobbins"
+       },
+       {
+        "pick_no": 76,
+        "round": 7,
+        "pos": "QB",
+        "player": "Jalen Hurts"
+       },
+       {
+        "pick_no": 93,
+        "round": 8,
+        "pos": "RB",
+        "player": "RJ Harvey"
+       },
+       {
+        "pick_no": 100,
+        "round": 9,
+        "pos": "RB",
+        "player": "Tank Bigsby"
+       },
+       {
+        "pick_no": 117,
+        "round": 10,
+        "pos": "WR",
+        "player": "Jalen Nailor"
+       },
+       {
+        "pick_no": 124,
+        "round": 11,
+        "pos": "K",
+        "player": "Will Reichard"
+       },
+       {
+        "pick_no": 141,
+        "round": 12,
+        "pos": "WR",
+        "player": "Chris Bell"
+       },
+       {
+        "pick_no": 148,
+        "round": 13,
+        "pos": "DEF",
+        "player": "Denver Broncos"
+       },
+       {
+        "pick_no": 165,
+        "round": 14,
+        "pos": "TE",
+        "player": "Dallas Goedert"
+       }
+      ],
+      "first_round_by_pos": {
+       "WR": 1,
+       "RB": 4,
+       "TE": 5,
+       "QB": 7,
+       "K": 11,
+       "DEF": 13
+      },
+      "pos_counts": {
+       "WR": 5,
+       "RB": 4,
+       "TE": 2,
+       "QB": 1,
+       "K": 1,
+       "DEF": 1
+      },
+      "opening_sequence": [
+       "WR",
+       "WR",
+       "WR",
+       "RB",
+       "TE"
+      ]
+     }
+    },
+    "summary": {
+     "first_qb_rounds": [
+      7
+     ],
+     "first_te_rounds": [
+      5
+     ],
+     "opening_sequences": {
+      "2026": [
+       "WR",
+       "WR",
+       "WR",
+       "RB",
+       "TE"
+      ]
+     }
+    }
+   },
+   "faab": {
+    "seasons": {
+     "2026": {
+      "won": [
+       {
+        "week": 3,
+        "bid": 1,
+        "player": "Tyreek Hill",
+        "pos": "WR",
+        "status": "complete"
+       }
+      ],
+      "lost": [],
+      "free_agent_adds": 3,
+      "trades": 0,
+      "spent": 1
+     }
+    },
+    "summary": {
+     "claims_won": 1,
+     "claims_lost": 0,
+     "total_spent_by_season": {
+      "2026": 1
+     },
+     "avg_winning_bid": 1.0,
+     "max_winning_bid": 1,
+     "median_winning_bid": 1,
+     "avg_losing_bid": null,
+     "max_losing_bid": null,
+     "burn_curve": {
+      "2026": {
+       "3": 1
+      }
+     },
+     "spend_by_bucket": {
+      "early": 1,
+      "mid": 0,
+      "late": 0
+     },
+     "top_buys": [
+      {
+       "week": 3,
+       "bid": 1,
+       "player": "Tyreek Hill",
+       "pos": "WR",
+       "status": "complete"
+      }
+     ]
+    }
+   }
+  },
+  "1037248488746541056": {
+   "display_name": "rhettrez",
+   "team_names": {
+    "2026": "Ayatollah's Revenge"
+   },
+   "seasons": [
+    "2026"
+   ],
+   "draft": {
+    "seasons": {
+     "2026": {
+      "slot": 7,
+      "picks": [
+       {
+        "pick_no": 7,
+        "round": 1,
+        "pos": "WR",
+        "player": "Jaxon Smith-Njigba"
+       },
+       {
+        "pick_no": 18,
+        "round": 2,
+        "pos": "RB",
+        "player": "Kenneth Walker"
+       },
+       {
+        "pick_no": 31,
+        "round": 3,
+        "pos": "WR",
+        "player": "George Pickens"
+       },
+       {
+        "pick_no": 42,
+        "round": 4,
+        "pos": "TE",
+        "player": "Colston Loveland"
+       },
+       {
+        "pick_no": 55,
+        "round": 5,
+        "pos": "WR",
+        "player": "Luther Burden"
+       },
+       {
+        "pick_no": 66,
+        "round": 6,
+        "pos": "RB",
+        "player": "Rhamondre Stevenson"
+       },
+       {
+        "pick_no": 79,
+        "round": 7,
+        "pos": "RB",
+        "player": "Blake Corum"
+       },
+       {
+        "pick_no": 90,
+        "round": 8,
+        "pos": "QB",
+        "player": "Trevor Lawrence"
+       },
+       {
+        "pick_no": 103,
+        "round": 9,
+        "pos": "WR",
+        "player": "Courtland Sutton"
+       },
+       {
+        "pick_no": 114,
+        "round": 10,
+        "pos": "RB",
+        "player": "Jonah Coleman"
+       },
+       {
+        "pick_no": 127,
+        "round": 11,
+        "pos": "RB",
+        "player": "Emmett Johnson"
+       },
+       {
+        "pick_no": 138,
+        "round": 12,
+        "pos": "WR",
+        "player": "Khalil Shakir"
+       },
+       {
+        "pick_no": 151,
+        "round": 13,
+        "pos": "DEF",
+        "player": "New England Patriots"
+       },
+       {
+        "pick_no": 162,
+        "round": 14,
+        "pos": "K",
+        "player": "Tyler Loop"
+       }
+      ],
+      "first_round_by_pos": {
+       "WR": 1,
+       "RB": 2,
+       "TE": 4,
+       "QB": 8,
+       "DEF": 13,
+       "K": 14
+      },
+      "pos_counts": {
+       "WR": 5,
+       "RB": 5,
+       "TE": 1,
+       "QB": 1,
+       "DEF": 1,
+       "K": 1
+      },
+      "opening_sequence": [
+       "WR",
+       "RB",
+       "WR",
+       "TE",
+       "WR"
+      ]
+     }
+    },
+    "summary": {
+     "first_qb_rounds": [
+      8
+     ],
+     "first_te_rounds": [
+      4
+     ],
+     "opening_sequences": {
+      "2026": [
+       "WR",
+       "RB",
+       "WR",
+       "TE",
+       "WR"
+      ]
+     }
+    }
+   },
+   "faab": {
+    "seasons": {
+     "2026": {
+      "won": [
+       {
+        "week": 3,
+        "bid": 1,
+        "player": "Cleveland Browns",
+        "pos": "DEF",
+        "status": "complete"
+       },
+       {
+        "week": 4,
+        "bid": 11,
+        "player": "Brian Robinson Jr.",
+        "pos": "RB",
+        "status": "complete"
+       },
+       {
+        "week": 7,
+        "bid": 1,
+        "player": "Makai Lemon",
+        "pos": "WR",
+        "status": "complete"
+       }
+      ],
+      "lost": [
+       {
+        "week": 1,
+        "bid": 1,
+        "player": "Mark Andrews",
+        "pos": "TE",
+        "status": "failed"
+       },
+       {
+        "week": 3,
+        "bid": 7,
+        "player": "Braelon Allen",
+        "pos": "RB",
+        "status": "failed"
+       },
+       {
+        "week": 3,
+        "bid": 5,
+        "player": "Kenyon Sadiq",
+        "pos": "TE",
+        "status": "failed"
+       },
+       {
+        "week": 3,
+        "bid": 1,
+        "player": "Braelon Allen",
+        "pos": "RB",
+        "status": "failed"
+       },
+       {
+        "week": 3,
+        "bid": 1,
+        "player": "Kenyon Sadiq",
+        "pos": "TE",
+        "status": "failed"
+       }
+      ],
+      "free_agent_adds": 4,
+      "trades": 0,
+      "spent": 13
+     }
+    },
+    "summary": {
+     "claims_won": 3,
+     "claims_lost": 5,
+     "total_spent_by_season": {
+      "2026": 13
+     },
+     "avg_winning_bid": 4.3,
+     "max_winning_bid": 11,
+     "median_winning_bid": 1,
+     "avg_losing_bid": 3.0,
+     "max_losing_bid": 7,
+     "burn_curve": {
+      "2026": {
+       "3": 1,
+       "4": 12,
+       "7": 13
+      }
+     },
+     "spend_by_bucket": {
+      "early": 12,
+      "mid": 1,
+      "late": 0
+     },
+     "top_buys": [
+      {
+       "week": 4,
+       "bid": 11,
+       "player": "Brian Robinson Jr.",
+       "pos": "RB",
+       "status": "complete"
+      },
+      {
+       "week": 3,
+       "bid": 1,
+       "player": "Cleveland Browns",
+       "pos": "DEF",
+       "status": "complete"
+      },
+      {
+       "week": 7,
+       "bid": 1,
+       "player": "Makai Lemon",
+       "pos": "WR",
+       "status": "complete"
+      }
+     ]
+    }
+   }
+  },
+  "1404669224789524480": {
+   "display_name": "JiggityJ",
    "team_names": {},
    "seasons": [
     "2026"
@@ -6508,28 +8821,28 @@
  "league": {
   "price_book": {
    "RB|early": {
-    "n": 17,
+    "n": 23,
     "median": 10,
     "max": 81
    },
    "WR|early": {
-    "n": 10,
-    "median": 4.5,
-    "max": 30
+    "n": 17,
+    "median": 10,
+    "max": 35
    },
    "DEF|early": {
-    "n": 5,
-    "median": 2,
+    "n": 10,
+    "median": 1.0,
     "max": 3
    },
    "TE|early": {
-    "n": 9,
-    "median": 3,
+    "n": 14,
+    "median": 3.0,
     "max": 68
    },
    "QB|early": {
-    "n": 9,
-    "median": 6,
+    "n": 12,
+    "median": 5.0,
     "max": 16
    },
    "K|early": {
@@ -6538,33 +8851,33 @@
     "max": 1
    },
    "DEF|mid": {
-    "n": 14,
-    "median": 1.0,
+    "n": 19,
+    "median": 1,
     "max": 5
    },
    "WR|mid": {
-    "n": 21,
-    "median": 6,
+    "n": 28,
+    "median": 6.0,
     "max": 21
    },
    "QB|mid": {
-    "n": 6,
+    "n": 10,
     "median": 1.0,
     "max": 9
    },
    "K|mid": {
-    "n": 6,
-    "median": 1.0,
+    "n": 7,
+    "median": 1,
     "max": 3
    },
    "RB|mid": {
-    "n": 17,
-    "median": 12,
+    "n": 22,
+    "median": 6.0,
     "max": 101
    },
    "TE|mid": {
-    "n": 10,
-    "median": 3.5,
+    "n": 13,
+    "median": 3,
     "max": 23
    },
    "TE|late": {
@@ -6596,6 +8909,11 @@
     "n": 2,
     "median": 2.5,
     "max": 4
+   },
+   "DB|mid": {
+    "n": 1,
+    "median": 5,
+    "max": 5
    }
   },
   "contested_claims": [
@@ -6662,7 +8980,7 @@
    {
     "season": "2025",
     "week": 8,
-    "player": "Tyrone Tracy",
+    "player": "Tyrone Tracy Jr.",
     "pos": "RB",
     "winning_bid": 62,
     "second_bid": 55,
@@ -6710,6 +9028,16 @@
     "n_bidders": 6
    },
    {
+    "season": "2026",
+    "week": 3,
+    "player": "Kenyon Sadiq",
+    "pos": "TE",
+    "winning_bid": 30,
+    "second_bid": 18,
+    "margin": 12,
+    "n_bidders": 4
+   },
+   {
     "season": "2024",
     "week": 2,
     "player": "Carson Steele",
@@ -6722,7 +9050,7 @@
    {
     "season": "2024",
     "week": 11,
-    "player": "Anthony Richardson",
+    "player": "Anthony Richardson Sr.",
     "pos": "QB",
     "winning_bid": 25,
     "second_bid": 3,
@@ -6737,6 +9065,16 @@
     "winning_bid": 25,
     "second_bid": 1,
     "margin": 24,
+    "n_bidders": 2
+   },
+   {
+    "season": "2026",
+    "week": 3,
+    "player": "Ollie Gordon II",
+    "pos": "RB",
+    "winning_bid": 25,
+    "second_bid": 24,
+    "margin": 1,
     "n_bidders": 2
    },
    {
@@ -6757,6 +9095,16 @@
     "winning_bid": 21,
     "second_bid": 15,
     "margin": 6,
+    "n_bidders": 5
+   },
+   {
+    "season": "2026",
+    "week": 3,
+    "player": "Braelon Allen",
+    "pos": "RB",
+    "winning_bid": 21,
+    "second_bid": 16,
+    "margin": 5,
     "n_bidders": 5
    },
    {
@@ -6808,6 +9156,16 @@
     "second_bid": 1,
     "margin": 15,
     "n_bidders": 2
+   },
+   {
+    "season": "2026",
+    "week": 1,
+    "player": "Devaughn Vele",
+    "pos": "WR",
+    "winning_bid": 16,
+    "second_bid": 7,
+    "margin": 9,
+    "n_bidders": 3
    },
    {
     "season": "2024",
@@ -6880,6 +9238,16 @@
     "n_bidders": 2
    },
    {
+    "season": "2026",
+    "week": 4,
+    "player": "Brian Robinson Jr.",
+    "pos": "RB",
+    "winning_bid": 11,
+    "second_bid": 9,
+    "margin": 2,
+    "n_bidders": 2
+   },
+   {
     "season": "2024",
     "week": 13,
     "player": "Russell Wilson",
@@ -6902,12 +9270,22 @@
    {
     "season": "2025",
     "week": 1,
-    "player": "Harold Fannin",
+    "player": "Harold Fannin Jr.",
     "pos": "TE",
     "winning_bid": 10,
     "second_bid": 6,
     "margin": 4,
     "n_bidders": 3
+   },
+   {
+    "season": "2026",
+    "week": 6,
+    "player": "Omar Cooper Jr.",
+    "pos": "WR",
+    "winning_bid": 10,
+    "second_bid": 2,
+    "margin": 8,
+    "n_bidders": 2
    },
    {
     "season": "2024",
@@ -6982,7 +9360,7 @@
    {
     "season": "2024",
     "week": 6,
-    "player": "Michael Pittman",
+    "player": "Michael Pittman Jr.",
     "pos": "WR",
     "winning_bid": 6,
     "second_bid": 3,
@@ -6992,12 +9370,22 @@
    {
     "season": "2024",
     "week": 8,
-    "player": "Tyrone Tracy",
+    "player": "Tyrone Tracy Jr.",
     "pos": "RB",
     "winning_bid": 6,
     "second_bid": 1,
     "margin": 5,
     "n_bidders": 2
+   },
+   {
+    "season": "2026",
+    "week": 7,
+    "player": "Tre Tucker",
+    "pos": "WR",
+    "winning_bid": 6,
+    "second_bid": 2,
+    "margin": 4,
+    "n_bidders": 3
    },
    {
     "season": "2024",
@@ -7022,7 +9410,7 @@
    {
     "season": "2024",
     "week": 10,
-    "player": "John Metchie",
+    "player": "John Metchie III",
     "pos": "WR",
     "winning_bid": 5,
     "second_bid": 1,
@@ -7080,6 +9468,16 @@
     "n_bidders": 2
    },
    {
+    "season": "2026",
+    "week": 1,
+    "player": "Mark Andrews",
+    "pos": "TE",
+    "winning_bid": 5,
+    "second_bid": 1,
+    "margin": 4,
+    "n_bidders": 2
+   },
+   {
     "season": "2024",
     "week": 13,
     "player": "Tennessee Titans",
@@ -7130,6 +9528,16 @@
     "n_bidders": 2
    },
    {
+    "season": "2026",
+    "week": 7,
+    "player": "Cincinnati Bengals",
+    "pos": "DEF",
+    "winning_bid": 3,
+    "second_bid": 2,
+    "margin": 1,
+    "n_bidders": 3
+   },
+   {
     "season": "2024",
     "week": 5,
     "player": "Philadelphia Eagles",
@@ -7157,6 +9565,16 @@
     "winning_bid": 2,
     "second_bid": 1,
     "margin": 1,
+    "n_bidders": 2
+   },
+   {
+    "season": "2026",
+    "week": 6,
+    "player": "Houston Texans",
+    "pos": "DEF",
+    "winning_bid": 2,
+    "second_bid": 2,
+    "margin": 0,
     "n_bidders": 2
    },
    {
@@ -7194,6 +9612,16 @@
     "week": 5,
     "player": "Eddy Pineiro",
     "pos": "K",
+    "winning_bid": 1,
+    "second_bid": 1,
+    "margin": 0,
+    "n_bidders": 2
+   },
+   {
+    "season": "2026",
+    "week": 7,
+    "player": "New England Patriots",
+    "pos": "DEF",
     "winning_bid": 1,
     "second_bid": 1,
     "margin": 0,

@@ -111,8 +111,9 @@ def analyze(history):
                 ds["pos_counts"] = {pos: len(rs) for pos, rs in pos_rounds.items()}
                 ds["opening_sequence"] = [p.get("pos") for p in picks[:5]]
 
-        # ---- transactions ----
-        if not completed:
+        # ---- transactions (completed and in-season both count; an
+        # in-season year is simply partial data) ----
+        if not (s.get("transactions") or []):
             continue
         tx = s.get("transactions") or []
 
