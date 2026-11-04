@@ -1,5 +1,8 @@
 name: Refresh data
 
+# TEMPORARY (branch-only): repurposed to re-harvest Blitz history and take
+# a week snapshot. Restore to the main version before merging.
+
 on:
   schedule:
     - cron: '0 10 * * *'
@@ -20,12 +23,15 @@ jobs:
         with:
           python-version: '3.12'
 
-      - name: Refresh data
-        run: python scripts/refresh.py
+      - name: Harvest league history
+        run: python scripts/league_history.py --league "1387442990548549632" --slug "blitz"
+
+      - name: Week snapshot
+        run: python scripts/week_snapshot.py
 
       - name: Commit and push if changed
         run: |
           git config user.name "hub-bot"
           git config user.email "hub-bot@users.noreply.github.com"
           git add data
-          git diff --cached --quiet || (git commit -m "data: scheduled refresh" && git push)
+          git diff --cached --quiet || (git commit -m "data: blitz re-harvest + week snapshot" && git push)

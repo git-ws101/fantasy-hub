@@ -112,6 +112,7 @@ def fetch_season(league):
                 "wins": (r.get("settings") or {}).get("wins"),
                 "losses": (r.get("settings") or {}).get("losses"),
                 "fpts": (r.get("settings") or {}).get("fpts"),
+                "players": r.get("players"),
             }
             for r in rosters
         ],
