@@ -1,0 +1,408 @@
+{
+ "fetched": "2026-11-04T04:05:03.947683Z",
+ "season": "2026",
+ "week": 9,
+ "season_type": "regular",
+ "trending_adds": [
+  {
+   "player_id": "11625",
+   "name": "Adonai Mitchell",
+   "pos": "WR",
+   "team": "NYJ",
+   "injury_status": null,
+   "adds_24h": 1860088
+  },
+  {
+   "player_id": "8132",
+   "name": "Tyler Allgeier",
+   "pos": "RB",
+   "team": "ARI",
+   "injury_status": null,
+   "adds_24h": 1530440
+  },
+  {
+   "player_id": "6130",
+   "name": "Devin Singletary",
+   "pos": "RB",
+   "team": "NYG",
+   "injury_status": null,
+   "adds_24h": 951840
+  },
+  {
+   "player_id": "6011",
+   "name": "Gardner Minshew II",
+   "pos": "QB",
+   "team": "ARI",
+   "injury_status": null,
+   "adds_24h": 897332
+  },
+  {
+   "player_id": "13337",
+   "name": "Emmett Johnson",
+   "pos": "RB",
+   "team": "KC",
+   "injury_status": null,
+   "adds_24h": 827154
+  },
+  {
+   "player_id": "HOU",
+   "name": "Houston Texans",
+   "pos": "DEF",
+   "team": "HOU",
+   "injury_status": null,
+   "adds_24h": 680390
+  },
+  {
+   "player_id": "DET",
+   "name": "Detroit Lions",
+   "pos": "DEF",
+   "team": "DET",
+   "injury_status": null,
+   "adds_24h": 517896
+  },
+  {
+   "player_id": "7042",
+   "name": "Tyler Bass",
+   "pos": "K",
+   "team": "BUF",
+   "injury_status": null,
+   "adds_24h": 414845
+  },
+  {
+   "player_id": "4993",
+   "name": "Mike Gesicki",
+   "pos": "TE",
+   "team": "CIN",
+   "injury_status": null,
+   "adds_24h": 366428
+  },
+  {
+   "player_id": "8161",
+   "name": "Malik Willis",
+   "pos": "QB",
+   "team": "MIA",
+   "injury_status": null,
+   "adds_24h": 358393
+  },
+  {
+   "player_id": "10219",
+   "name": "Chris Rodriguez Jr.",
+   "pos": "RB",
+   "team": "JAX",
+   "injury_status": "Questionable",
+   "adds_24h": 353691
+  },
+  {
+   "player_id": "11783",
+   "name": "Ryan Flournoy",
+   "pos": "WR",
+   "team": "DAL",
+   "injury_status": null,
+   "adds_24h": 320136
+  },
+  {
+   "player_id": "11610",
+   "name": "Malik Washington",
+   "pos": "WR",
+   "team": "MIA",
+   "injury_status": null,
+   "adds_24h": 312920
+  },
+  {
+   "player_id": "2020",
+   "name": "Cairo Santos",
+   "pos": "K",
+   "team": "CHI",
+   "injury_status": null,
+   "adds_24h": 276164
+  },
+  {
+   "player_id": "NO",
+   "name": "New Orleans Saints",
+   "pos": "DEF",
+   "team": "NO",
+   "injury_status": null,
+   "adds_24h": 267120
+  },
+  {
+   "player_id": "8135",
+   "name": "Treylon Burks",
+   "pos": "WR",
+   "team": "WAS",
+   "injury_status": null,
+   "adds_24h": 259854
+  },
+  {
+   "player_id": "13286",
+   "name": "Jadarian Price",
+   "pos": "RB",
+   "team": "SEA",
+   "injury_status": null,
+   "adds_24h": 230670
+  },
+  {
+   "player_id": "12469",
+   "name": "Dylan Sampson",
+   "pos": "RB",
+   "team": "CLE",
+   "injury_status": null,
+   "adds_24h": 222890
+  },
+  {
+   "player_id": "11729",
+   "name": "Sione Vaki",
+   "pos": "RB",
+   "team": "DET",
+   "injury_status": null,
+   "adds_24h": 209013
+  },
+  {
+   "player_id": "NYG",
+   "name": "New York Giants",
+   "pos": "DEF",
+   "team": "NYG",
+   "injury_status": null,
+   "adds_24h": 203240
+  },
+  {
+   "player_id": "SF",
+   "name": "San Francisco 49ers",
+   "pos": "DEF",
+   "team": "SF",
+   "injury_status": null,
+   "adds_24h": 193443
+  },
+  {
+   "player_id": "7567",
+   "name": "Kenny Gainwell",
+   "pos": "RB",
+   "team": "TB",
+   "injury_status": null,
+   "adds_24h": 187048
+  },
+  {
+   "player_id": "1166",
+   "name": "Kirk Cousins",
+   "pos": "QB",
+   "team": "LV",
+   "injury_status": null,
+   "adds_24h": 156480
+  },
+  {
+   "player_id": "13305",
+   "name": "Mike Washington Jr.",
+   "pos": "RB",
+   "team": "LV",
+   "injury_status": null,
+   "adds_24h": 143286
+  },
+  {
+   "player_id": "7561",
+   "name": "Elijah Mitchell",
+   "pos": "RB",
+   "team": "PHI",
+   "injury_status": null,
+   "adds_24h": 130662
+  },
+  {
+   "player_id": "11539",
+   "name": "Jake Bates",
+   "pos": "K",
+   "team": "DET",
+   "injury_status": null,
+   "adds_24h": 126784
+  },
+  {
+   "player_id": "CHI",
+   "name": "Chicago Bears",
+   "pos": "DEF",
+   "team": "CHI",
+   "injury_status": null,
+   "adds_24h": 124606
+  },
+  {
+   "player_id": "13414",
+   "name": "Kaelon Black",
+   "pos": "RB",
+   "team": "SF",
+   "injury_status": null,
+   "adds_24h": 120645
+  },
+  {
+   "player_id": "1479",
+   "name": "Keenan Allen",
+   "pos": "WR",
+   "team": "IND",
+   "injury_status": null,
+   "adds_24h": 119848
+  },
+  {
+   "player_id": "4943",
+   "name": "Sam Darnold",
+   "pos": "QB",
+   "team": "SEA",
+   "injury_status": null,
+   "adds_24h": 116490
+  },
+  {
+   "player_id": "12540",
+   "name": "Chimere Dike",
+   "pos": "WR",
+   "team": "TEN",
+   "injury_status": null,
+   "adds_24h": 116280
+  },
+  {
+   "player_id": "4035",
+   "name": "Alvin Kamara",
+   "pos": "RB",
+   "team": "NO",
+   "injury_status": null,
+   "adds_24h": 116040
+  },
+  {
+   "player_id": "12545",
+   "name": "Tyler Shough",
+   "pos": "QB",
+   "team": "NO",
+   "injury_status": null,
+   "adds_24h": 112440
+  },
+  {
+   "player_id": "3451",
+   "name": "Ka'imi Fairbairn",
+   "pos": "K",
+   "team": "HOU",
+   "injury_status": null,
+   "adds_24h": 106756
+  },
+  {
+   "player_id": "13424",
+   "name": "Seth McGowan",
+   "pos": "RB",
+   "team": "IND",
+   "injury_status": null,
+   "adds_24h": 100184
+  },
+  {
+   "player_id": "13345",
+   "name": "Jonah Coleman",
+   "pos": "RB",
+   "team": "DEN",
+   "injury_status": null,
+   "adds_24h": 98306
+  },
+  {
+   "player_id": "11565",
+   "name": "J.J. McCarthy",
+   "pos": "QB",
+   "team": "NYG",
+   "injury_status": null,
+   "adds_24h": 93342
+  },
+  {
+   "player_id": "13296",
+   "name": "Caleb Douglas",
+   "pos": "WR",
+   "team": "MIA",
+   "injury_status": null,
+   "adds_24h": 91560
+  },
+  {
+   "player_id": "JAX",
+   "name": "Jacksonville Jaguars",
+   "pos": "DEF",
+   "team": "JAX",
+   "injury_status": null,
+   "adds_24h": 89466
+  },
+  {
+   "player_id": "9482",
+   "name": "Michael Mayer",
+   "pos": "TE",
+   "team": "LV",
+   "injury_status": null,
+   "adds_24h": 87741
+  },
+  {
+   "player_id": "6650",
+   "name": "Chase McLaughlin",
+   "pos": "K",
+   "team": "TB",
+   "injury_status": null,
+   "adds_24h": 81584
+  },
+  {
+   "player_id": "5892",
+   "name": "David Montgomery",
+   "pos": "RB",
+   "team": "HOU",
+   "injury_status": "Out",
+   "adds_24h": 78786
+  },
+  {
+   "player_id": "12487",
+   "name": "Terrance Ferguson",
+   "pos": "TE",
+   "team": "LAR",
+   "injury_status": "IR",
+   "adds_24h": 77784
+  },
+  {
+   "player_id": "9758",
+   "name": "C.J. Stroud",
+   "pos": "QB",
+   "team": "HOU",
+   "injury_status": null,
+   "adds_24h": 77350
+  },
+  {
+   "player_id": "3161",
+   "name": "Carson Wentz",
+   "pos": "QB",
+   "team": "MIN",
+   "injury_status": null,
+   "adds_24h": 74268
+  },
+  {
+   "player_id": "TB",
+   "name": "Tampa Bay Buccaneers",
+   "pos": "DEF",
+   "team": "TB",
+   "injury_status": null,
+   "adds_24h": 73200
+  },
+  {
+   "player_id": "11563",
+   "name": "Bo Nix",
+   "pos": "QB",
+   "team": "DEN",
+   "injury_status": null,
+   "adds_24h": 73056
+  },
+  {
+   "player_id": "8134",
+   "name": "Khalil Shakir",
+   "pos": "WR",
+   "team": "BUF",
+   "injury_status": null,
+   "adds_24h": 65826
+  },
+  {
+   "player_id": "12506",
+   "name": "Harold Fannin Jr.",
+   "pos": "TE",
+   "team": "CLE",
+   "injury_status": null,
+   "adds_24h": 65525
+  },
+  {
+   "player_id": "5189",
+   "name": "Eddy Pineiro",
+   "pos": "K",
+   "team": "SF",
+   "injury_status": null,
+   "adds_24h": 57750
+  }
+ ]
+}
