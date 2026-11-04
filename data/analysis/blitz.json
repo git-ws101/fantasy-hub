@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-04T04:06:09.143511Z",
+ "generated": "2026-11-04T14:38:05.905804Z",
  "slug": "blitz",
  "league_name": "Blitz: The Fantasy League",
  "seasons": [
@@ -642,6 +642,13 @@
         "player": "Jordan Addison",
         "pos": "WR",
         "status": "complete"
+       },
+       {
+        "week": 8,
+        "bid": 12,
+        "player": "Woody Marks",
+        "pos": "RB",
+        "status": "complete"
        }
       ],
       "lost": [
@@ -658,24 +665,31 @@
         "player": "Kenyon Sadiq",
         "pos": "TE",
         "status": "failed"
+       },
+       {
+        "week": 8,
+        "bid": 15,
+        "player": "Mike Washington Jr.",
+        "pos": "RB",
+        "status": "failed"
        }
       ],
-      "free_agent_adds": 25,
+      "free_agent_adds": 27,
       "trades": 0,
-      "spent": 41
+      "spent": 53
      }
     },
     "summary": {
-     "claims_won": 25,
-     "claims_lost": 8,
+     "claims_won": 26,
+     "claims_lost": 9,
      "total_spent_by_season": {
       "2024": 100,
       "2025": 87,
-      "2026": 41
+      "2026": 53
      },
-     "avg_winning_bid": 9.1,
+     "avg_winning_bid": 9.2,
      "max_winning_bid": 25,
-     "median_winning_bid": 6,
+     "median_winning_bid": 7.5,
      "avg_losing_bid": 15.2,
      "max_losing_bid": 32,
      "burn_curve": {
@@ -700,12 +714,13 @@
       "2026": {
        "1": 16,
        "2": 39,
-       "7": 41
+       "7": 41,
+       "8": 53
       }
      },
      "spend_by_bucket": {
       "early": 42,
-      "mid": 105,
+      "mid": 117,
       "late": 81
      },
      "top_buys": [
@@ -1520,6 +1535,13 @@
         "player": "Deebo Samuel Sr.",
         "pos": "WR",
         "status": "complete"
+       },
+       {
+        "week": 8,
+        "bid": 5,
+        "player": "Houston Texans",
+        "pos": "DEF",
+        "status": "complete"
        }
       ],
       "lost": [
@@ -1540,20 +1562,20 @@
       ],
       "free_agent_adds": 14,
       "trades": 0,
-      "spent": 22
+      "spent": 27
      }
     },
     "summary": {
-     "claims_won": 28,
+     "claims_won": 29,
      "claims_lost": 26,
      "total_spent_by_season": {
       "2024": 33,
       "2025": 74,
-      "2026": 22
+      "2026": 27
      },
      "avg_winning_bid": 4.6,
      "max_winning_bid": 30,
-     "median_winning_bid": 1.0,
+     "median_winning_bid": 1,
      "avg_losing_bid": 8.5,
      "max_losing_bid": 60,
      "burn_curve": {
@@ -1580,12 +1602,13 @@
        "3": 2,
        "4": 3,
        "6": 20,
-       "7": 22
+       "7": 22,
+       "8": 27
       }
      },
      "spend_by_bucket": {
       "early": 43,
-      "mid": 53,
+      "mid": 58,
       "late": 33
      },
      "top_buys": [
@@ -3042,7 +3065,7 @@
      "2026": {
       "won": [],
       "lost": [],
-      "free_agent_adds": 18,
+      "free_agent_adds": 20,
       "trades": 0,
       "spent": 0
      }
@@ -3853,6 +3876,20 @@
         "player": "Matthew Stafford",
         "pos": "QB",
         "status": "complete"
+       },
+       {
+        "week": 8,
+        "bid": 19,
+        "player": "Mike Washington Jr.",
+        "pos": "RB",
+        "status": "complete"
+       },
+       {
+        "week": 8,
+        "bid": 1,
+        "player": "Kansas City Chiefs",
+        "pos": "DEF",
+        "status": "complete"
        }
       ],
       "lost": [
@@ -3897,25 +3934,32 @@
         "player": "Tre Tucker",
         "pos": "WR",
         "status": "failed"
+       },
+       {
+        "week": 8,
+        "bid": 1,
+        "player": "Houston Texans",
+        "pos": "DEF",
+        "status": "failed"
        }
       ],
       "free_agent_adds": 7,
       "trades": 0,
-      "spent": 31
+      "spent": 51
      }
     },
     "summary": {
-     "claims_won": 26,
-     "claims_lost": 25,
+     "claims_won": 28,
+     "claims_lost": 26,
      "total_spent_by_season": {
       "2024": 93,
       "2025": 91,
-      "2026": 31
+      "2026": 51
      },
-     "avg_winning_bid": 8.3,
+     "avg_winning_bid": 8.4,
      "max_winning_bid": 62,
      "median_winning_bid": 4.5,
-     "avg_losing_bid": 7.2,
+     "avg_losing_bid": 6.9,
      "max_losing_bid": 26,
      "burn_curve": {
       "2024": {
@@ -3943,12 +3987,13 @@
        "4": 25,
        "5": 26,
        "6": 30,
-       "7": 31
+       "7": 31,
+       "8": 51
       }
      },
      "spend_by_bucket": {
       "early": 81,
-      "mid": 93,
+      "mid": 113,
       "late": 41
      },
      "top_buys": [
@@ -3967,6 +4012,13 @@
        "status": "complete"
       },
       {
+       "week": 8,
+       "bid": 19,
+       "player": "Mike Washington Jr.",
+       "pos": "RB",
+       "status": "complete"
+      },
+      {
        "week": 3,
        "bid": 17,
        "player": "Jauan Jennings",
@@ -3978,13 +4030,6 @@
        "bid": 15,
        "player": "Deebo Samuel Sr.",
        "pos": "WR",
-       "status": "complete"
-      },
-      {
-       "week": 13,
-       "bid": 11,
-       "player": "Jaleel McLaughlin",
-       "pos": "RB",
        "status": "complete"
       }
      ]
@@ -4966,6 +5011,13 @@
         "player": "Jacoby Brissett",
         "pos": "QB",
         "status": "complete"
+       },
+       {
+        "week": 8,
+        "bid": 1,
+        "player": "C.J. Stroud",
+        "pos": "QB",
+        "status": "complete"
        }
       ],
       "lost": [
@@ -4979,20 +5031,20 @@
       ],
       "free_agent_adds": 7,
       "trades": 0,
-      "spent": 67
+      "spent": 68
      }
     },
     "summary": {
-     "claims_won": 31,
+     "claims_won": 32,
      "claims_lost": 9,
      "total_spent_by_season": {
       "2024": 100,
       "2025": 101,
-      "2026": 67
+      "2026": 68
      },
-     "avg_winning_bid": 8.6,
+     "avg_winning_bid": 8.4,
      "max_winning_bid": 61,
-     "median_winning_bid": 4,
+     "median_winning_bid": 4.0,
      "avg_losing_bid": 7.6,
      "max_losing_bid": 21,
      "burn_curve": {
@@ -5021,12 +5073,13 @@
        "3": 56,
        "4": 57,
        "6": 60,
-       "7": 67
+       "7": 67,
+       "8": 68
       }
      },
      "spend_by_bucket": {
       "early": 69,
-      "mid": 74,
+      "mid": 75,
       "late": 125
      },
      "top_buys": [
@@ -5857,16 +5910,37 @@
         "player": "Cincinnati Bengals",
         "pos": "DEF",
         "status": "failed"
+       },
+       {
+        "week": 8,
+        "bid": 5,
+        "player": "Houston Texans",
+        "pos": "DEF",
+        "status": "failed"
+       },
+       {
+        "week": 8,
+        "bid": 5,
+        "player": "Emmett Johnson",
+        "pos": "RB",
+        "status": "failed"
+       },
+       {
+        "week": 8,
+        "bid": 7,
+        "player": "Mike Washington Jr.",
+        "pos": "RB",
+        "status": "failed"
        }
       ],
-      "free_agent_adds": 3,
+      "free_agent_adds": 5,
       "trades": 2,
       "spent": 84
      }
     },
     "summary": {
      "claims_won": 33,
-     "claims_lost": 21,
+     "claims_lost": 24,
      "total_spent_by_season": {
       "2024": 100,
       "2025": 65,
@@ -5875,7 +5949,7 @@
      "avg_winning_bid": 7.5,
      "max_winning_bid": 68,
      "median_winning_bid": 2,
-     "avg_losing_bid": 10.3,
+     "avg_losing_bid": 9.7,
      "max_losing_bid": 61,
      "burn_curve": {
       "2024": {
@@ -8689,6 +8763,20 @@
         "player": "Makai Lemon",
         "pos": "WR",
         "status": "complete"
+       },
+       {
+        "week": 8,
+        "bid": 6,
+        "player": "Adonai Mitchell",
+        "pos": "WR",
+        "status": "complete"
+       },
+       {
+        "week": 8,
+        "bid": 30,
+        "player": "Emmett Johnson",
+        "pos": "RB",
+        "status": "complete"
        }
       ],
       "lost": [
@@ -8726,42 +8814,64 @@
         "player": "Kenyon Sadiq",
         "pos": "TE",
         "status": "failed"
+       },
+       {
+        "week": 8,
+        "bid": 27,
+        "player": "Emmett Johnson",
+        "pos": "RB",
+        "status": "failed"
        }
       ],
-      "free_agent_adds": 4,
+      "free_agent_adds": 5,
       "trades": 0,
-      "spent": 13
+      "spent": 49
      }
     },
     "summary": {
-     "claims_won": 3,
-     "claims_lost": 5,
+     "claims_won": 5,
+     "claims_lost": 6,
      "total_spent_by_season": {
-      "2026": 13
+      "2026": 49
      },
-     "avg_winning_bid": 4.3,
-     "max_winning_bid": 11,
-     "median_winning_bid": 1,
-     "avg_losing_bid": 3.0,
-     "max_losing_bid": 7,
+     "avg_winning_bid": 9.8,
+     "max_winning_bid": 30,
+     "median_winning_bid": 6,
+     "avg_losing_bid": 7.0,
+     "max_losing_bid": 27,
      "burn_curve": {
       "2026": {
        "3": 1,
        "4": 12,
-       "7": 13
+       "7": 13,
+       "8": 49
       }
      },
      "spend_by_bucket": {
       "early": 12,
-      "mid": 1,
+      "mid": 37,
       "late": 0
      },
      "top_buys": [
+      {
+       "week": 8,
+       "bid": 30,
+       "player": "Emmett Johnson",
+       "pos": "RB",
+       "status": "complete"
+      },
       {
        "week": 4,
        "bid": 11,
        "player": "Brian Robinson Jr.",
        "pos": "RB",
+       "status": "complete"
+      },
+      {
+       "week": 8,
+       "bid": 6,
+       "player": "Adonai Mitchell",
+       "pos": "WR",
        "status": "complete"
       },
       {
@@ -8851,18 +8961,18 @@
     "max": 1
    },
    "DEF|mid": {
-    "n": 19,
+    "n": 21,
     "median": 1,
     "max": 5
    },
    "WR|mid": {
-    "n": 28,
-    "median": 6.0,
+    "n": 29,
+    "median": 6,
     "max": 21
    },
    "QB|mid": {
-    "n": 10,
-    "median": 1.0,
+    "n": 11,
+    "median": 1,
     "max": 9
    },
    "K|mid": {
@@ -8871,8 +8981,8 @@
     "max": 3
    },
    "RB|mid": {
-    "n": 22,
-    "median": 6.0,
+    "n": 25,
+    "median": 12,
     "max": 101
    },
    "TE|mid": {
@@ -9038,6 +9148,16 @@
     "n_bidders": 4
    },
    {
+    "season": "2026",
+    "week": 8,
+    "player": "Emmett Johnson",
+    "pos": "RB",
+    "winning_bid": 30,
+    "second_bid": 27,
+    "margin": 3,
+    "n_bidders": 3
+   },
+   {
     "season": "2024",
     "week": 2,
     "player": "Carson Steele",
@@ -9116,6 +9236,16 @@
     "second_bid": 12,
     "margin": 7,
     "n_bidders": 2
+   },
+   {
+    "season": "2026",
+    "week": 8,
+    "player": "Mike Washington Jr.",
+    "pos": "RB",
+    "winning_bid": 19,
+    "second_bid": 15,
+    "margin": 4,
+    "n_bidders": 3
    },
    {
     "season": "2024",
@@ -9476,6 +9606,16 @@
     "second_bid": 1,
     "margin": 4,
     "n_bidders": 2
+   },
+   {
+    "season": "2026",
+    "week": 8,
+    "player": "Houston Texans",
+    "pos": "DEF",
+    "winning_bid": 5,
+    "second_bid": 5,
+    "margin": 0,
+    "n_bidders": 3
    },
    {
     "season": "2024",
